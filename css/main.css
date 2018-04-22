@@ -1,0 +1,57 @@
+:root {
+  --background-clr: #5e565a;
+  --primary-clr: #f3f1d8;
+  --secondary-clr: #ff934f;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--background-clr);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--secondary-clr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.hamburger-menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 2.5rem;
+}
+
+.hamburger-menu-bar {
+  background-color: var(--primary-clr);
+  border-radius: 1.5px;
+  height: 0.4rem;
+  width: 2.5rem;
+}
