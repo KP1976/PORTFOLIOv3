@@ -1,0 +1,42 @@
+.about-me {
+  align-items: center;
+  background-color: var(--secondary-clr);
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem;
+}
+
+.title {
+  color: var(--primary-clr);
+  font-family: var(--titles-font);
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+  margin: 0 0 3rem 0;
+}
+
+.list {
+  display: grid;
+  grid-row-gap: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  .box {
+    align-items: center;
+    background-color: var(--primary-clr);
+    border-radius: 0.5rem;
+    color: var(--background-clr);
+    display: flex;
+    font-family: var(--text-font);
+    font-size: 2.2rem;
+    height: 4rem;
+    list-style-type: none;
+    padding: 0 10px;
+    text-transform: uppercase;
+    width: 100%;
+
+    .category {
+      margin: 3px 0 0 1.2rem;
+    }
+  }
+}

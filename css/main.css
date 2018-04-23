@@ -73,14 +73,16 @@
   padding-top: 9rem;
   position: relative;
 }
-.header .greetings {
+
+.greetings {
   color: var(--primary-clr);
   font-family: var(--titles-font);
   font-size: 5.5rem;
   line-height: 5.5rem;
   margin: 0;
 }
-.header .greetings-sub {
+
+.greetings-sub {
   border-bottom: 1px solid var(--primary-clr);
   color: var(--secondary-clr);
   font-family: var(--titles-font);
@@ -89,7 +91,8 @@
   margin: 0.3rem 0 0 0;
   padding-bottom: 1.2rem;
 }
-.header .description {
+
+.description {
   color: var(--primary-clr);
   font-family: var(--titles-font);
   font-size: 1.4rem;
@@ -98,18 +101,21 @@
   text-align: center;
   width: 80%;
 }
-.header .self-picture-wrapper {
+
+.self-picture-wrapper {
   border: 5px solid var(--secondary-clr);
   border-radius: 50%;
   height: 10rem;
   margin-top: 4rem;
   width: 10rem;
 }
-.header .self-picture {
+
+.self-picture {
   border-radius: 50%;
   width: 100%;
 }
-.header .myname {
+
+.myname {
   color: var(--primary-clr);
   font-family: var(--name-font);
   font-size: 3.6rem;
@@ -118,7 +124,8 @@
   text-align: center;
   width: 60%;
 }
-.header .triangle-small {
+
+.triangle-small {
   background-color: var(--primary-clr);
   height: 70px;
   position: absolute;
@@ -128,7 +135,8 @@
   top: 275px;
   left: -35px;
 }
-.header .triangle-medium {
+
+.triangle-medium {
   background-color: var(--primary-clr);
   height: 108px;
   position: absolute;
@@ -138,7 +146,8 @@
   bottom: 130px;
   right: -54px;
 }
-.header .triangle-big {
+
+.triangle-big {
   background-color: var(--primary-clr);
   height: 132px;
   position: absolute;
@@ -147,6 +156,58 @@
   width: 132px;
   bottom: -67px;
   left: -15px;
+}
+
+.about-me {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--secondary-clr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 1rem;
+}
+
+.title {
+  color: var(--primary-clr);
+  font-family: var(--titles-font);
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+  margin: 0 0 3rem 0;
+}
+
+.list {
+  display: grid;
+  grid-row-gap: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.list .box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--primary-clr);
+  border-radius: 0.5rem;
+  color: var(--background-clr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: var(--text-font);
+  font-size: 2.2rem;
+  height: 4rem;
+  list-style-type: none;
+  padding: 0 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.list .box .category {
+  margin: 3px 0 0 1.2rem;
 }
 
 :root {
