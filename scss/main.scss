@@ -1,8 +1,23 @@
-// KOLORY
+@import "mixins";
+@import "menu";
+@import "section-header";
+
 :root {
+  // KOLORY
   --background-clr: #5e565a;
   --primary-clr: #f3f1d8;
   --secondary-clr: #ff934f;
+
+  //FONTY
+  --titles-font: "Libre Baskerville", serif;
+  --text-font: "Hind", sans-serif;
+  --name-font: "Parisienne", cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
@@ -11,32 +26,6 @@ html {
 
 body {
   background-color: var(--background-clr);
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-.navbar {
-  align-items: center;
-  background-color: var(--secondary-clr);
-  display: flex;
-  height: 4rem;
-  justify-content: flex-end;
-  padding-right: 1rem;
-}
-
-.hamburger-menu {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 2rem;
-  justify-content: space-between;
-  width: 2.5rem;
-}
-
-.hamburger-menu-bar {
-  background-color: var(--primary-clr);
-  border-radius: 1.5px;
-  height: 0.4rem;
-  width: 2.5rem;
 }
