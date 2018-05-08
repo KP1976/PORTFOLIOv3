@@ -214,7 +214,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3rem 1rem 4rem;
+  padding: 3rem 1rem 5rem;
 }
 .portfolio .description {
   margin-top: -0.5rem;
@@ -284,6 +284,61 @@
   margin: 1rem 0 0 0;
 }
 
+.contact {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--secondary-clr);
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact i {
+  color: var(--background-clr);
+  font-size: 6rem;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+.contact .description {
+  color: var(--primary-clr);
+  font-family: var(--text-font);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+.social-media i:hover {
+  color: var(--primary-clr);
+}
+
+.footer {
+  padding: 2rem 0;
+}
+.footer .copyright {
+  color: var(--primary-clr);
+  font-family: var(--titles-font);
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+}
+
 :root {
   --background-clr: #5e565a;
   --primary-clr: #f3f1d8;
@@ -315,5 +370,6 @@ body {
   font-family: var(--titles-font);
   font-size: 3.6rem;
   line-height: 3.6rem;
-  margin: 0 0 2.5rem 0;
+  margin: 0 0 3rem 0;
+  text-align: center;
 }

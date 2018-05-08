@@ -1,0 +1,34 @@
+.contact {
+  align-items: center;
+  background-color: var(--secondary-clr);
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+
+  i {
+    color: var(--background-clr);
+    font-size: 6rem;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .description {
+    color: var(--primary-clr);
+    font-family: var(--text-font);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  i:hover {
+    color: var(--primary-clr);
+  }
+}
