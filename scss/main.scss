@@ -2,6 +2,7 @@
 @import "menu";
 @import "section-header";
 @import "section-aboutme";
+@import "section-portfolio";
 
 :root {
   // KOLORY
@@ -29,4 +30,12 @@ body {
   background-color: var(--background-clr);
   margin: 0;
   padding: 0;
+}
+
+.sections-title {
+  color: var(--primary-clr);
+  font-family: var(--titles-font);
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+  margin: 0 0 2.5rem 0;
 }
