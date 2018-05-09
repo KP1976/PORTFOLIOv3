@@ -1,8 +1,6 @@
 @mixin hamburger-bar {
   background-color: var(--primary-clr);
   border-radius: 1.5px;
-  height: 0.4rem;
-  width: 2.5rem;
 }
 
 @mixin triangle($size) {
@@ -11,4 +9,10 @@
   position: absolute;
   transform: rotate(45deg);
   width: $size;
+}
+
+@mixin mq($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
 }

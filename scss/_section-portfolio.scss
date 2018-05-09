@@ -16,9 +16,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // height: 30rem;
   margin: 4.4rem 0 0 0;
-  padding: 2.5rem;
+  padding-top: 2rem;
   position: relative;
   width: 30rem;
 
@@ -46,21 +45,30 @@
 }
 
 .portfolio-example-img {
-  margin-top: 0;
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.portfolio-example-description-wrapper {
+  background-color: var(--secondary-clr);
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 2rem 2rem 2rem 2.5rem;
   width: 100%;
 }
 
 .portfolio-example-title {
-  color: var(--background-clr);
+  color: var(--primary-clr);
   font-family: var(--text-font);
   font-weight: bold;
   font-size: 2.3rem;
   line-height: 2.3rem;
-  margin: 2rem 0 0 0;
+  margin: 0;
 }
 
 .portfolio-example-description {
-  color: var(--background-clr);
+  color: var(--primary-clr);
   font-family: var(--text-font);
   font-size: 1.4rem;
   line-height: 2.1rem;

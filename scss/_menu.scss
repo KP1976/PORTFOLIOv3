@@ -8,6 +8,10 @@
   position: fixed;
   width: 100%;
   z-index: 1;
+  @include mq(576px) {
+    height: 6rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .hamburger-menu {
@@ -19,15 +23,31 @@
   justify-content: center;
   position: relative;
   width: 2.5rem;
+  @include mq(576px) {
+    height: 3rem;
+    width: 3.5rem;
+  }
 }
 
 .hamburger-menu-bar {
   @include hamburger-bar;
+  height: 0.4rem;
+  width: 100%;
+  @include mq(576px) {
+    height: 0.6rem;
+    width: 3.5rem;
+  }
   &::before,
   &::after {
     @include hamburger-bar;
     content: "";
+    height: 0.4rem;
     position: absolute;
+    width: 100%;
+    @include mq(576px) {
+      height: 0.6rem;
+      width: 3.5rem;
+    }
   }
   &::before {
     top: 0;
