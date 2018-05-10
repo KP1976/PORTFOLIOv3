@@ -12,6 +12,9 @@
     height: 6rem;
     padding-right: 1.5rem;
   }
+  @include mq(768px) {
+    padding-right: 0;
+  }
 }
 
 .hamburger-menu {
@@ -26,6 +29,9 @@
   @include mq(576px) {
     height: 3rem;
     width: 3.5rem;
+  }
+  @include mq(768px) {
+    display: none;
   }
 }
 
@@ -54,5 +60,46 @@
   }
   &::after {
     bottom: 0;
+  }
+}
+
+.navbar-list {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 1.8rem;
+  width: 100%;
+  @include mq(768px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    line-height: 6rem;
+    transition: background-color 0.3s ease-in-out;
+    width: 25%;
+
+    a {
+      color: var(--primary-clr);
+      font-family: var(--text-font);
+      font-size: 1.8rem;
+      text-align: center;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+      width: 100%;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+
+    &:hover {
+      background-color: var(--primary-clr);
+      a {
+        color: var(--background-clr);
+      }
+    }
   }
 }
