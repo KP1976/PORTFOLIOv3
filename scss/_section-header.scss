@@ -10,6 +10,9 @@
     height: 985px;
     padding-top: 11rem;
   }
+  @include mq(768px) {
+    height: 1176px;
+  }
 }
 
 .greetings {
@@ -51,6 +54,7 @@
   @include mq(576px) {
     font-size: 2rem;
     line-height: 3.5rem;
+    width: 50%;
   }
 }
 
@@ -65,6 +69,11 @@
     height: 18rem;
     margin-top: 4rem;
     width: 18rem;
+  }
+  @include mq(768px) {
+    height: 24.5rem;
+    margin-top: 5rem;
+    width: 24.5rem;
   }
 }
 
@@ -87,6 +96,11 @@
     margin-top: 2rem;
     width: 100%;
   }
+  @include mq(768px) {
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-top: 5rem;
+  }
 }
 
 .triangle-small {
@@ -97,6 +111,11 @@
     @include triangle(140px);
     left: -70px;
     top: 445px;
+  }
+  @include mq(768px) {
+    @include triangle(214px);
+    left: -107px;
+    top: 455px;
   }
 }
 
@@ -109,6 +128,11 @@
     bottom: 90px;
     right: -107px;
   }
+  @include mq(768px) {
+    @include triangle(320px);
+    bottom: 575px;
+    right: -160px;
+  }
 }
 
 .triangle-big {
@@ -119,5 +143,10 @@
     @include triangle(284px);
     bottom: -142px;
     left: -25px;
+  }
+  @include mq(768px) {
+    @include triangle(460px);
+    bottom: -230px;
+    left: 146px;
   }
 }

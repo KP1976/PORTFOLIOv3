@@ -165,6 +165,11 @@
     padding-top: 11rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .header {
+    height: 1176px;
+  }
+}
 
 .greetings {
   color: var(--primary-clr);
@@ -211,6 +216,7 @@
   .description {
     font-size: 2rem;
     line-height: 3.5rem;
+    width: 50%;
   }
 }
 
@@ -227,6 +233,13 @@
     height: 18rem;
     margin-top: 4rem;
     width: 18rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .self-picture-wrapper {
+    height: 24.5rem;
+    margin-top: 5rem;
+    width: 24.5rem;
   }
 }
 
@@ -252,6 +265,13 @@
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) {
+  .myname {
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-top: 5rem;
+  }
+}
 
 .triangle-small {
   background-color: var(--primary-clr);
@@ -273,6 +293,18 @@
     width: 140px;
     left: -70px;
     top: 445px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .triangle-small {
+    background-color: var(--primary-clr);
+    height: 214px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 214px;
+    left: -107px;
+    top: 455px;
   }
 }
 
@@ -298,6 +330,18 @@
     right: -107px;
   }
 }
+@media screen and (min-width: 768px) {
+  .triangle-medium {
+    background-color: var(--primary-clr);
+    height: 320px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 320px;
+    bottom: 575px;
+    right: -160px;
+  }
+}
 
 .triangle-big {
   background-color: var(--primary-clr);
@@ -319,6 +363,18 @@
     width: 284px;
     bottom: -142px;
     left: -25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .triangle-big {
+    background-color: var(--primary-clr);
+    height: 460px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 460px;
+    bottom: -230px;
+    left: 146px;
   }
 }
 
