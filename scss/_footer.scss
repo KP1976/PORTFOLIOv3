@@ -1,5 +1,8 @@
 .footer {
   padding: 2rem 0;
+  @include mq(576px) {
+    padding: 2.5rem 0;
+  }
 
   .copyright {
     color: var(--primary-clr);
@@ -7,5 +10,8 @@
     font-size: 1.4rem;
     margin: 0;
     text-align: center;
+    @include mq(576px) {
+      font-size: 1.6rem;
+    }
   }
 }

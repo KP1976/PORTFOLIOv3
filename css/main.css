@@ -475,6 +475,12 @@
   text-align: center;
   width: 100%;
 }
+@media screen and (min-width: 576px) {
+  .contact .description {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+}
 
 .social-media {
   display: -webkit-box;
@@ -492,12 +498,22 @@
 .footer {
   padding: 2rem 0;
 }
+@media screen and (min-width: 576px) {
+  .footer {
+    padding: 2.5rem 0;
+  }
+}
 .footer .copyright {
   color: var(--primary-clr);
   font-family: var(--titles-font);
   font-size: 1.4rem;
   margin: 0;
   text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .footer .copyright {
+    font-size: 1.6rem;
+  }
 }
 
 :root {
