@@ -7,6 +7,9 @@
   @include mq(576px) {
     padding: 3rem 0;
   }
+  @include mq(768px) {
+    padding: 3rem 0 5rem;
+  }
 }
 
 .list {
@@ -17,6 +20,13 @@
   width: 100%;
   @include mq(576px) {
     width: 45rem;
+  }
+  @include mq(768px) {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
 
   .box {
@@ -36,9 +46,36 @@
       font-size: 2.8rem;
       height: 5rem;
     }
+    @include mq(768px) {
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+      flex-direction: column;
+      height: 12rem;
+      justify-content: center;
+      line-height: 3.2rem;
+      margin-bottom: 3rem;
+      margin-right: 1rem;
+      padding: 0;
+      text-align: center;
+      width: 24rem;
+      i {
+        font-size: 3.6rem;
+      }
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
+      &:nth-child(5) {
+        margin-bottom: 0;
+      }
+    }
 
     .category {
       margin: 3px 0 0 1.2rem;
+      @include mq(768px) {
+        margin: 0.7rem 0 0 0;
+      }
     }
   }
 }

@@ -397,6 +397,11 @@
     padding: 3rem 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .about-me {
+    padding: 3rem 0 5rem;
+  }
+}
 
 .list {
   display: grid;
@@ -408,6 +413,22 @@
 @media screen and (min-width: 576px) {
   .list {
     width: 45rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
 }
 .list .box {
@@ -434,8 +455,45 @@
     height: 5rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .list .box {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 12rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 3.2rem;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    padding: 0;
+    text-align: center;
+    width: 24rem;
+  }
+  .list .box i {
+    font-size: 3.6rem;
+  }
+  .list .box:nth-child(3) {
+    margin-right: 0;
+  }
+  .list .box:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .list .box:nth-child(5) {
+    margin-bottom: 0;
+  }
+}
 .list .box .category {
   margin: 3px 0 0 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  .list .box .category {
+    margin: 0.7rem 0 0 0;
+  }
 }
 
 .portfolio {
@@ -672,5 +730,11 @@ body {
   .sections-title {
     font-size: 4.5rem;
     line-height: 4.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sections-title {
+    font-size: 6rem;
+    line-height: 6rem;
   }
 }

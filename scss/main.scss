@@ -45,4 +45,8 @@ body {
     font-size: 4.5rem;
     line-height: 4.5rem;
   }
+  @include mq(768px) {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
 }
