@@ -509,6 +509,16 @@
           flex-direction: column;
   padding: 3rem 1rem 5rem;
 }
+@media screen and (min-width: 768px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 3rem 1.8rem 5rem;
+  }
+  .portfolio .sections-title {
+    grid-column: 1 / -1;
+  }
+}
 .portfolio .description {
   margin-top: -0.5rem;
 }
@@ -516,6 +526,12 @@
   .portfolio .description {
     font-size: 1.8rem;
     line-height: 2.8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio .description {
+    grid-column: 4 / 10;
+    width: 100%;
   }
 }
 
@@ -545,6 +561,25 @@
     width: 45rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .portfolio-example-wrapper {
+    -ms-flex-item-align: start;
+        align-self: start;
+    justify-self: center;
+    width: 30.5rem;
+  }
+  .portfolio-example-wrapper:nth-child(odd) {
+    grid-column: 1 / 7;
+  }
+  .portfolio-example-wrapper:nth-child(even) {
+    grid-column: 7 / 13;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-example-wrapper .portfolio-link {
+    height: 16rem;
+  }
+}
 .portfolio-example-wrapper::before, .portfolio-example-wrapper::after {
   background-color: transparent;
   bottom: 8.5%;
@@ -570,11 +605,12 @@
 .portfolio-example-img {
   display: block;
   margin: 0 auto;
-  width: 85%;
+  max-height: 20rem;
+  max-width: 90%;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .portfolio-example-img {
-    width: 90%;
+    max-height: 16rem;
   }
 }
 
@@ -582,13 +618,18 @@
   background-color: var(--secondary-clr);
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   padding: 2rem 2rem 2rem 2.5rem;
   width: 100%;
 }
 @media screen and (min-width: 576px) {
   .portfolio-example-description-wrapper {
-    padding: 2.5rem 3rem 2.5rem 3rem;
+    padding: 2.5rem 3rem 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-example-description-wrapper {
+    padding: 2.5rem 1.5rem 1.5rem;
   }
 }
 
@@ -606,6 +647,12 @@
     line-height: 3rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .portfolio-example-title {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+}
 
 .portfolio-example-description {
   color: var(--primary-clr);
@@ -615,6 +662,12 @@
   margin: 1rem 0 0 0;
 }
 @media screen and (min-width: 576px) {
+  .portfolio-example-description {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
   .portfolio-example-description {
     font-size: 1.6rem;
     line-height: 2.3rem;
@@ -653,8 +706,8 @@
 }
 @media screen and (min-width: 576px) {
   .contact .description {
-    font-size: 2rem;
-    line-height: 2.6rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
   }
 }
 
