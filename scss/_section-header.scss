@@ -13,6 +13,14 @@
   @include mq(768px) {
     height: 1176px;
   }
+  @include mq(992px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, auto) repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    height: 697px;
+    padding: 13rem 2.6rem 0;
+  }
 }
 
 .greetings {
@@ -24,6 +32,11 @@
   @include mq(576px) {
     font-size: 9.8rem;
     line-height: 9.8rem;
+  }
+  @include mq(992px) {
+    font-size: 12.5rem;
+    grid-column: 2 / 8;
+    justify-self: end;
   }
 }
 
@@ -40,6 +53,13 @@
     line-height: 4.2rem;
     padding-bottom: 2.5rem;
   }
+  @include mq(992px) {
+    align-self: start;
+    border-bottom: none;
+    justify-self: end;
+    grid-column: 3 / 8;
+    padding-bottom: 0;
+  }
 }
 
 .description {
@@ -55,6 +75,15 @@
     font-size: 2rem;
     line-height: 3.5rem;
     width: 50%;
+  }
+  @include mq(992px) {
+    align-self: start;
+    font-size: 2.1rem;
+    grid-column: 3 / 8;
+    justify-self: end;
+    line-height: 3.6rem;
+    text-align: left;
+    width: 100%;
   }
 }
 
@@ -74,6 +103,14 @@
     height: 24.5rem;
     margin-top: 5rem;
     width: 24.5rem;
+  }
+  @include mq(992px) {
+    height: 18rem;
+    justify-self: center;
+    margin-top: 3rem;
+    width: 18rem;
+    grid-column: 9 / 12;
+    grid-row: 1 / 3;
   }
 }
 
@@ -101,6 +138,13 @@
     line-height: 6rem;
     margin-top: 5rem;
   }
+  @include mq(992px) {
+    align-self: start;
+    font-size: 5.2rem;
+    line-height: 6.7rem;
+    margin-top: 1rem;
+    grid-column: 9 / 12;
+  }
 }
 
 .triangle-small {
@@ -116,6 +160,9 @@
     @include triangle(214px);
     left: -107px;
     top: 455px;
+  }
+  @include mq(992px) {
+    display: none;
   }
 }
 
@@ -133,6 +180,9 @@
     bottom: 575px;
     right: -160px;
   }
+  @include mq(992px) {
+    display: none;
+  }
 }
 
 .triangle-big {
@@ -148,5 +198,15 @@
     @include triangle(460px);
     bottom: -230px;
     left: 146px;
+  }
+  @include mq(992px) {
+    background-color: var(--primary-clr);
+    height: 27rem;
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    margin: 78px auto;
+    position: static;
+    transform: rotate(45deg);
+    width: 27rem;
   }
 }
