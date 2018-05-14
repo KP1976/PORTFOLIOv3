@@ -108,6 +108,11 @@
             justify-content: space-evenly;
   }
 }
+@media screen and (min-width: 992px) {
+  .navbar-list {
+    padding: 0 1.6rem;
+  }
+}
 .navbar-list .menu-items {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -133,8 +138,13 @@
   transition: color 0.3s ease-in-out;
   width: 100%;
 }
+@media screen and (min-width: 992px) {
+  .navbar-list .menu-items a {
+    font-size: 2.4rem;
+  }
+}
 .navbar-list .menu-items a i {
-  margin-right: 5px;
+  margin-right: 0.5rem;
 }
 .navbar-list .menu-items:hover {
   background-color: var(--primary-clr);
