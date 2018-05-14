@@ -494,6 +494,11 @@
     padding: 3rem 0 5rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .about-me {
+    padding: 5rem 0;
+  }
+}
 
 .list {
   display: grid;
@@ -521,6 +526,11 @@
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .list {
+    width: 78rem;
   }
 }
 .list .box {
@@ -886,5 +896,10 @@ body {
   .sections-title {
     font-size: 6rem;
     line-height: 6rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .sections-title {
+    margin: 0 0 5rem 0;
   }
 }

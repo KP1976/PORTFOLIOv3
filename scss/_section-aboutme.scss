@@ -10,6 +10,9 @@
   @include mq(768px) {
     padding: 3rem 0 5rem;
   }
+  @include mq(768px) {
+    padding: 5rem 0;
+  }
 }
 
 .list {
@@ -27,6 +30,9 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+  }
+  @include mq(992px) {
+    width: 78rem;
   }
 
   .box {
