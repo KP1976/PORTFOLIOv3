@@ -621,6 +621,15 @@
     grid-column: 1 / -1;
   }
 }
+@media screen and (min-width: 992px) {
+  .portfolio {
+    grid-column-gap: 2rem;
+    padding: 5rem 2.6rem 5rem;
+  }
+  .portfolio .sections-title {
+    grid-column: 1 / -1;
+  }
+}
 .portfolio .description {
   margin-top: -0.5rem;
 }
@@ -634,6 +643,13 @@
   .portfolio .description {
     grid-column: 4 / 10;
     width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .portfolio .description {
+    justify-self: center;
+    text-align: center;
+    width: 37rem;
   }
 }
 
@@ -677,9 +693,25 @@
     grid-column: 7 / 13;
   }
 }
+@media screen and (min-width: 992px) {
+  .portfolio-example-wrapper {
+    width: 38rem;
+  }
+  .portfolio-example-wrapper:nth-child(odd) {
+    grid-column: 2 / 7;
+  }
+  .portfolio-example-wrapper:nth-child(even) {
+    grid-column: 7 / 12;
+  }
+}
 @media screen and (min-width: 768px) {
   .portfolio-example-wrapper .portfolio-link {
     height: 16rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .portfolio-example-wrapper .portfolio-link {
+    height: 19.5rem;
   }
 }
 .portfolio-example-wrapper::before, .portfolio-example-wrapper::after {
@@ -715,6 +747,11 @@
     max-height: 16rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .portfolio-example-img {
+    max-height: 19.5rem;
+  }
+}
 
 .portfolio-example-description-wrapper {
   background-color: var(--secondary-clr);
@@ -732,6 +769,11 @@
 @media screen and (min-width: 768px) {
   .portfolio-example-description-wrapper {
     padding: 2.5rem 1.5rem 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .portfolio-example-description-wrapper {
+    padding: 2rem 3rem;
   }
 }
 
@@ -755,6 +797,12 @@
     line-height: 2.4rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .portfolio-example-title {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+}
 
 .portfolio-example-description {
   color: var(--primary-clr);
@@ -769,10 +817,10 @@
     line-height: 2.3rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .portfolio-example-description {
-    font-size: 1.6rem;
-    line-height: 2.3rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
   }
 }
 
