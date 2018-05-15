@@ -4,6 +4,9 @@
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
+  @include mq(992px) {
+    padding: 5rem 0;
+  }
 
   i {
     color: var(--background-clr);
@@ -34,6 +37,10 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  @include mq(992px) {
+    justify-content: space-between;
+    width: 46rem;
+  }
 
   i:hover {
     color: var(--primary-clr);

@@ -3,6 +3,9 @@
   @include mq(576px) {
     padding: 2.5rem 0;
   }
+  @include mq(768px) {
+    padding: 3rem 0;
+  }
 
   .copyright {
     color: var(--primary-clr);

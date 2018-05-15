@@ -838,6 +838,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 992px) {
+  .contact {
+    padding: 5rem 0;
+  }
+}
 .contact i {
   color: var(--background-clr);
   font-size: 4rem;
@@ -875,6 +880,14 @@
           justify-content: space-evenly;
   width: 100%;
 }
+@media screen and (min-width: 992px) {
+  .social-media {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 46rem;
+  }
+}
 .social-media i:hover {
   color: var(--primary-clr);
 }
@@ -885,6 +898,11 @@
 @media screen and (min-width: 576px) {
   .footer {
     padding: 2.5rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 3rem 0;
   }
 }
 .footer .copyright {
