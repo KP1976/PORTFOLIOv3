@@ -551,7 +551,7 @@
     padding: 3rem 0 5rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .about-me {
     padding: 5rem 0;
   }
@@ -590,6 +590,15 @@
     width: 78rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  .list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 120rem;
+    width: 80%;
+  }
+}
 .list .box {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -600,13 +609,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: var(--text-font);
-  font-size: 2.2rem;
   height: 4rem;
   list-style-type: none;
   padding: 0 10px;
   text-transform: uppercase;
   width: 100%;
+}
+.list .box i {
+  font-size: 2.2rem;
+}
+@media screen and (min-width: 768px) {
+  .list .box i {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list .box i {
+    font-size: 3rem;
+  }
 }
 @media screen and (min-width: 576px) {
   .list .box {
@@ -633,9 +653,6 @@
     text-align: center;
     width: 24rem;
   }
-  .list .box i {
-    font-size: 3.6rem;
-  }
   .list .box:nth-child(3) {
     margin-right: 0;
   }
@@ -646,12 +663,30 @@
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .list .box {
+    margin: 0;
+    width: 17rem;
+  }
+}
 .list .box .category {
+  font-family: var(--text-font);
+  font-size: 2.2rem;
   margin: 3px 0 0 1.2rem;
+}
+@media screen and (min-width: 576px) {
+  .list .box .category {
+    font-size: 2.8rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .list .box .category {
     margin: 0.7rem 0 0 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list .box .category {
+    font-size: 2.4rem;
   }
 }
 

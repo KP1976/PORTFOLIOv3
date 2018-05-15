@@ -10,7 +10,7 @@
   @include mq(768px) {
     padding: 3rem 0 5rem;
   }
-  @include mq(768px) {
+  @include mq(992px) {
     padding: 5rem 0;
   }
 }
@@ -34,6 +34,11 @@
   @include mq(992px) {
     width: 78rem;
   }
+  @include mq(1200px) {
+    justify-content: space-between;
+    max-width: 120rem;
+    width: 80%;
+  }
 
   .box {
     align-items: center;
@@ -41,13 +46,20 @@
     border-radius: 0.5rem;
     color: var(--background-clr);
     display: flex;
-    font-family: var(--text-font);
-    font-size: 2.2rem;
     height: 4rem;
     list-style-type: none;
     padding: 0 10px;
     text-transform: uppercase;
     width: 100%;
+    i {
+      font-size: 2.2rem;
+      @include mq(768px) {
+        font-size: 3.6rem;
+      }
+      @include mq(1200px) {
+        font-size: 3rem;
+      }
+    }
     @include mq(576px) {
       font-size: 2.8rem;
       height: 5rem;
@@ -63,9 +75,6 @@
       padding: 0;
       text-align: center;
       width: 24rem;
-      i {
-        font-size: 3.6rem;
-      }
       &:nth-child(3) {
         margin-right: 0;
       }
@@ -76,11 +85,23 @@
         margin-bottom: 0;
       }
     }
+    @include mq(1200px) {
+      margin: 0;
+      width: 17rem;
+    }
 
     .category {
+      font-family: var(--text-font);
+      font-size: 2.2rem;
       margin: 3px 0 0 1.2rem;
+      @include mq(576px) {
+        font-size: 2.8rem;
+      }
       @include mq(768px) {
         margin: 0.7rem 0 0 0;
+      }
+      @include mq(1200px) {
+        font-size: 2.4rem;
       }
     }
   }
