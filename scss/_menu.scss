@@ -76,9 +76,9 @@
   @include mq(992px) {
     padding: 0 1.6rem;
   }
-  @include mq(992px) {
+  @include mq(1200px) {
     margin: 0 auto;
-    padding: 0;
+    padding: 0 3rem;
     width: 120rem;
   }
 
