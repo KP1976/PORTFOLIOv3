@@ -113,6 +113,13 @@
     padding: 0 1.6rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .navbar-list {
+    margin: 0 auto;
+    padding: 0;
+    width: 120rem;
+  }
+}
 .navbar-list .menu-items {
   -webkit-box-align: center;
       -ms-flex-align: center;

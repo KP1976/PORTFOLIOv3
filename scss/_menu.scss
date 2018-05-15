@@ -76,6 +76,11 @@
   @include mq(992px) {
     padding: 0 1.6rem;
   }
+  @include mq(992px) {
+    margin: 0 auto;
+    padding: 0;
+    width: 120rem;
+  }
 
   .menu-items {
     align-items: center;
