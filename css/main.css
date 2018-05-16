@@ -199,7 +199,6 @@
 }
 @media screen and (min-width: 1200px) {
   .header {
-    grid-template-columns: repeat(12, 7.5rem);
     grid-template-rows: repeat(4, auto);
     grid-column-gap: 2rem;
     margin: 0 auto;
@@ -705,21 +704,17 @@
 }
 @media screen and (min-width: 768px) {
   .portfolio {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     padding: 3rem 1.8rem 5rem;
-  }
-  .portfolio .sections-title {
-    grid-column: 1 / -1;
   }
 }
 @media screen and (min-width: 992px) {
   .portfolio {
-    grid-column-gap: 2rem;
-    padding: 5rem 2.6rem 5rem;
+    padding: 5rem 1.6rem;
   }
-  .portfolio .sections-title {
-    grid-column: 1 / -1;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 5rem 4rem;
   }
 }
 .portfolio .description {
@@ -733,15 +728,42 @@
 }
 @media screen and (min-width: 768px) {
   .portfolio .description {
-    grid-column: 4 / 10;
-    width: 100%;
+    width: 50%;
   }
 }
 @media screen and (min-width: 992px) {
   .portfolio .description {
-    justify-self: center;
+    margin: 0 auto;
     text-align: center;
-    width: 37rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio .description {
+    width: 35rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .portfolio-grid .sections-title {
+    grid-column: 1 / -1;
+  }
+}
+@media screen and (min-width: 992px) {
+  .portfolio-grid {
+    padding: 0 9rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    padding: 0;
+    width: 120rem;
   }
 }
 
@@ -778,22 +800,15 @@
     justify-self: center;
     width: 30.5rem;
   }
-  .portfolio-example-wrapper:nth-child(odd) {
-    grid-column: 1 / 7;
-  }
-  .portfolio-example-wrapper:nth-child(even) {
-    grid-column: 7 / 13;
-  }
 }
 @media screen and (min-width: 992px) {
   .portfolio-example-wrapper {
     width: 38rem;
   }
-  .portfolio-example-wrapper:nth-child(odd) {
-    grid-column: 2 / 7;
-  }
-  .portfolio-example-wrapper:nth-child(even) {
-    grid-column: 7 / 12;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-example-wrapper {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1058,6 +1073,6 @@ body {
 }
 @media screen and (min-width: 992px) {
   .sections-title {
-    margin: 0 0 5rem 0;
+    margin: 0 0 3rem 0;
   }
 }

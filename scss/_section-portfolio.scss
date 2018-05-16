@@ -4,21 +4,13 @@
   flex-direction: column;
   padding: 3rem 1rem 5rem;
   @include mq(768px) {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     padding: 3rem 1.8rem 5rem;
-
-    .sections-title {
-      grid-column: 1 / -1;
-    }
   }
   @include mq(992px) {
-    grid-column-gap: 2rem;
-    padding: 5rem 2.6rem 5rem;
-
-    .sections-title {
-      grid-column: 1 / -1;
-    }
+    padding: 5rem 1.6rem;
+  }
+  @include mq(1200px) {
+    padding: 5rem 4rem;
   }
 
   .description {
@@ -28,14 +20,36 @@
       line-height: 2.8rem;
     }
     @include mq(768px) {
-      grid-column: 4 / 10;
-      width: 100%;
+      width: 50%;
     }
     @include mq(992px) {
-      justify-self: center;
+      margin: 0 auto;
       text-align: center;
-      width: 37rem;
     }
+    @include mq(1200px) {
+      width: 35rem;
+    }
+  }
+}
+
+.portfolio-grid {
+  @include mq(768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+
+    .sections-title {
+      grid-column: 1 / -1;
+    }
+  }
+  @include mq(992px) {
+    padding: 0 9rem;
+  }
+  @include mq(1200px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    padding: 0;
+    width: 120rem;
   }
 }
 
@@ -58,21 +72,12 @@
     align-self: start;
     justify-self: center;
     width: 30.5rem;
-    &:nth-child(odd) {
-      grid-column: 1 / 7;
-    }
-    &:nth-child(even) {
-      grid-column: 7 / 13;
-    }
   }
   @include mq(992px) {
     width: 38rem;
-    &:nth-child(odd) {
-      grid-column: 2 / 7;
-    }
-    &:nth-child(even) {
-      grid-column: 7 / 12;
-    }
+  }
+  @include mq(1200px) {
+    width: 100%;
   }
 
   .portfolio-link {
