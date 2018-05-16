@@ -30,6 +30,11 @@
       font-size: 1.6rem;
       line-height: 2.2rem;
     }
+    @include mq(1200px) {
+      font-size: 2rem;
+      line-height: 2.6rem;
+      margin-bottom: 5rem;
+    }
   }
 }
 

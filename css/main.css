@@ -977,6 +977,13 @@
     line-height: 2.2rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact .description {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 5rem;
+  }
+}
 
 .social-media {
   display: -webkit-box;
