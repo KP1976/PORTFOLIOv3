@@ -63,6 +63,7 @@
   margin: 4.4rem 0 0 0;
   padding-top: 2rem;
   position: relative;
+  transition: box-shadow 0.3s ease-in-out;
   width: 30rem;
   @include mq(576px) {
     padding-top: 2.5rem;
@@ -80,6 +81,18 @@
     width: 100%;
   }
 
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+  }
+
+  &:hover::before {
+    box-shadow: none;
+  }
+
+  &:hover::after {
+    box-shadow: none;
+  }
+
   .portfolio-link {
     @include mq(768px) {
       height: 16rem;
@@ -94,9 +107,10 @@
   &::after {
     background-color: transparent;
     bottom: 8.5%;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 30px 10px 0 rgba(0, 0, 0, 0.3);
     content: "";
     position: absolute;
+    transition: box-shadow 0.3s ease-in-out;
     width: 95%;
     height: 2rem;
     z-index: -1;

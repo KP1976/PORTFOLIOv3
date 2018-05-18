@@ -10,7 +10,6 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-right: 1rem;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -18,16 +17,39 @@
 @media screen and (min-width: 576px) {
   .navbar {
     height: 6rem;
-    padding-right: 1.5rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .navbar {
-    padding-right: 0;
   }
 }
 
-.hamburger-menu {
+#hamburger-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+#hamburger-menu:checked ~ .navbar .navbar-list {
+  display: block;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+#hamburger-menu:checked ~ .navbar .navbar-list a {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out 0.2s;
+  transition: opacity 0.2s ease-in-out 0.2s;
+}
+#hamburger-menu:checked ~ .hamburger-menu-label .hamburger-menu-bar {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+#hamburger-menu:checked ~ .hamburger-menu-label .hamburger-menu-bar::before {
+  display: none;
+}
+#hamburger-menu:checked ~ .hamburger-menu-label .hamburger-menu-bar::after {
+  left: 0;
+  top: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.hamburger-menu-label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -35,25 +57,26 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   height: 2rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
   width: 2.5rem;
+  z-index: 1;
 }
 @media screen and (min-width: 576px) {
-  .hamburger-menu {
+  .hamburger-menu-label {
     height: 3rem;
+    right: 1.5rem;
+    top: 1.5rem;
     width: 3.5rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .hamburger-menu {
+  .hamburger-menu-label {
     display: none;
   }
 }
@@ -61,8 +84,10 @@
 .hamburger-menu-bar {
   background-color: var(--primary-clr);
   border-radius: 1.5px;
+  cursor: pointer;
+  position: relative;
   height: 0.4rem;
-  width: 100%;
+  width: 2.5rem;
 }
 @media screen and (min-width: 576px) {
   .hamburger-menu-bar {
@@ -76,7 +101,7 @@
   content: "";
   height: 0.4rem;
   position: absolute;
-  width: 100%;
+  width: 2.5rem;
 }
 @media screen and (min-width: 576px) {
   .hamburger-menu-bar::before, .hamburger-menu-bar::after {
@@ -85,18 +110,43 @@
   }
 }
 .hamburger-menu-bar::before {
-  top: 0;
+  top: 0.8rem;
+}
+@media screen and (min-width: 576px) {
+  .hamburger-menu-bar::before {
+    top: 1.2rem;
+  }
 }
 .hamburger-menu-bar::after {
-  bottom: 0;
+  bottom: 0.8rem;
+}
+@media screen and (min-width: 576px) {
+  .hamburger-menu-bar::after {
+    bottom: 1.2rem;
+  }
 }
 
 .navbar-list {
-  display: none;
+  -webkit-box-shadow: 0 5px 10px -7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px -7px rgba(0, 0, 0, 0.3);
   list-style-type: none;
-  margin: 0;
-  padding: 0 1.8rem;
+  margin: 4rem 0 0 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   width: 100%;
+  z-index: 1;
+}
+@media screen and (min-width: 576px) {
+  .navbar-list {
+    margin: 6rem 0 0 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .navbar-list {
@@ -106,6 +156,7 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin: 0;
   }
 }
 @media screen and (min-width: 992px) {
@@ -121,6 +172,7 @@
   }
 }
 .navbar-list .menu-items {
+  background-color: var(--secondary-clr);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -130,20 +182,24 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 6rem;
+  height: 4rem;
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
-  width: 25%;
+}
+@media screen and (min-width: 576px) {
+  .navbar-list .menu-items {
+    height: 6rem;
+  }
 }
 .navbar-list .menu-items a {
   color: var(--primary-clr);
   font-family: var(--text-font);
   font-size: 1.8rem;
+  opacity: 0;
   text-align: center;
   text-decoration: none;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-  width: 100%;
+  -webkit-transition: color 0.3s ease-in-out, opacity 0.1s ease-in-out;
+  transition: color 0.3s ease-in-out, opacity 0.1s ease-in-out;
 }
 @media screen and (min-width: 992px) {
   .navbar-list .menu-items a {
@@ -785,6 +841,10 @@
   margin: 4.4rem 0 0 0;
   padding-top: 2rem;
   position: relative;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   width: 30rem;
 }
 @media screen and (min-width: 576px) {
@@ -811,6 +871,18 @@
     width: 100%;
   }
 }
+.portfolio-example-wrapper:hover {
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+.portfolio-example-wrapper:hover::before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.portfolio-example-wrapper:hover::after {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 @media screen and (min-width: 768px) {
   .portfolio-example-wrapper .portfolio-link {
     height: 16rem;
@@ -824,10 +896,14 @@
 .portfolio-example-wrapper::before, .portfolio-example-wrapper::after {
   background-color: transparent;
   bottom: 8.5%;
-  -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 30px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 30px 10px 0 rgba(0, 0, 0, 0.3);
   content: "";
   position: absolute;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   width: 95%;
   height: 2rem;
   z-index: -1;
@@ -1056,6 +1132,7 @@ body {
   background-color: var(--background-clr);
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .sections-title {
