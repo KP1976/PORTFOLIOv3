@@ -106,7 +106,7 @@
   top: 0;
   transform: scale(1, 0);
   transform-origin: top;
-  transition: all 0.4s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   width: 100%;
   z-index: 1;
   @include mq(576px) {
@@ -136,7 +136,7 @@
     display: flex;
     justify-content: center;
     height: 4rem;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
     @include mq(576px) {
       height: 6rem;
     }
@@ -148,13 +148,17 @@
       color: var(--primary-clr);
       font-family: var(--text-font);
       font-size: 1.8rem;
+      line-height: 4rem;
       opacity: 0;
       text-align: center;
       text-decoration: none;
-      transition: color 0.3s ease-in-out, opacity 0.1s ease-in-out;
+      transition: color 0.2s ease-in-out, opacity 0.1s ease-in-out;
+      width: 100%;
+      @include mq(576px) {
+        line-height: 6rem;
+      }
       @include mq(768px) {
         opacity: 1;
-        width: 100%;
       }
       @include mq(992px) {
         font-size: 2.4rem;
