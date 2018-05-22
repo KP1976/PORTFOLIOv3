@@ -73,7 +73,7 @@
   &::before,
   &::after {
     @include hamburger-bar;
-    content: "";
+    content: '';
     height: 0.4rem;
     position: absolute;
     width: 2.5rem;
@@ -131,7 +131,7 @@
   }
 
   .menu-items {
-    background-color: var(--secondary-clr);
+    background-color: var(--primary-clr);
     align-items: center;
     display: flex;
     justify-content: center;
@@ -141,11 +141,12 @@
       height: 6rem;
     }
     @include mq(768px) {
+      background-color: var(--secondary-clr);
       width: 25%;
     }
 
     a {
-      color: var(--primary-clr);
+      color: var(--background-clr);
       font-family: var(--text-font);
       font-size: 1.8rem;
       line-height: 4rem;
@@ -158,6 +159,7 @@
         line-height: 6rem;
       }
       @include mq(768px) {
+        color: var(--primary-clr);
         opacity: 1;
       }
       @include mq(992px) {
@@ -170,7 +172,7 @@
     }
 
     &:hover {
-      background-color: var(--primary-clr);
+      background-color: #e6e4cf;
       a {
         color: var(--background-clr);
       }

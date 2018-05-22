@@ -17,7 +17,7 @@
 
 .list {
   display: grid;
-  grid-row-gap: 2rem;
+  grid-row-gap: 1rem;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -39,70 +39,155 @@
     max-width: 120rem;
     width: 80%;
   }
+}
 
-  .box {
-    align-items: center;
-    background-color: var(--primary-clr);
-    border-radius: 0.5rem;
-    color: var(--background-clr);
-    display: flex;
-    height: 4rem;
-    list-style-type: none;
-    padding: 0 10px;
-    text-transform: uppercase;
-    width: 100%;
-    i {
-      font-size: 2.2rem;
-      @include mq(768px) {
-        font-size: 3.6rem;
-      }
-      @include mq(1200px) {
-        font-size: 3rem;
-      }
-    }
-    @include mq(576px) {
-      font-size: 2.8rem;
-      height: 5rem;
-    }
+.box {
+  align-items: center;
+  background-color: var(--primary-clr);
+  border-radius: 0.5rem;
+  color: var(--background-clr);
+  cursor: pointer;
+  display: flex;
+  height: 4rem;
+  list-style-type: none;
+  padding: 0 10px;
+  text-transform: uppercase;
+  transition: border-radius 0.4s ease-in-out;
+  width: 100%;
+  i {
+    font-size: 2.2rem;
     @include mq(768px) {
-      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-      flex-direction: column;
-      height: 12rem;
-      justify-content: center;
-      line-height: 3.2rem;
-      margin-bottom: 3rem;
-      margin-right: 1rem;
-      padding: 0;
-      text-align: center;
-      width: 24rem;
-      &:nth-child(3) {
-        margin-right: 0;
-      }
-      &:nth-child(4) {
-        margin-bottom: 0;
-      }
-      &:nth-child(5) {
-        margin-bottom: 0;
-      }
+      font-size: 3.6rem;
     }
     @include mq(1200px) {
-      margin: 0;
-      width: 17rem;
+      font-size: 3rem;
+    }
+  }
+  @include mq(576px) {
+    font-size: 2.8rem;
+    height: 5rem;
+  }
+  @include mq(768px) {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    height: 12rem;
+    justify-content: center;
+    line-height: 3.2rem;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    padding: 0;
+    text-align: center;
+    width: 24rem;
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+    &:nth-child(5) {
+      margin-bottom: 0;
+    }
+  }
+  @include mq(1200px) {
+    margin: 0;
+    width: 17rem;
+  }
+
+  .category {
+    font-family: var(--text-font);
+    font-size: 2.2rem;
+    margin: 3px 0 0 1.2rem;
+    @include mq(576px) {
+      font-size: 2.8rem;
+    }
+    @include mq(768px) {
+      margin: 0.7rem 0 0 0;
+    }
+    @include mq(1200px) {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.box-expanded {
+  background-color: var(--primary-clr);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  // display: none;
+  max-height: 0;
+  display: grid;
+  grid-row-gap: 2rem;
+  margin-top: -2rem;
+  padding: 1rem;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 0.5s ease-in-out, max-height 0.2s ease-in-out 0.3s;
+
+  .box-edu-wrapper {
+    background-color: var(--background-clr);
+    border-radius: 0.5rem;
+    opacity: 0;
+    padding: 1.5rem 1rem;
+    transition: opacity 0.5s ease-in-out;
+
+    .edu-date {
+      color: var(--primary-clr);
+      font-family: var(--titles-font);
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: 100;
+      margin: 0 0 2rem 0;
+      text-align: center;
     }
 
-    .category {
+    .edu-desc {
+      color: var(--primary-clr);
       font-family: var(--text-font);
-      font-size: 2.2rem;
-      margin: 3px 0 0 1.2rem;
-      @include mq(576px) {
-        font-size: 2.8rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2rem;
+      margin: 0 0 1.5rem 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .edu-desc2 {
+      color: var(--primary-clr);
+      font-family: var(--text-font);
+      font-size: 1.6rem;
+      line-height: 2rem;
+      margin: 0;
+      text-align: center;
+
+      .edu-desc-bold {
+        font-weight: 700;
+        text-transform: uppercase;
       }
-      @include mq(768px) {
-        margin: 0.7rem 0 0 0;
-      }
-      @include mq(1200px) {
-        font-size: 2.4rem;
+    }
+    &:last-child {
+      .edu-desc2 {
+        margin: 0 0 1.5rem 0;
+        &:last-child {
+          margin: 0;
+        }
       }
     }
   }
+
+  .is-visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+
+.change {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  justify-content: center;
+}
+
+.is-open {
+  max-height: 500px;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease-in-out;
 }
