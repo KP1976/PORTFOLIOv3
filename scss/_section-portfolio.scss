@@ -82,7 +82,7 @@
   }
 
   &:hover {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   }
 
   &:hover::before {
@@ -107,8 +107,8 @@
   &::after {
     background-color: transparent;
     bottom: 8.5%;
-    box-shadow: 0 30px 10px 0 rgba(0, 0, 0, 0.3);
-    content: "";
+    box-shadow: 0 25px 10px 0 rgba(0, 0, 0, 0.2);
+    content: '';
     position: absolute;
     transition: box-shadow 0.3s ease-in-out;
     width: 95%;
