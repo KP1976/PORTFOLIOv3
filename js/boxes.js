@@ -6,10 +6,10 @@ function revealBoxEduWorkCourses() {
   innerBox.forEach(box => box.classList.toggle('is-visible'));
 }
 
-function revealBoxSkillsLanguages() {
+function revealBoxSkills() {
   const innerBox = this.querySelectorAll('.box-skills-languages-wrapper');
-  const balls = this.querySelectorAll('.bar-ball');
   const barWidth = this.querySelector('.bar').offsetWidth + 20; // 20px to pading z obu stron (10 + 10)
+  const balls = this.querySelectorAll('.bar-ball');
   const ballWidth = 16;
   const [
     ballPhotoshop,
@@ -21,7 +21,7 @@ function revealBoxSkillsLanguages() {
     ballJS,
     ballOffice
   ] = [...balls];
-  console.log(barWidth, barWidth / 3);
+  console.log(balls);
 
   // widthBar + szerokość kulki (16px) daje 100%
   ballPhotoshop.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10}px))`;
@@ -36,8 +36,23 @@ function revealBoxSkillsLanguages() {
   innerBox.forEach(box => box.classList.toggle('is-visible2'));
 }
 
+function revealBoxLanguages() {
+  const innerBox = this.querySelectorAll('.box-skills-languages-wrapper');
+  const barWidth = this.querySelector('.bar').offsetWidth + 20; // 20px to pading z obu stron (10 + 10)
+  const balls = this.querySelectorAll('.bar-ball');
+  const ballWidth = 16;
+  const [ballPolish, ballEnglish] = [...balls];
+  console.log(balls);
+
+  // widthBar + szerokość kulki (16px) daje 100%
+  ballPolish.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10 * 0.5}px))`;
+  ballEnglish.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10 * 5}px))`;
+
+  innerBox.forEach(box => box.classList.toggle('is-visible2'));
+}
+
 boxes[0].addEventListener('click', revealBoxEduWorkCourses);
 boxes[1].addEventListener('click', revealBoxEduWorkCourses);
-boxes[2].addEventListener('click', revealBoxSkillsLanguages);
+boxes[2].addEventListener('click', revealBoxSkills);
 boxes[3].addEventListener('click', revealBoxEduWorkCourses);
-boxes[4].addEventListener('click', revealBoxSkillsLanguages);
+boxes[4].addEventListener('click', revealBoxLanguages);
