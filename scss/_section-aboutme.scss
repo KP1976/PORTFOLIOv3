@@ -114,7 +114,7 @@
   }
 }
 
-.box-edu-wrapper {
+.box-wrapper {
   background-color: var(--background-clr);
   border-radius: 0.5rem;
   max-height: 0;
@@ -133,7 +133,7 @@
   transition: opacity 0s ease-in-out 2.5s;
 }
 
-.edu-date {
+.date {
   color: var(--primary-clr);
   font-family: var(--titles-font);
   font-size: 1.45rem;
@@ -143,7 +143,7 @@
   text-align: center;
 }
 
-.edu-desc {
+.desc {
   color: var(--secondary-clr);
   font-family: var(--text-font);
   font-size: 2rem;
@@ -154,7 +154,7 @@
   text-transform: uppercase;
 }
 
-.edu-desc2 {
+.desc2 {
   color: var(--primary-clr);
   font-family: var(--text-font);
   font-size: 1.6rem;
@@ -164,7 +164,7 @@
   margin: 0 0 2rem 0;
   text-align: center;
 
-  .edu-desc-bold {
+  .desc-bold {
     font-weight: 700;
     text-transform: uppercase;
   }

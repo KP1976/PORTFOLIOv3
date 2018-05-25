@@ -2,7 +2,7 @@
 const boxes = document.querySelectorAll('.box');
 
 function revealBoxEduWorkCourses() {
-  const innerBox = this.querySelectorAll('.box-edu-wrapper');
+  const innerBox = this.querySelectorAll('.box-wrapper');
   innerBox.forEach(box => box.classList.toggle('is-visible'));
 }
 
