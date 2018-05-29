@@ -1,58 +1,62 @@
 /*eslint no-console: "off"*/
 const boxes = document.querySelectorAll('.box');
+const ballWidth = 16;
 
-function revealBoxEduWorkCourses() {
+// Funkcja przyjmuje dwa argumenty: które koło, jaki procent wiedzy
+function findBallPosition(ball, percentOfKnowledge, barWidth) {
+  let percent = (100 - percentOfKnowledge) / 100;
+  ball.style.transform = `translateX(calc(${barWidth}px - ${ballWidth / 2}px - ${barWidth * percent}px))`;
+}
+
+class AboutBoxes {
+  constructor(boxEdu, boxWork, boxSkills, boxCourses, boxLanguages) {
+    this.boxEdu = boxEdu;
+    this.boxWork = boxWork;
+    this.boxSkills = boxSkills;
+    this.boxCourses = boxCourses;
+    this.boxLanguages = boxLanguages;
+  }
+}
+
+AboutBoxes.prototype.revealBoxEduWorkCourses = function() {
   const innerBox = this.querySelectorAll('.box-wrapper');
   innerBox.forEach(box => box.classList.toggle('is-visible'));
-}
+};
 
-function revealBoxSkills() {
+AboutBoxes.prototype.revealBoxSkills = function() {
   const innerBox = this.querySelectorAll('.box-skills-languages-wrapper');
   const barWidth = this.querySelector('.bar').offsetWidth + 20; // 20px to pading z obu stron (10 + 10)
   const balls = this.querySelectorAll('.bar-ball');
-  const ballWidth = 16;
-  const [
-    ballPhotoshop,
-    ballIndesign,
-    ballIllustrator,
-    ballQuarkXpress,
-    balHTML,
-    ballCSS,
-    ballJS,
-    ballOffice
-  ] = [...balls];
-  console.log(balls);
+  const [ballPhotoshop, ballIndesign, ballIllustrator, ballQuarkXpress, ballHTML, ballCSS, ballJS, ballOffice] = [...balls];
 
-  // widthBar + szerokość kulki (16px) daje 100%
-  ballPhotoshop.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10}px))`;
-  ballIndesign.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10 * 7}px))`;
-  ballIllustrator.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10 * 6}px))`;
-  ballQuarkXpress.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10}px))`;
-  balHTML.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10 * 4}px))`;
-  ballCSS.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10 * 3}px))`;
-  ballJS.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10 * 5}px))`;
-  ballOffice.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10 * 6}px))`;
+  findBallPosition(ballPhotoshop, 90, barWidth);
+  findBallPosition(ballIndesign, 30, barWidth);
+  findBallPosition(ballIllustrator, 40, barWidth);
+  findBallPosition(ballQuarkXpress, 90, barWidth);
+  findBallPosition(ballHTML, 60, barWidth);
+  findBallPosition(ballCSS, 70, barWidth);
+  findBallPosition(ballJS, 50, barWidth);
+  findBallPosition(ballOffice, 40, barWidth);
 
   innerBox.forEach(box => box.classList.toggle('is-visible2'));
-}
+};
 
-function revealBoxLanguages() {
+AboutBoxes.prototype.revealBoxLanguages = function() {
   const innerBox = this.querySelectorAll('.box-skills-languages-wrapper');
   const barWidth = this.querySelector('.bar').offsetWidth + 20; // 20px to pading z obu stron (10 + 10)
   const balls = this.querySelectorAll('.bar-ball');
-  const ballWidth = 16;
   const [ballPolish, ballEnglish] = [...balls];
-  console.log(balls);
 
-  // widthBar + szerokość kulki (16px) daje 100%
-  ballPolish.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10 * 0.5}px))`;
-  ballEnglish.style.transform = `translateX(calc(${barWidth}px - ${ballWidth}px - ${barWidth / 10 * 5}px))`;
+  findBallPosition(ballPolish, 95, barWidth);
+  findBallPosition(ballEnglish, 45, barWidth);
 
   innerBox.forEach(box => box.classList.toggle('is-visible2'));
-}
+};
 
-boxes[0].addEventListener('click', revealBoxEduWorkCourses);
-boxes[1].addEventListener('click', revealBoxEduWorkCourses);
-boxes[2].addEventListener('click', revealBoxSkills);
-boxes[3].addEventListener('click', revealBoxEduWorkCourses);
-boxes[4].addEventListener('click', revealBoxLanguages);
+const allBoxes = new AboutBoxes(...boxes);
+
+allBoxes.boxEdu.addEventListener('click', allBoxes.revealBoxEduWorkCourses);
+allBoxes.boxWork.addEventListener('click', allBoxes.revealBoxEduWorkCourses);
+allBoxes.boxCourses.addEventListener('click', allBoxes.revealBoxEduWorkCourses);
+allBoxes.boxSkills.addEventListener('click', allBoxes.revealBoxSkills);
+allBoxes.boxLanguages.addEventListener('click', allBoxes.revealBoxLanguages);
