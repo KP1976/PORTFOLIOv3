@@ -860,10 +860,8 @@
   left: 0;
   position: absolute;
   top: -8px;
-  -webkit-transition: -webkit-transform 1s linear 1s;
-  transition: -webkit-transform 1s linear 1s;
-  transition: transform 1s linear 1s;
-  transition: transform 1s linear 1s, -webkit-transform 1s linear 1s;
+  -webkit-transition: left 1s linear 1s;
+  transition: left 1s linear 1s;
   width: 1.6rem;
 }
 

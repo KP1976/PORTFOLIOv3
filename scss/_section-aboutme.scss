@@ -121,8 +121,7 @@
   opacity: 0;
   transform: scale(1, 0);
   transform-origin: top;
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .box-skills-languages-wrapper {
@@ -183,7 +182,7 @@
   left: 0;
   position: absolute;
   top: -8px;
-  transition: transform 1s linear 1s;
+  transition: left 1s linear 1s;
   width: 1.6rem;
 }
 
@@ -193,8 +192,7 @@
   margin-bottom: 2rem;
   padding: 1.5rem 1rem 0;
   transform: scale(1, 1);
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out,
-    transform 0.3s ease-in-out 0.3s;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s;
   &:last-child {
     margin-bottom: 1rem;
   }
