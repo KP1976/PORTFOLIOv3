@@ -1,10 +1,11 @@
-@import "mixins";
-@import "menu";
-@import "section-header";
-@import "section-aboutme";
-@import "section-portfolio";
-@import "section-contact";
-@import "footer";
+@import 'mixins';
+@import 'menu';
+@import 'section-header';
+@import 'section-aboutme';
+@import 'section-portfolio';
+@import 'section-contact';
+@import 'footer';
+@import 'modals';
 
 :root {
   // KOLORY
@@ -13,9 +14,9 @@
   --secondary-clr: #ff934f;
 
   //FONTY
-  --titles-font: "Libre Baskerville", serif;
-  --text-font: "Hind", sans-serif;
-  --name-font: "Parisienne", cursive;
+  --titles-font: 'Libre Baskerville', serif;
+  --text-font: 'Hind', sans-serif;
+  --name-font: 'Parisienne', cursive;
 }
 
 *,

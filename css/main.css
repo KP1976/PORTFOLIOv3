@@ -685,7 +685,6 @@
 .box {
   background-color: var(--primary-clr);
   border-radius: 0.5rem;
-  color: var(--background-clr);
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -701,24 +700,6 @@
   list-style-type: none;
   padding: 0 10px;
   width: 100%;
-}
-.box i {
-  font-size: 2.2rem;
-}
-@media screen and (min-width: 768px) {
-  .box i {
-    font-size: 3.6rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .box i {
-    font-size: 3rem;
-  }
-}
-@media screen and (min-width: 576px) {
-  .box {
-    font-size: 2.8rem;
-  }
 }
 @media screen and (min-width: 768px) {
   .box {
@@ -755,32 +736,61 @@
     width: 17rem;
   }
 }
-.box .box-title {
+
+.box-title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: var(--background-clr);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-transform: uppercase;
 }
-.box .category {
+@media screen and (min-width: 768px) {
+  .box-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.box-title i {
+  font-size: 2.2rem;
+}
+@media screen and (min-width: 768px) {
+  .box-title i {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box-title i {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .box-title {
+    font-size: 2.8rem;
+  }
+}
+
+.category {
   font-family: var(--text-font);
   font-size: 2.2rem;
   margin: 3px 0 0 1.2rem;
 }
 @media screen and (min-width: 576px) {
-  .box .category {
+  .category {
     font-size: 2.8rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .box .category {
+  .category {
     margin: 0.7rem 0 0 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  .box .category {
+  .category {
     font-size: 2.4rem;
   }
 }
@@ -1257,13 +1267,109 @@
   }
 }
 
+.modal {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--background-clr);
+  display: none;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  top: 0;
+}
+.modal .box-title {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.modal .category {
+  margin: 0;
+}
+
+.modal-edu .modal-container,
+.modal-languages .modal-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--primary-clr);
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  overflow-y: auto;
+  position: relative;
+  width: 55rem;
+  padding: 2rem 0;
+}
+
+.modal-work .modal-container,
+.modal-skills .modal-container,
+.modal-courses .modal-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--primary-clr);
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  width: 55rem;
+  padding: 2rem 0;
+}
+
+.modal-box-wrapper {
+  background-color: var(--background-clr);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem 1rem 0;
+  width: 80%;
+}
+.modal-box-wrapper:last-child {
+  margin-bottom: 1rem;
+}
+
+.modal-box-skills-languages-wrapper {
+  margin: 0 auto 2rem;
+  padding: 1.5rem 1rem 0;
+  width: 80%;
+}
+
+.modal-on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 :root {
   --background-clr: #5e565a;
   --primary-clr: #f3f1d8;
   --secondary-clr: #ff934f;
-  --titles-font: "Libre Baskerville", serif;
-  --text-font: "Hind", sans-serif;
-  --name-font: "Parisienne", cursive;
+  --titles-font: 'Libre Baskerville', serif;
+  --text-font: 'Hind', sans-serif;
+  --name-font: 'Parisienne', cursive;
 }
 
 *,

@@ -1,0 +1,82 @@
+.modal {
+	align-items: center;
+	background-color: var(--background-clr);
+	display: none;
+	height: 100vh;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	z-index: 1;
+	top: 0;
+	@include mq(768px) {
+		// display: flex;
+	}
+
+	.box-title {
+		margin-bottom: 1rem;
+		width: 100%;
+	}
+
+	.category {
+		margin: 0;
+	}
+}
+
+.modal-edu,
+.modal-languages {
+	.modal-container {
+		align-items: center;
+		background-color: var(--primary-clr);
+		border-radius: 0.5rem;
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		height: auto;
+		overflow-y: auto;
+		position: relative;
+		width: 55rem;
+		padding: 2rem 0;
+	}
+}
+
+.modal-work,
+.modal-skills,
+.modal-courses {
+	.modal-container {
+		align-items: center;
+		background-color: var(--primary-clr);
+		border-radius: 0.5rem;
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		height: 80vh;
+		overflow-y: auto;
+		position: relative;
+		width: 55rem;
+		padding: 2rem 0;
+	}
+}
+
+.modal-box-wrapper {
+	background-color: var(--background-clr);
+	border-radius: 0.5rem;
+	margin-bottom: 2rem;
+	padding: 1.5rem 1rem 0;
+	&:last-child {
+		margin-bottom: 1rem;
+	}
+	width: 80%;
+}
+
+.modal-box-skills-languages-wrapper {
+	margin: 0 auto 2rem;
+	padding: 1.5rem 1rem 0;
+	width: 80%;
+}
+
+.modal-on {
+	display: flex;
+}
