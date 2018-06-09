@@ -9,9 +9,6 @@
 	width: 100vw;
 	z-index: 1;
 	top: 0;
-	@include mq(768px) {
-		// display: flex;
-	}
 
 	.box-title {
 		margin-bottom: 1rem;

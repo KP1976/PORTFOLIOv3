@@ -1,0 +1,18 @@
+{
+	"short_name": "KP1976",
+	"name": "Portfolio Krzysztofa Pawłowskiego",
+	"start_url": "index.html?launcher=true",
+	"icons": [
+		{
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"background_color": "#5e565a",
+	"display": "standalone",
+	"theme_color": "#ff934f"
+}
