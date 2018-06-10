@@ -2,6 +2,7 @@
 const body = document.querySelector('body');
 const boxes = document.querySelectorAll('.box');
 const modals = document.querySelectorAll('.modal');
+const modalContainers = document.querySelectorAll('.modal-container');
 const ballWidth = 16;
 
 // Funkcja przyjmuje dwa argumenty: które koło, jaki procent wiedzy
@@ -43,17 +44,23 @@ function modalEvents(switcher) {
 }
 
 function modalEdu() {
-	modals[0].classList.add('modal-on');
+	modals[0].classList.add('visibility-on');
+	modalContainers[0].style.visibility = 'visible';
+	modalContainers[0].style.transform = 'scale(1)';
 	body.style.overflowY = 'hidden';
 }
 
 function modalWork() {
-	modals[1].classList.add('modal-on');
+	modals[1].classList.add('visibility-on');
+	modalContainers[1].style.visibility = 'visible';
+	modalContainers[1].style.transform = 'scale(1)';
 	body.style.overflowY = 'hidden';
 }
 
 function modalSkills() {
-	modals[2].classList.add('modal-on');
+	modals[2].classList.add('visibility-on');
+	modalContainers[2].style.visibility = 'visible';
+	modalContainers[2].style.transform = 'scale(1)';
 	body.style.overflowY = 'hidden';
 
 	const innerBox = modals[2].querySelectorAll('.modal-box-skills-languages-wrapper');
@@ -75,12 +82,16 @@ function modalSkills() {
 }
 
 function modalCourses() {
-	modals[3].classList.add('modal-on');
+	modals[3].classList.add('visibility-on');
+	modalContainers[3].style.visibility = 'visible';
+	modalContainers[3].style.transform = 'scale(1)';
 	body.style.overflowY = 'hidden';
 }
 
 function modalLanguages() {
-	modals[4].classList.add('modal-on');
+	modals[4].classList.add('visibility-on');
+	modalContainers[4].style.visibility = 'visible';
+	modalContainers[4].style.transform = 'scale(1)';
 	body.style.overflowY = 'hidden';
 
 	const innerBox = modals[4].querySelectorAll('.box-skills-languages-wrapper');
@@ -96,8 +107,12 @@ function modalLanguages() {
 function closeModals(e) {
 	// Jeżeli to na co klikniemy jest tłem modala to ma się zamknąć
 	if (e.target === this) {
-		this.classList.remove('modal-on');
+		this.classList.remove('visibility-on');
 		body.style.overflowY = 'auto';
+		modalContainers.forEach(modalContainer => {
+			modalContainer.style.visibility = 'hidden';
+			modalContainer.style.transform = 'scale(0)';
+		});
 	}
 }
 

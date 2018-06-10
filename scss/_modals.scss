@@ -1,14 +1,15 @@
 .modal {
 	align-items: center;
 	background-color: var(--background-clr);
-	display: none;
+	display: flex;
 	height: 100vh;
 	justify-content: center;
 	left: 0;
 	position: fixed;
+	top: 0;
+	visibility: hidden;
 	width: 100vw;
 	z-index: 1;
-	top: 0;
 
 	.box-title {
 		margin-bottom: 1rem;
@@ -32,9 +33,12 @@
 		justify-content: center;
 		height: auto;
 		overflow-y: auto;
-		position: relative;
-		width: 55rem;
 		padding: 2rem 0;
+		position: relative;
+		transform: scale(0);
+		transition: transform 0.5s ease-in-out;
+		visibility: hidden;
+		width: 55rem;
 	}
 }
 
@@ -52,6 +56,9 @@
 		height: 80vh;
 		overflow-y: auto;
 		position: relative;
+		transform: scale(0);
+		transition: transform 0.5s ease-in-out;
+		visibility: hidden;
 		width: 55rem;
 		padding: 2rem 0;
 	}
@@ -74,6 +81,6 @@
 	width: 80%;
 }
 
-.modal-on {
-	display: flex;
+.visibility-on {
+	visibility: visible;
 }

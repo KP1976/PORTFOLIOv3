@@ -677,8 +677,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    max-width: 120rem;
-    width: 80%;
+    width: 93rem;
   }
 }
 
@@ -1272,16 +1271,19 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: var(--background-clr);
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   left: 0;
   position: fixed;
+  top: 0;
+  visibility: hidden;
   width: 100vw;
   z-index: 1;
-  top: 0;
 }
 .modal .box-title {
   margin-bottom: 1rem;
@@ -1310,9 +1312,16 @@
           justify-content: center;
   height: auto;
   overflow-y: auto;
-  position: relative;
-  width: 55rem;
   padding: 2rem 0;
+  position: relative;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  visibility: hidden;
+  width: 55rem;
 }
 
 .modal-work .modal-container,
@@ -1336,6 +1345,13 @@
   height: 80vh;
   overflow-y: auto;
   position: relative;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  visibility: hidden;
   width: 55rem;
   padding: 2rem 0;
 }
@@ -1357,10 +1373,8 @@
   width: 80%;
 }
 
-.modal-on {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.visibility-on {
+  visibility: visible;
 }
 
 :root {
