@@ -3,7 +3,6 @@ const buttons = document.querySelectorAll('.menu-items');
 const pages = document.querySelectorAll('section');
 let offsetsOfSections = [];
 const [btn1, btn2, btn3, btn4] = [...buttons];
-const maxScrollY = window.scrollMaxY || document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
 function getPagesOffsetTop() {
 	pages.forEach((page, index) => {
@@ -13,11 +12,20 @@ function getPagesOffsetTop() {
 
 function scroll(destination) {
 	let i = scrollY;
+	let startScroll = scrollY;
+
+	if (destination > window.scrollMaxY) {
+		destination = window.scrollMaxY;
+	}
+
+	let distance = Math.abs(startScroll - destination);
+	let howManyPixelsMove = Math.floor(distance / 100);
+
 	let interval = setInterval(() => {
-		destination = destination > maxScrollY ? maxScrollY : destination;
+		destination = destination > window.scrollMaxY ? window.scrollMaxY : destination;
 
 		if (scrollY <= destination) {
-			scrollTo(0, i + 10);
+			scrollTo(0, i + howManyPixelsMove);
 			i = scrollY;
 
 			if (scrollY > destination) {
@@ -27,17 +35,19 @@ function scroll(destination) {
 			if (i >= destination) {
 				scrollTo(0, destination);
 				clearInterval(interval);
+				console.log(startScroll, destination, distance, howManyPixelsMove);
 				return;
 			}
 		}
 
 		if (scrollY >= destination) {
-			scrollTo(0, i - 10);
+			scrollTo(0, i - howManyPixelsMove);
 			i = scrollY;
 
 			if (i <= destination) {
 				scrollTo(0, destination);
 				clearInterval(interval);
+				console.log(startScroll, destination, distance, howManyPixelsMove);
 				return;
 			}
 		}
