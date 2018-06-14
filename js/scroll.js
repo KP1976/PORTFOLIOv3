@@ -12,6 +12,7 @@ function getPagesOffsetTop() {
 
 function scroll(destination) {
 	let i = scrollY;
+<<<<<<< HEAD
 	let startScroll = scrollY;
 
 	if (destination > window.scrollMaxY) {
@@ -23,10 +24,24 @@ function scroll(destination) {
 
 	let interval = setInterval(() => {
 		destination = destination > window.scrollMaxY ? window.scrollMaxY : destination;
+=======
+  let startScroll = scrollY;
+  
+  if (destination > scrollMaxY) {
+    destination = scrollMaxY
+  }
+  
+  let distance = Math.abs(startScroll - destination);
+  let howManyPixelsMove = Math.floor(distance / 20);
+  
+	let interval = setInterval(() => {
+		destination = destination > scrollMaxY ? scrollMaxY : destination;
+>>>>>>> 409430ca35ae59c48788ca040681d4cdf4e19468
 
 		if (scrollY <= destination) {
 			scrollTo(0, i + howManyPixelsMove);
 			i = scrollY;
+      
 
 			if (scrollY > destination) {
 				i = destination;
@@ -34,8 +49,13 @@ function scroll(destination) {
 
 			if (i >= destination) {
 				scrollTo(0, destination);
+        endScroll = scrollY;
 				clearInterval(interval);
+<<<<<<< HEAD
 				console.log(startScroll, destination, distance, howManyPixelsMove);
+=======
+        console.log(startScroll, destination, distance, howManyPixelsMove);
+>>>>>>> 409430ca35ae59c48788ca040681d4cdf4e19468
 				return;
 			}
 		}
@@ -43,11 +63,17 @@ function scroll(destination) {
 		if (scrollY >= destination) {
 			scrollTo(0, i - howManyPixelsMove);
 			i = scrollY;
+      
 
 			if (i <= destination) {
 				scrollTo(0, destination);
+        endScroll = scrollY;
 				clearInterval(interval);
+<<<<<<< HEAD
 				console.log(startScroll, destination, distance, howManyPixelsMove);
+=======
+        console.log(startScroll, destination, distance, howManyPixelsMove);
+>>>>>>> 409430ca35ae59c48788ca040681d4cdf4e19468
 				return;
 			}
 		}
