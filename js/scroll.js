@@ -4,6 +4,8 @@ const pages = document.querySelectorAll('section');
 let offsetsOfSections = [];
 const [btn1, btn2, btn3, btn4] = [...buttons];
 
+let scrollMaxY = window.scrollMaxY || document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
 function getPagesOffsetTop() {
 	pages.forEach((page, index) => {
 		offsetsOfSections[index] = page.offsetTop;
@@ -12,36 +14,25 @@ function getPagesOffsetTop() {
 
 function scroll(destination) {
 	let i = scrollY;
-<<<<<<< HEAD
 	let startScroll = scrollY;
 
-	if (destination > window.scrollMaxY) {
-		destination = window.scrollMaxY;
+	destination = destination > scrollMaxY ? scrollMaxY : destination;
+
+	if (destination > scrollMaxY) {
+		destination = scrollMaxY;
 	}
 
-	let distance = Math.abs(startScroll - destination);
-	let howManyPixelsMove = Math.floor(distance / 100);
+	let interval = setInterval(() => {
+		if (destination > scrollMaxY) {
+			destination = scrollMaxY;
+		}
 
-	let interval = setInterval(() => {
-		destination = destination > window.scrollMaxY ? window.scrollMaxY : destination;
-=======
-  let startScroll = scrollY;
-  
-  if (destination > scrollMaxY) {
-    destination = scrollMaxY
-  }
-  
-  let distance = Math.abs(startScroll - destination);
-  let howManyPixelsMove = Math.floor(distance / 20);
-  
-	let interval = setInterval(() => {
-		destination = destination > scrollMaxY ? scrollMaxY : destination;
->>>>>>> 409430ca35ae59c48788ca040681d4cdf4e19468
+		let distance = Math.abs(startScroll - destination);
+		let howManyPixelsMove = Math.floor(distance / 100);
 
 		if (scrollY <= destination) {
 			scrollTo(0, i + howManyPixelsMove);
 			i = scrollY;
-      
 
 			if (scrollY > destination) {
 				i = destination;
@@ -49,13 +40,8 @@ function scroll(destination) {
 
 			if (i >= destination) {
 				scrollTo(0, destination);
-        endScroll = scrollY;
 				clearInterval(interval);
-<<<<<<< HEAD
 				console.log(startScroll, destination, distance, howManyPixelsMove);
-=======
-        console.log(startScroll, destination, distance, howManyPixelsMove);
->>>>>>> 409430ca35ae59c48788ca040681d4cdf4e19468
 				return;
 			}
 		}
@@ -63,17 +49,11 @@ function scroll(destination) {
 		if (scrollY >= destination) {
 			scrollTo(0, i - howManyPixelsMove);
 			i = scrollY;
-      
 
 			if (i <= destination) {
 				scrollTo(0, destination);
-        endScroll = scrollY;
 				clearInterval(interval);
-<<<<<<< HEAD
 				console.log(startScroll, destination, distance, howManyPixelsMove);
-=======
-        console.log(startScroll, destination, distance, howManyPixelsMove);
->>>>>>> 409430ca35ae59c48788ca040681d4cdf4e19468
 				return;
 			}
 		}
