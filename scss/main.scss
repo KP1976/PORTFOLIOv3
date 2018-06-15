@@ -35,6 +35,12 @@ body {
 	padding: 0;
 }
 
+.container {
+	height: 100vh;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+}
+
 .sections-title {
 	color: var(--primary-clr);
 	font-family: var(--titles-font);

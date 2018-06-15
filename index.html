@@ -17,70 +17,457 @@
 </head>
 
 <body>
-  <!-- MENU -->
-  <input type="checkbox" id="hamburger-menu">
-  <nav class="navbar">
-    <div class="navbar-list">
-      <div class="menu-items">
-        <a href="#">
-          <i class="fas fa-home"></i>
-          <span>Strona główna</span>
-        </a>
+  <div class="container">
+    <!-- MENU -->
+    <input type="checkbox" id="hamburger-menu">
+    <nav class="navbar">
+      <div class="navbar-list">
+        <div class="menu-items">
+          <a href="#home">
+            <i class="fas fa-home"></i>
+            <span>Strona główna</span>
+          </a>
+        </div>
+        <div class="menu-items">
+          <a href="#aboutme">
+            <i class="fas fa-user-circle"></i>
+            <span>O mnie</span>
+          </a>
+        </div>
+        <div class="menu-items">
+          <a href="#portfolio">
+            <i class="fas fa-th"></i>
+            <span>Portfolio</span>
+          </a>
+        </div>
+        <div class="menu-items">
+          <a href="#contact">
+            <i class="fas fa-envelope"></i>
+            <span>Kontakt</span>
+          </a>
+        </div>
       </div>
-      <div class="menu-items">
-        <a href="#aboutme">
-          <i class="fas fa-user-circle"></i>
-          <span>O mnie</span>
-        </a>
-      </div>
-      <div class="menu-items">
-        <a href="#portfolio">
-          <i class="fas fa-th"></i>
-          <span>Portfolio</span>
-        </a>
-      </div>
-      <div class="menu-items">
-        <a href="#contact">
-          <i class="fas fa-envelope"></i>
-          <span>Kontakt</span>
-        </a>
-      </div>
-    </div>
-  </nav>
-  <label for="hamburger-menu" class="hamburger-menu-label">
-    <span class="hamburger-menu-bar"></span>
-  </label>
+    </nav>
+    <label for="hamburger-menu" class="hamburger-menu-label">
+      <span class="hamburger-menu-bar"></span>
+    </label>
 
-  <!-- SEKCJA HEADER -->
-  <section class="header">
-    <h1 class="greetings">Witam</h1>
-    <h2 class="greetings-sub">na mojej stronie</h2>
-    <p class="description">Pracuję jako grafik komputerowy (operator DTP) i&nbsp;próbuję zostać front-end developerem.</p>
-    <div class="self-picture-wrapper">
-      <img class="self-picture" src="img/ja.jpg" alt="zdjęcie portretowe Krzysztofa Pawłowskiego">
-    </div>
-    <span class="myname">Krzysztof Pawłowski</span>
-    <div class="triangle-small"></div>
-    <div class="triangle-medium"></div>
-    <div class="triangle-big"></div>
-  </section>
+    <!-- SEKCJA HEADER -->
+    <section class="header" id="home">
+      <h1 class="greetings">Witam</h1>
+      <h2 class="greetings-sub">na mojej stronie</h2>
+      <p class="description">Pracuję jako grafik komputerowy (operator DTP) i&nbsp;próbuję zostać front-end developerem.</p>
+      <div class="self-picture-wrapper">
+        <img class="self-picture" src="img/ja.jpg" alt="zdjęcie portretowe Krzysztofa Pawłowskiego">
+      </div>
+      <span class="myname">Krzysztof Pawłowski</span>
+      <div class="triangle-small"></div>
+      <div class="triangle-medium"></div>
+      <div class="triangle-big"></div>
+    </section>
 
-  <!-- SEKCJA O MNIE -->
-  <section class="about-me" id="aboutme">
-    <h2 class="sections-title">O mnie</h2>
-    <div class="list">
-      <div class="box">
-        <!-- EDUKACJA -->
+    <!-- SEKCJA O MNIE -->
+    <section class="about-me" id="aboutme">
+      <h2 class="sections-title">O mnie</h2>
+      <div class="list">
+        <div class="box">
+          <!-- EDUKACJA -->
+          <div class="box-title">
+            <i class="fas fa-graduation-cap"></i>
+            <span class="category">edukacja</span>
+          </div>
+          <div class="box-wrapper">
+            <h3 class="date">wrzesień 1991 r. – maj 1995 r.</h3>
+            <p class="desc">Liceum im. Mieszka I w&nbsp;Świnoujściu</p>
+            <p class="desc2">Profil: ogólny</p>
+          </div>
+          <div class="box-wrapper">
+            <h3 class="date">październik 1995 r. – lipiec 2001 r.</h3>
+            <p class="desc">Politechnika Szczecińska
+              <br>Wydział Informatyki</p>
+            <p class="desc2">Kierunek:
+              <br>
+              <span class="desc-bold">informatyka</span>
+            </p>
+            <p class="desc2">Specjalizacja:
+              <br>
+              <span class="desc-bold">techniki multimedialne</span>
+            </p>
+            <p class="desc2">Tytuł:
+              <br>
+              <span class="desc-bold"> magister inżynier</span>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <!-- PRACA -->
+          <div class="box-title">
+            <i class="far fa-handshake"></i>
+            <span class="category">praca</span>
+          </div>
+          <div class="box-wrapper">
+            <h3 class="date">lipiec 1998 r.</h3>
+            <p class="desc">Pomocnik informatyka</p>
+            <p class="desc2">
+              <span class="desc-bold">Urząd miejski
+                <br>w Świnoujściu</span>
+            </p>
+            <div class="desc2">konfiguracja i&nbsp;pomoc techniczna urzędnikom w&nbsp;zakresie instalacji programów i&nbsp;obsługi systemu Windows
+            </div>
+            <div class="desc2">instalacja i wymiana kabli sieciowych</div>
+          </div>
+          <div class="box-wrapper">
+            <h3 class="date">lipiec – sierpień 1999 r.</h3>
+            <p class="desc">Informatyk Helpdesk</p>
+            <p class="desc2">
+              <span class="desc-bold">Urząd miejski
+                <br>w Świnoujściu</span>
+            </p>
+            <div class="desc2">konfiguracja i&nbsp;pomoc techniczna urzędnikom w&nbsp;zakresie instalacji programów i&nbsp;obsługi systemu Windows
+            </div>
+            <div class="desc2">instalacja i wymiana kabli sieciowych</div>
+          </div>
+          <div class="box-wrapper">
+            <h3 class="date">styczeń 2002 r.</h3>
+            <p class="desc">Grafik komputerowy</p>
+            <p class="desc2">
+              <span class="desc-bold">Wydawnictwo PAIP Warszawa
+              </span>
+            </p>
+            <div class="desc2">skład i łamanie czasopisma</div>
+            <div class="desc2">wysyłka materiałów do drukarni</div>
+          </div>
+          <div class="box-wrapper">
+            <h3 class="date">luty – kwiecień 2002 r.</h3>
+            <p class="desc">Operator DTP</p>
+            <p class="desc2">
+              <span class="desc-bold">Wydawnictwo Vision Media
+                <br> Warszawa
+              </span>
+            </p>
+            <div class="desc2">skład i łamanie czasopisma „Technologie i przemysł”</div>
+            <div class="desc2">wysyłka materiałów do drukarni</div>
+          </div>
+          <div class="box-wrapper">
+            <h3 class="date">czerwiec 2002 r. – grudzień 2003 r.</h3>
+            <p class="desc">Grafik komputerowy</p>
+            <p class="desc2">
+              <span class="desc-bold">Wydawnictwo
+                <br>Hearst-Marquard Publishing
+                <br> Warszawa
+              </span>
+            </p>
+            <div class="desc2">skład i łamanie czasopisma „Shape”</div>
+          </div>
+          <div class="box-wrapper">
+            <h3 class="date">kwiecień 2004 r. –</h3>
+            <p class="desc">Operator DTP</p>
+            <p class="desc2">
+              <span class="desc-bold">Invest Company Corporation
+                <br> Warszawa
+              </span>
+            </p>
+            <div class="desc2">skład i łamanie czasopisma „Piłka Nożna”</div>
+            <div class="desc2">wysyłka materiałów do drukarni</div>
+            <div class="desc2">tworzenie infografik</div>
+            <div class="desc2">obróbka zdjęć</div>
+            <div class="desc2">tworzenie okładki (w&nbsp;zastępstwie)</div>
+          </div>
+        </div>
+        <div class="box">
+          <!-- UMIEJĘTNOŚCI -->
+          <div class="box-title">
+            <i class="fas fa-cogs"></i>
+            <span class="category">umiejętności</span>
+          </div>
+          <div class="box-skills-languages-wrapper">
+            <p class="desc">adobe photoshop</p>
+            <div class="bar">
+              <div class="bar-ball"></div>
+            </div>
+          </div>
+          <div class="box-skills-languages-wrapper">
+            <p class="desc">adobe indesign</p>
+            <div class="bar">
+              <div class="bar-ball"></div>
+            </div>
+          </div>
+          <div class="box-skills-languages-wrapper">
+            <p class="desc">adobe illustrator</p>
+            <div class="bar">
+              <div class="bar-ball"></div>
+            </div>
+          </div>
+          <div class="box-skills-languages-wrapper">
+            <p class="desc">quarkxpress</p>
+            <div class="bar">
+              <div class="bar-ball"></div>
+            </div>
+          </div>
+          <div class="box-skills-languages-wrapper">
+            <p class="desc">html</p>
+            <div class="bar">
+              <div class="bar-ball"></div>
+            </div>
+          </div>
+          <div class="box-skills-languages-wrapper">
+            <p class="desc">css</p>
+            <div class="bar">
+              <div class="bar-ball"></div>
+            </div>
+          </div>
+          <div class="box-skills-languages-wrapper">
+            <p class="desc">javascript (jquery)</p>
+            <div class="bar">
+              <div class="bar-ball"></div>
+            </div>
+          </div>
+          <div class="box-skills-languages-wrapper">
+            <p class="desc">ms office</p>
+            <div class="bar">
+              <div class="bar-ball"></div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <!-- KURSY, CERTYFIKATY -->
+          <div class="box-title">
+            <i class="fas fa-certificate"></i>
+            <span class="category">kursy, certyfikaty</span>
+          </div>
+          <div class="box-wrapper">
+            <h3 class="date">październik 2001 r.</h3>
+            <p class="desc">Kurs podstawowy na&nbsp;Operatora DTP</p>
+            <p class="desc">Kurs zaawansowany na&nbsp;Operatora DTP</p>
+            <p class="desc2">
+              <span class="desc-bold">Ośrodek szkoleniowy Publishing Institute</span>
+            </p>
+          </div>
+          <div class="box-wrapper">
+            <h3 class="date">listopad 2001 r.</h3>
+            <p class="desc">Certyfikat Operatora DTP</p>
+            <p class="desc2">
+              <span class="desc-bold">Ośrodek szkoleniowy Publishing Institute</span>
+            </p>
+          </div>
+          <div class="box-wrapper">
+            <h3 class="date">22 listopada 2016 r.</h3>
+            <p class="desc">Certyfikat internetowych rewolucji (kurs marketingu internetowego)</p>
+            <p class="desc2">
+              <span class="desc-bold">Google</span>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <!-- JĘZYKI -->
+          <div class="box-title">
+            <i class="fas fa-comment"></i>
+            <span class="category">języki</span>
+          </div>
+          <div class="box-skills-languages-wrapper">
+            <p class="desc">polski</p>
+            <div class="bar">
+              <div class="bar-ball"></div>
+            </div>
+          </div>
+          <div class="box-skills-languages-wrapper">
+            <p class="desc">angielski</p>
+            <div class="bar">
+              <div class="bar-ball"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEKCJA PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="sections-title">Portfolio</h2>
+      <p class="description">Wszystkie projekty możesz zobaczyć na moim profilu na GitHubie</p>
+      <div class="portfolio-grid">
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/LOAN-CALCULATOR/" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/kalkulator_pozyczkowy.jpg" alt="obraz aplikacji kalkulatora">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">Kalkulator Pożyczkowy</h3>
+            <p class="portfolio-example-description">Aplikacja oblicza miesięczną ratę kredytu do spłacenia. Całkowitą kwotę pożyczki i&nbsp;zysk pożyczkodawcy.</p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/LISTA-KSIAZEK" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/lista_ksiazek.jpg" alt="obraz aplikacji listy książek">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">Lista Książek</h3>
+            <p class="portfolio-example-description">Baza danych książek, gdzie dodajemy tytuł, autora i&nbsp;cenę książki.</p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/TO-DOver3" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/lista_zadan.jpg" alt="obraz aplikacji listy zadań">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">Lista Zadań</h3>
+            <p class="portfolio-example-description">Lista zadań do wykonania z&nbsp;możliwością kasowania, filtrowania i&nbsp;modyfikowania konkretnego zadania.
+            </p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/LISTA-ZAKUPOW" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/lista_zakupow.jpg" alt="obraz aplikacji listy zakupów">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">Lista Zakupów</h3>
+            <p class="portfolio-example-description">Lista zakupów z&nbsp;możliwością kasowania i&nbsp;modyfikowania konkretnego produktu.
+            </p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/Materialize-Biuro_Podrozy" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/materialize/biuro_podrozy.jpg" alt="obraz strony biura podróży">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">Biuro Podróży</h3>
+            <p class="portfolio-example-description">Strona zrobiona pod frameworkiem Materialize z&nbsp;galerią, wyszukiwarką i&nbsp;kontaktem.
+            </p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/Materialize-Biznes" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/materialize/biznes.jpg" alt="obraz strony biznesowej">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">Strona Biznesowa</h3>
+            <p class="portfolio-example-description">Strona zrobiona pod frameworkiem Materialize z&nbsp;lokalizacją za pomocą Google Maps.
+            </p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/Materialize-Firma_IT" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/materialize/firma_IT.jpg" alt="obraz strony firmy z branży IT">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">Strona IT</h3>
+            <p class="portfolio-example-description">Strona zrobiona pod frameworkiem Materialize z&nbsp;możliwością założenia konta.
+            </p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/Materialize-Panel_Logowania" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/materialize/panel_logowania.jpg" alt="obraz strony z panelem logowania ">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">Panel Administratora</h3>
+            <p class="portfolio-example-description">Strona zrobiona pod frameworkiem Materialize z&nbsp;możliwością dodawania i&nbsp;kasowania zadań, dodawania postów,
+              kategorii&nbsp;i użytkowników.</p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/Materialize-Projektowanie/" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/materialize/projektowanie.jpg" alt="obraz strony o projektowaniu">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">Projektowanie</h3>
+            <p class="portfolio-example-description">Strona zrobiona pod frameworkiem Materialize z&nbsp;galerią projektów podzieloną na kategorie.</p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/POGODA/" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/pogoda.jpg" alt="obraz aplikacji o pogodzie">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">Pogoda</h3>
+            <p class="portfolio-example-description">Aplikacja, która pokazuje różne czynniki pogodowe w&nbsp;danej lokalizacji z&nbsp;danych ze strony https://api.wunderground.com.</p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/REDDIT" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/reddit.jpg" alt="obraz aplikacji wyszukiwarki reddit">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">REDDIT</h3>
+            <p class="portfolio-example-description">Wyszukiwarka postów REDDIT z&nbsp;sortowaniem i&nbsp;wyborem liczby wyników.</p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/GITHUB-USERS-FINDER" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/github_wyszukiwarka.jpg" alt="obraz aplikacji wyszukiwarki użytkowników GitHuba">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">Wyszukiwarka GitHub</h3>
+            <p class="portfolio-example-description">Wyszukiwarka użytkowników GitHuba. Wyświetla dane i&nbsp;najnowsze repozytoria.</p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/WEEKLY-WEBDEV-CHALLENGE-1" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/WeeklyWebDevChallenge_01.jpg" alt="obraz strony z zadania numer 1 WeeklyWebDevChallenge">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">WebDevChallenge1</h3>
+            <p class="portfolio-example-description">Strona powstała z&nbsp;gotowego projektu w&nbsp;Photoshopie z&nbsp;grupy na facebooku Weekly WebDev Challenge.</p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/WEB_DEV_CHALLENGE_NR37" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/WeeklyWebDevChallenge_37.jpg" alt="obraz strony z zadania numer 37 WeeklyWebDevChallenge">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">WebDevChallenge37</h3>
+            <p class="portfolio-example-description">Strona powstała z&nbsp;gotowego projektu w&nbsp;Photoshopie z&nbsp;grupy na facebooku Weekly WebDev Challenge.</p>
+          </div>
+        </figure>
+        <figure class="portfolio-example-wrapper">
+          <a class="portfolio-link" href="https://kp1976.github.io/NUMBER-GUESSER" target="_blank" rel="noreferrer">
+            <img class="portfolio-example-img" src="img/Portfolio/zgadnij_liczbe.jpg" alt="obraz aplikacji zgadnij liczbę">
+          </a>
+          <div class="portfolio-example-description-wrapper">
+            <h3 class="portfolio-example-title">Zgadnij liczbę</h3>
+            <p class="portfolio-example-description">Aplikacja sprawdza czy zgadłeś liczbę z&nbsp;przedziału od 1&nbsp;do 10. Masz na to trzy próby.</p>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SEKCJA KONTAKT -->
+    <section class="contact" id="contact">
+      <h2 class="sections-title">Kontakt</h2>
+      <i class="fas fa-envelope"></i>
+      <p class="description">krzyszp@wp.pl
+        <br> kpawlowski1976@gmail.com
+      </p>
+      <div class="social-media">
+        <a class="link" href="https://www.facebook.com/KP1976PL" target="_blank" aria-label="Facebook" rel="noreferrer">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a class="link" href="https://github.com/KP1976" target="_blank" aria-label="GitHub" rel="noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="link" href="https://www.linkedin.com/in/krzysztof-pawłowski-74aa01154" target="_blank" aria-label="LinkedIn" rel="noreferrer">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- STOPKA -->
+    <footer class="footer">
+      <p class="copyright">&copy; Krzysztof Pawłowski</p>
+    </footer>
+
+    <!-- MODALE -->
+    <!-- EDUKACJA -->
+    <div class="modal modal-edu">
+      <div class="modal-container">
         <div class="box-title">
           <i class="fas fa-graduation-cap"></i>
           <span class="category">edukacja</span>
         </div>
-        <div class="box-wrapper">
+        <div class="modal-box-wrapper">
           <h3 class="date">wrzesień 1991 r. – maj 1995 r.</h3>
           <p class="desc">Liceum im. Mieszka I w&nbsp;Świnoujściu</p>
           <p class="desc2">Profil: ogólny</p>
         </div>
-        <div class="box-wrapper">
+        <div class="modal-box-wrapper">
           <h3 class="date">październik 1995 r. – lipiec 2001 r.</h3>
           <p class="desc">Politechnika Szczecińska
             <br>Wydział Informatyki</p>
@@ -98,13 +485,16 @@
           </p>
         </div>
       </div>
-      <div class="box">
-        <!-- PRACA -->
+    </div>
+
+    <!-- PRACA -->
+    <div class="modal modal-work">
+      <div class="modal-container">
         <div class="box-title">
           <i class="far fa-handshake"></i>
           <span class="category">praca</span>
         </div>
-        <div class="box-wrapper">
+        <div class="modal-box-wrapper">
           <h3 class="date">lipiec 1998 r.</h3>
           <p class="desc">Pomocnik informatyka</p>
           <p class="desc2">
@@ -115,7 +505,7 @@
           </div>
           <div class="desc2">instalacja i wymiana kabli sieciowych</div>
         </div>
-        <div class="box-wrapper">
+        <div class="modal-box-wrapper">
           <h3 class="date">lipiec – sierpień 1999 r.</h3>
           <p class="desc">Informatyk Helpdesk</p>
           <p class="desc2">
@@ -126,7 +516,7 @@
           </div>
           <div class="desc2">instalacja i wymiana kabli sieciowych</div>
         </div>
-        <div class="box-wrapper">
+        <div class="modal-box-wrapper">
           <h3 class="date">styczeń 2002 r.</h3>
           <p class="desc">Grafik komputerowy</p>
           <p class="desc2">
@@ -136,7 +526,7 @@
           <div class="desc2">skład i łamanie czasopisma</div>
           <div class="desc2">wysyłka materiałów do drukarni</div>
         </div>
-        <div class="box-wrapper">
+        <div class="modal-box-wrapper">
           <h3 class="date">luty – kwiecień 2002 r.</h3>
           <p class="desc">Operator DTP</p>
           <p class="desc2">
@@ -144,10 +534,10 @@
               <br> Warszawa
             </span>
           </p>
-          <div class="desc2">skład i łamanie czasopisma „Technologie i przemysł”</div>
+          <div class="desc2">skład i łamanie czasopisma „Technologie&nbsp;i&nbsp;przemysł”</div>
           <div class="desc2">wysyłka materiałów do drukarni</div>
         </div>
-        <div class="box-wrapper">
+        <div class="modal-box-wrapper">
           <h3 class="date">czerwiec 2002 r. – grudzień 2003 r.</h3>
           <p class="desc">Grafik komputerowy</p>
           <p class="desc2">
@@ -158,7 +548,7 @@
           </p>
           <div class="desc2">skład i łamanie czasopisma „Shape”</div>
         </div>
-        <div class="box-wrapper">
+        <div class="modal-box-wrapper">
           <h3 class="date">kwiecień 2004 r. –</h3>
           <p class="desc">Operator DTP</p>
           <p class="desc2">
@@ -173,68 +563,74 @@
           <div class="desc2">tworzenie okładki (w&nbsp;zastępstwie)</div>
         </div>
       </div>
-      <div class="box">
-        <!-- UMIEJĘTNOŚCI -->
+    </div>
+
+    <!-- UMIEJĘTNOŚCI -->
+    <div class="modal modal-skills">
+      <div class="modal-container">
         <div class="box-title">
           <i class="fas fa-cogs"></i>
           <span class="category">umiejętności</span>
         </div>
-        <div class="box-skills-languages-wrapper">
+        <div class="modal-box-skills-languages-wrapper">
           <p class="desc">adobe photoshop</p>
           <div class="bar">
             <div class="bar-ball"></div>
           </div>
         </div>
-        <div class="box-skills-languages-wrapper">
+        <div class="modal-box-skills-languages-wrapper">
           <p class="desc">adobe indesign</p>
           <div class="bar">
             <div class="bar-ball"></div>
           </div>
         </div>
-        <div class="box-skills-languages-wrapper">
+        <div class="modal-box-skills-languages-wrapper">
           <p class="desc">adobe illustrator</p>
           <div class="bar">
             <div class="bar-ball"></div>
           </div>
         </div>
-        <div class="box-skills-languages-wrapper">
+        <div class="modal-box-skills-languages-wrapper">
           <p class="desc">quarkxpress</p>
           <div class="bar">
             <div class="bar-ball"></div>
           </div>
         </div>
-        <div class="box-skills-languages-wrapper">
+        <div class="modal-box-skills-languages-wrapper">
           <p class="desc">html</p>
           <div class="bar">
             <div class="bar-ball"></div>
           </div>
         </div>
-        <div class="box-skills-languages-wrapper">
+        <div class="modal-box-skills-languages-wrapper">
           <p class="desc">css</p>
           <div class="bar">
             <div class="bar-ball"></div>
           </div>
         </div>
-        <div class="box-skills-languages-wrapper">
+        <div class="modal-box-skills-languages-wrapper">
           <p class="desc">javascript (jquery)</p>
           <div class="bar">
             <div class="bar-ball"></div>
           </div>
         </div>
-        <div class="box-skills-languages-wrapper">
+        <div class="modal-box-skills-languages-wrapper">
           <p class="desc">ms office</p>
           <div class="bar">
             <div class="bar-ball"></div>
           </div>
         </div>
       </div>
-      <div class="box">
-        <!-- KURSY, CERTYFIKATY -->
+    </div>
+
+    <!-- KURSY, CERTYFIKATY -->
+    <div class="modal modal-courses">
+      <div class="modal-container">
         <div class="box-title">
           <i class="fas fa-certificate"></i>
           <span class="category">kursy, certyfikaty</span>
         </div>
-        <div class="box-wrapper">
+        <div class="modal-box-wrapper">
           <h3 class="date">październik 2001 r.</h3>
           <p class="desc">Kurs podstawowy na&nbsp;Operatora DTP</p>
           <p class="desc">Kurs zaawansowany na&nbsp;Operatora DTP</p>
@@ -242,14 +638,14 @@
             <span class="desc-bold">Ośrodek szkoleniowy Publishing Institute</span>
           </p>
         </div>
-        <div class="box-wrapper">
+        <div class="modal-box-wrapper">
           <h3 class="date">listopad 2001 r.</h3>
           <p class="desc">Certyfikat Operatora DTP</p>
           <p class="desc2">
             <span class="desc-bold">Ośrodek szkoleniowy Publishing Institute</span>
           </p>
         </div>
-        <div class="box-wrapper">
+        <div class="modal-box-wrapper">
           <h3 class="date">22 listopada 2016 r.</h3>
           <p class="desc">Certyfikat internetowych rewolucji (kurs marketingu internetowego)</p>
           <p class="desc2">
@@ -257,19 +653,22 @@
           </p>
         </div>
       </div>
-      <div class="box">
-        <!-- JĘZYKI -->
+    </div>
+
+    <!-- JĘZYKI -->
+    <div class="modal modal-languages">
+      <div class="modal-container">
         <div class="box-title">
           <i class="fas fa-comment"></i>
           <span class="category">języki</span>
         </div>
-        <div class="box-skills-languages-wrapper">
+        <div class="modal-box-skills-languages-wrapper">
           <p class="desc">polski</p>
           <div class="bar">
             <div class="bar-ball"></div>
           </div>
         </div>
-        <div class="box-skills-languages-wrapper">
+        <div class="modal-box-skills-languages-wrapper">
           <p class="desc">angielski</p>
           <div class="bar">
             <div class="bar-ball"></div>
@@ -277,406 +676,8 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- SEKCJA PORTFOLIO -->
-  <section class="portfolio" id="portfolio">
-    <h2 class="sections-title">Portfolio</h2>
-    <p class="description">Wszystkie projekty możesz zobaczyć na moim profilu na GitHubie</p>
-    <div class="portfolio-grid">
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/LOAN-CALCULATOR/" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/kalkulator_pozyczkowy.jpg" alt="obraz aplikacji kalkulatora">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">Kalkulator Pożyczkowy</h3>
-          <p class="portfolio-example-description">Aplikacja oblicza miesięczną ratę kredytu do spłacenia. Całkowitą kwotę pożyczki i&nbsp;zysk pożyczkodawcy.</p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/LISTA-KSIAZEK" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/lista_ksiazek.jpg" alt="obraz aplikacji listy książek">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">Lista Książek</h3>
-          <p class="portfolio-example-description">Baza danych książek, gdzie dodajemy tytuł, autora i&nbsp;cenę książki.</p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/TO-DOver3" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/lista_zadan.jpg" alt="obraz aplikacji listy zadań">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">Lista Zadań</h3>
-          <p class="portfolio-example-description">Lista zadań do wykonania z&nbsp;możliwością kasowania, filtrowania i&nbsp;modyfikowania konkretnego zadania.
-          </p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/LISTA-ZAKUPOW" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/lista_zakupow.jpg" alt="obraz aplikacji listy zakupów">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">Lista Zakupów</h3>
-          <p class="portfolio-example-description">Lista zakupów z&nbsp;możliwością kasowania i&nbsp;modyfikowania konkretnego produktu.
-          </p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/Materialize-Biuro_Podrozy" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/materialize/biuro_podrozy.jpg" alt="obraz strony biura podróży">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">Biuro Podróży</h3>
-          <p class="portfolio-example-description">Strona zrobiona pod frameworkiem Materialize z&nbsp;galerią, wyszukiwarką i&nbsp;kontaktem.
-          </p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/Materialize-Biznes" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/materialize/biznes.jpg" alt="obraz strony biznesowej">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">Strona Biznesowa</h3>
-          <p class="portfolio-example-description">Strona zrobiona pod frameworkiem Materialize z&nbsp;lokalizacją za pomocą Google Maps.
-          </p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/Materialize-Firma_IT" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/materialize/firma_IT.jpg" alt="obraz strony firmy z branży IT">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">Strona IT</h3>
-          <p class="portfolio-example-description">Strona zrobiona pod frameworkiem Materialize z&nbsp;możliwością założenia konta.
-          </p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/Materialize-Panel_Logowania" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/materialize/panel_logowania.jpg" alt="obraz strony z panelem logowania ">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">Panel Administratora</h3>
-          <p class="portfolio-example-description">Strona zrobiona pod frameworkiem Materialize z&nbsp;możliwością dodawania i&nbsp;kasowania zadań, dodawania postów,
-            kategorii&nbsp;i użytkowników.</p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/Materialize-Projektowanie/" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/materialize/projektowanie.jpg" alt="obraz strony o projektowaniu">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">Projektowanie</h3>
-          <p class="portfolio-example-description">Strona zrobiona pod frameworkiem Materialize z&nbsp;galerią projektów podzieloną na kategorie.</p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/POGODA/" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/pogoda.jpg" alt="obraz aplikacji o pogodzie">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">Pogoda</h3>
-          <p class="portfolio-example-description">Aplikacja, która pokazuje różne czynniki pogodowe w&nbsp;danej lokalizacji z&nbsp;danych ze strony https://api.wunderground.com.</p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/REDDIT" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/reddit.jpg" alt="obraz aplikacji wyszukiwarki reddit">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">REDDIT</h3>
-          <p class="portfolio-example-description">Wyszukiwarka postów REDDIT z&nbsp;sortowaniem i&nbsp;wyborem liczby wyników.</p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/GITHUB-USERS-FINDER" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/github_wyszukiwarka.jpg" alt="obraz aplikacji wyszukiwarki użytkowników GitHuba">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">Wyszukiwarka GitHub</h3>
-          <p class="portfolio-example-description">Wyszukiwarka użytkowników GitHuba. Wyświetla dane i&nbsp;najnowsze repozytoria.</p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/WEEKLY-WEBDEV-CHALLENGE-1" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/WeeklyWebDevChallenge_01.jpg" alt="obraz strony z zadania numer 1 WeeklyWebDevChallenge">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">WebDevChallenge1</h3>
-          <p class="portfolio-example-description">Strona powstała z&nbsp;gotowego projektu w&nbsp;Photoshopie z&nbsp;grupy na facebooku Weekly WebDev Challenge.</p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/WEB_DEV_CHALLENGE_NR37" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/WeeklyWebDevChallenge_37.jpg" alt="obraz strony z zadania numer 37 WeeklyWebDevChallenge">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">WebDevChallenge37</h3>
-          <p class="portfolio-example-description">Strona powstała z&nbsp;gotowego projektu w&nbsp;Photoshopie z&nbsp;grupy na facebooku Weekly WebDev Challenge.</p>
-        </div>
-      </figure>
-      <figure class="portfolio-example-wrapper">
-        <a class="portfolio-link" href="https://kp1976.github.io/NUMBER-GUESSER" target="_blank" rel="noreferrer">
-          <img class="portfolio-example-img" src="img/Portfolio/zgadnij_liczbe.jpg" alt="obraz aplikacji zgadnij liczbę">
-        </a>
-        <div class="portfolio-example-description-wrapper">
-          <h3 class="portfolio-example-title">Zgadnij liczbę</h3>
-          <p class="portfolio-example-description">Aplikacja sprawdza czy zgadłeś liczbę z&nbsp;przedziału od 1&nbsp;do 10. Masz na to trzy próby.</p>
-        </div>
-      </figure>
-    </div>
-  </section>
-
-  <!-- SEKCJA KONTAKT -->
-  <section class="contact" id="contact">
-    <h2 class="sections-title">Kontakt</h2>
-    <i class="fas fa-envelope"></i>
-    <p class="description">krzyszp@wp.pl
-      <br> kpawlowski1976@gmail.com
-    </p>
-    <div class="social-media">
-      <a class="link" href="https://www.facebook.com/KP1976PL" target="_blank" aria-label="Facebook" rel="noreferrer">
-        <i class="fab fa-facebook"></i>
-      </a>
-      <a class="link" href="https://github.com/KP1976" target="_blank" aria-label="GitHub" rel="noreferrer">
-        <i class="fab fa-github"></i>
-      </a>
-      <a class="link" href="https://www.linkedin.com/in/krzysztof-pawłowski-74aa01154" target="_blank" aria-label="LinkedIn" rel="noreferrer">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </div>
-  </section>
-
-  <!-- STOPKA -->
-  <footer class="footer">
-    <p class="copyright">&copy; Krzysztof Pawłowski</p>
-  </footer>
-
-  <!-- MODALE -->
-  <!-- EDUKACJA -->
-  <div class="modal modal-edu">
-    <div class="modal-container">
-      <div class="box-title">
-        <i class="fas fa-graduation-cap"></i>
-        <span class="category">edukacja</span>
-      </div>
-      <div class="modal-box-wrapper">
-        <h3 class="date">wrzesień 1991 r. – maj 1995 r.</h3>
-        <p class="desc">Liceum im. Mieszka I w&nbsp;Świnoujściu</p>
-        <p class="desc2">Profil: ogólny</p>
-      </div>
-      <div class="modal-box-wrapper">
-        <h3 class="date">październik 1995 r. – lipiec 2001 r.</h3>
-        <p class="desc">Politechnika Szczecińska
-          <br>Wydział Informatyki</p>
-        <p class="desc2">Kierunek:
-          <br>
-          <span class="desc-bold">informatyka</span>
-        </p>
-        <p class="desc2">Specjalizacja:
-          <br>
-          <span class="desc-bold">techniki multimedialne</span>
-        </p>
-        <p class="desc2">Tytuł:
-          <br>
-          <span class="desc-bold"> magister inżynier</span>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- PRACA -->
-  <div class="modal modal-work">
-    <div class="modal-container">
-      <div class="box-title">
-        <i class="far fa-handshake"></i>
-        <span class="category">praca</span>
-      </div>
-      <div class="modal-box-wrapper">
-        <h3 class="date">lipiec 1998 r.</h3>
-        <p class="desc">Pomocnik informatyka</p>
-        <p class="desc2">
-          <span class="desc-bold">Urząd miejski
-            <br>w Świnoujściu</span>
-        </p>
-        <div class="desc2">konfiguracja i&nbsp;pomoc techniczna urzędnikom w&nbsp;zakresie instalacji programów i&nbsp;obsługi systemu Windows
-        </div>
-        <div class="desc2">instalacja i wymiana kabli sieciowych</div>
-      </div>
-      <div class="modal-box-wrapper">
-        <h3 class="date">lipiec – sierpień 1999 r.</h3>
-        <p class="desc">Informatyk Helpdesk</p>
-        <p class="desc2">
-          <span class="desc-bold">Urząd miejski
-            <br>w Świnoujściu</span>
-        </p>
-        <div class="desc2">konfiguracja i&nbsp;pomoc techniczna urzędnikom w&nbsp;zakresie instalacji programów i&nbsp;obsługi systemu Windows
-        </div>
-        <div class="desc2">instalacja i wymiana kabli sieciowych</div>
-      </div>
-      <div class="modal-box-wrapper">
-        <h3 class="date">styczeń 2002 r.</h3>
-        <p class="desc">Grafik komputerowy</p>
-        <p class="desc2">
-          <span class="desc-bold">Wydawnictwo PAIP Warszawa
-          </span>
-        </p>
-        <div class="desc2">skład i łamanie czasopisma</div>
-        <div class="desc2">wysyłka materiałów do drukarni</div>
-      </div>
-      <div class="modal-box-wrapper">
-        <h3 class="date">luty – kwiecień 2002 r.</h3>
-        <p class="desc">Operator DTP</p>
-        <p class="desc2">
-          <span class="desc-bold">Wydawnictwo Vision Media
-            <br> Warszawa
-          </span>
-        </p>
-        <div class="desc2">skład i łamanie czasopisma „Technologie&nbsp;i&nbsp;przemysł”</div>
-        <div class="desc2">wysyłka materiałów do drukarni</div>
-      </div>
-      <div class="modal-box-wrapper">
-        <h3 class="date">czerwiec 2002 r. – grudzień 2003 r.</h3>
-        <p class="desc">Grafik komputerowy</p>
-        <p class="desc2">
-          <span class="desc-bold">Wydawnictwo
-            <br>Hearst-Marquard Publishing
-            <br> Warszawa
-          </span>
-        </p>
-        <div class="desc2">skład i łamanie czasopisma „Shape”</div>
-      </div>
-      <div class="modal-box-wrapper">
-        <h3 class="date">kwiecień 2004 r. –</h3>
-        <p class="desc">Operator DTP</p>
-        <p class="desc2">
-          <span class="desc-bold">Invest Company Corporation
-            <br> Warszawa
-          </span>
-        </p>
-        <div class="desc2">skład i łamanie czasopisma „Piłka Nożna”</div>
-        <div class="desc2">wysyłka materiałów do drukarni</div>
-        <div class="desc2">tworzenie infografik</div>
-        <div class="desc2">obróbka zdjęć</div>
-        <div class="desc2">tworzenie okładki (w&nbsp;zastępstwie)</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- UMIEJĘTNOŚCI -->
-  <div class="modal modal-skills">
-    <div class="modal-container">
-      <div class="box-title">
-        <i class="fas fa-cogs"></i>
-        <span class="category">umiejętności</span>
-      </div>
-      <div class="modal-box-skills-languages-wrapper">
-        <p class="desc">adobe photoshop</p>
-        <div class="bar">
-          <div class="bar-ball"></div>
-        </div>
-      </div>
-      <div class="modal-box-skills-languages-wrapper">
-        <p class="desc">adobe indesign</p>
-        <div class="bar">
-          <div class="bar-ball"></div>
-        </div>
-      </div>
-      <div class="modal-box-skills-languages-wrapper">
-        <p class="desc">adobe illustrator</p>
-        <div class="bar">
-          <div class="bar-ball"></div>
-        </div>
-      </div>
-      <div class="modal-box-skills-languages-wrapper">
-        <p class="desc">quarkxpress</p>
-        <div class="bar">
-          <div class="bar-ball"></div>
-        </div>
-      </div>
-      <div class="modal-box-skills-languages-wrapper">
-        <p class="desc">html</p>
-        <div class="bar">
-          <div class="bar-ball"></div>
-        </div>
-      </div>
-      <div class="modal-box-skills-languages-wrapper">
-        <p class="desc">css</p>
-        <div class="bar">
-          <div class="bar-ball"></div>
-        </div>
-      </div>
-      <div class="modal-box-skills-languages-wrapper">
-        <p class="desc">javascript (jquery)</p>
-        <div class="bar">
-          <div class="bar-ball"></div>
-        </div>
-      </div>
-      <div class="modal-box-skills-languages-wrapper">
-        <p class="desc">ms office</p>
-        <div class="bar">
-          <div class="bar-ball"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- KURSY, CERTYFIKATY -->
-  <div class="modal modal-courses">
-    <div class="modal-container">
-      <div class="box-title">
-        <i class="fas fa-certificate"></i>
-        <span class="category">kursy, certyfikaty</span>
-      </div>
-      <div class="modal-box-wrapper">
-        <h3 class="date">październik 2001 r.</h3>
-        <p class="desc">Kurs podstawowy na&nbsp;Operatora DTP</p>
-        <p class="desc">Kurs zaawansowany na&nbsp;Operatora DTP</p>
-        <p class="desc2">
-          <span class="desc-bold">Ośrodek szkoleniowy Publishing Institute</span>
-        </p>
-      </div>
-      <div class="modal-box-wrapper">
-        <h3 class="date">listopad 2001 r.</h3>
-        <p class="desc">Certyfikat Operatora DTP</p>
-        <p class="desc2">
-          <span class="desc-bold">Ośrodek szkoleniowy Publishing Institute</span>
-        </p>
-      </div>
-      <div class="modal-box-wrapper">
-        <h3 class="date">22 listopada 2016 r.</h3>
-        <p class="desc">Certyfikat internetowych rewolucji (kurs marketingu internetowego)</p>
-        <p class="desc2">
-          <span class="desc-bold">Google</span>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- JĘZYKI -->
-  <div class="modal modal-languages">
-    <div class="modal-container">
-      <div class="box-title">
-        <i class="fas fa-comment"></i>
-        <span class="category">języki</span>
-      </div>
-      <div class="modal-box-skills-languages-wrapper">
-        <p class="desc">polski</p>
-        <div class="bar">
-          <div class="bar-ball"></div>
-        </div>
-      </div>
-      <div class="modal-box-skills-languages-wrapper">
-        <p class="desc">angielski</p>
-        <div class="bar">
-          <div class="bar-ball"></div>
-        </div>
-      </div>
-    </div>
   </div>
 </body>
 <script src="js/boxes.js"></script>
-<script src="js/scroll.js"></script>
 
 </html>
