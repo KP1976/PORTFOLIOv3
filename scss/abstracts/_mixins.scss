@@ -1,18 +1,12 @@
-@mixin hamburger-bar {
-  background-color: var(--primary-clr);
-  border-radius: 1.5px;
-}
-
-@mixin triangle($size) {
-  background-color: var(--primary-clr);
-  height: $size;
-  position: absolute;
-  transform: rotate(45deg);
-  width: $size;
+@mixin hamburger-bar($height, $width) {
+	background-color: var(--primary-clr);
+	border-radius: 0.5rem;
+	height: $height;
+	width: $width;
 }
 
 @mixin mq($width) {
-  @media screen and (min-width: $width) {
-    @content;
-  }
+	@media screen and (min-width: $width) {
+		@content;
+	}
 }

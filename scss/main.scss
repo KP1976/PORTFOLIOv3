@@ -5,8 +5,10 @@
 @import 'base/reset';
 @import 'base/body';
 
+@import 'sections/header';
+
 @import 'menu';
-@import 'section-header';
+// @import 'section-header';
 @import 'section-aboutme';
 @import 'section-portfolio';
 @import 'section-contact';
