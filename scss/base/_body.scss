@@ -6,6 +6,8 @@ body {
 	background-attachment: fixed;
 	background-image: url('../../img/background.jpg');
 	background-size: cover;
+	color: var(--primary-clr);
+	font-family: var(--font);
 	margin: 0;
 	padding: 0;
 
@@ -23,7 +25,10 @@ body {
 }
 
 .container {
+	align-items: center;
+	display: flex;
 	height: 100vh;
+	justify-content: center;
 	padding: 2rem;
 	// scroll-behavior: smooth;
 	// overflow-y: scroll;

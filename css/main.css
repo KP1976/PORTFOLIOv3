@@ -317,6 +317,8 @@ body {
   background-attachment: fixed;
   background-image: url("../../img/background.jpg");
   background-size: cover;
+  color: var(--primary-clr);
+  font-family: var(--font);
   margin: 0;
   padding: 0; }
   body::after {
@@ -331,7 +333,10 @@ body {
     z-index: -1; }
 
 .container {
+  align-items: center;
+  display: flex;
   height: 100vh;
+  justify-content: center;
   padding: 2rem; }
 
 .sections-title {
@@ -352,6 +357,59 @@ body {
   @media screen and (min-width: 992px) {
     .sections-title {
       margin: 0 0 3rem 0; } }
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%; }
+  .header__my-photo {
+    border: 0.5rem solid var(--secondary-clr);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    height: 10rem;
+    width: 10rem; }
+  .header__my-name {
+    color: var(--primary-clr);
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 1rem auto;
+    text-align: center;
+    width: 21rem; }
+    .header__my-name--green {
+      color: var(--secondary-clr);
+      display: block; }
+  .header .professions {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--box-radius);
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 28rem; }
+    .header .professions__profession {
+      font-size: 1.8rem;
+      font-weight: normal;
+      line-height: 3rem;
+      margin: 0; }
+      .header .professions__profession--green {
+        color: var(--secondary-clr);
+        font-size: 1.8rem;
+        font-weight: normal;
+        line-height: 3rem;
+        margin: 0; }
+  .header .header-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem; }
+    .header .header-icons .header-icons__facebook,
+    .header .header-icons .header-icons__github,
+    .header .header-icons .header-icons__linkedin {
+      color: var(--primary-clr);
+      font-size: 3rem;
+      margin-right: 1.5rem; }
+    .header .header-icons .header-icons__linkedin {
+      margin-right: 0; }
 
 .hamburger-menu {
   cursor: pointer;
