@@ -7,11 +7,25 @@
 	width: 3rem;
 	z-index: 1;
 
+	&.close-btn &__bar {
+		transform: rotate(-315deg);
+	}
+
+	&.close-btn &__bar::before {
+		visibility: hidden;
+	}
+
+	&.close-btn &__bar::after {
+		top: 0;
+		transform: rotate(90deg);
+	}
+
 	&__bar {
 		@include hamburger-bar(0.5rem, 100%);
 		height: 0.5rem;
 		position: absolute;
 		top: 1rem;
+		transition: transform 0.3s ease-in-out;
 
 		&::before,
 		&::after {
