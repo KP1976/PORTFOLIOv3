@@ -343,7 +343,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem; }
+  padding: 2rem 2rem 0; }
 
 .gray-box {
   background-color: var(--gray-clr);
@@ -418,6 +418,9 @@ body {
   line-height: 2rem;
   margin-bottom: 0;
   text-align: center; }
+
+.bar-wrapper:not(:last-child) {
+  margin-bottom: 3rem; }
 
 .bar {
   background-color: var(--primary-clr);
@@ -619,11 +622,24 @@ body {
   width: 100%; }
   .skills .description--green {
     margin-bottom: 1.5rem; }
-  .skills__skill-wrapper:not(:last-child) {
-    margin-bottom: 3rem; }
 
 .courses {
+  width: 100%;
+  margin-bottom: 3rem; }
+
+.languages {
   width: 100%; }
+
+.footer {
+  align-items: center;
+  background-color: var(--background_dark-clr);
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+  width: calc(100% + 4rem); }
+  .footer__text {
+    font-size: 1.6rem;
+    font-style: italic; }
 
 .hamburger-menu {
   cursor: pointer;

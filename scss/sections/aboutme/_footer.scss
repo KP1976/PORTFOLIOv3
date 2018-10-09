@@ -1,0 +1,13 @@
+.footer {
+	align-items: center;
+	background-color: var(--background_dark-clr);
+	display: flex;
+	height: 5rem;
+	justify-content: center;
+	width: calc(100% + 4rem);
+
+	&__text {
+		font-size: 1.6rem;
+		font-style: italic;
+	}
+}
