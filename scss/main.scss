@@ -4,9 +4,11 @@
 @import 'base/normalize';
 @import 'base/reset';
 @import 'base/body';
+@import 'base/global-selectors';
 
 @import 'sections/start-page/header';
 @import 'sections/aboutme/header';
+@import 'sections/aboutme/education';
 
 @import 'menu';
 // @import 'section-header';

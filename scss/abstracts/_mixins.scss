@@ -13,6 +13,30 @@
 	width: $size;
 }
 
+@mixin grayBox($widthSize, $marginSize) {
+	background-color: var(--gray-clr);
+	margin-bottom: $marginSize;
+	width: $widthSize;
+}
+
+@mixin date($size) {
+	font-size: $size;
+	font-weight: normal;
+	font-style: italic;
+	margin: 0 0 1rem 0;
+	text-align: center;
+}
+
+@mixin description--green($size) {
+	color: var(--secondary-clr);
+	font-size: $size;
+	font-weight: bold;
+	line-height: 2rem;
+	margin: 0 0 1rem 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 @mixin mq($width) {
 	@media screen and (min-width: $width) {
 		@content;

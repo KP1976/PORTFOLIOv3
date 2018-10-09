@@ -1,0 +1,19 @@
+.date {
+	@include date(1.6rem);
+}
+
+.description {
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 2rem;
+	margin-bottom: 0;
+	text-align: center;
+
+	strong {
+		text-transform: uppercase;
+	}
+
+	&--green {
+		@include description--green(1.6rem);
+	}
+}

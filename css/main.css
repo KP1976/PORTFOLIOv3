@@ -1,6 +1,7 @@
 :root {
   --background-clr: #333;
   --background_dark-clr: #222;
+  --gray-clr: #707070;
   --primary-clr: #fff;
   --secondary-clr: #41ff14;
   --font: 'Open Sans', serif;
@@ -321,23 +322,46 @@ body {
   font-family: var(--font);
   margin: 0;
   padding: 0; }
-  body::after {
-    background-color: var(--background-clr);
-    content: '';
-    height: 100%;
-    left: 0;
-    opacity: 0.95;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1; }
 
 .container {
   align-items: center;
+  background-color: rgba(51, 51, 51, 0.95);
   display: flex;
   height: 100vh;
   justify-content: center;
   padding: 2rem; }
+
+.container-aboutme-portfolio {
+  align-items: center;
+  background-color: var(--background-clr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem; }
+
+.date {
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+  text-align: center; }
+
+.description {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2rem;
+  margin-bottom: 0;
+  text-align: center; }
+  .description strong {
+    text-transform: uppercase; }
+  .description--green {
+    color: var(--secondary-clr);
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+    text-transform: uppercase; }
 
 .header {
   align-items: center;
@@ -396,32 +420,40 @@ body {
 .hide-header {
   visibility: hidden; }
 
-.header__title {
-  color: var(--secondary-clr);
-  font-size: 4rem;
-  font-weight: bold;
-  margin: 0;
-  text-transform: uppercase; }
-.header__subtitle {
-  font-size: 1.8rem;
-  font-weight: normal;
-  margin: 1rem 0 0 0; }
-.header__my-photo {
-  border: 0.5rem solid var(--secondary-clr);
-  border-radius: 50%;
-  display: block;
-  height: 10rem;
-  width: 10rem;
-  margin: 2.5rem auto; }
-.header__description {
-  font-size: 1.6rem;
-  line-height: 2.5rem;
-  margin: 0;
-  text-align: center;
-  width: 24rem; }
+.header-aboutme-portfolio {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%; }
+  .header-aboutme-portfolio__title {
+    color: var(--secondary-clr);
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase; }
+  .header-aboutme-portfolio__subtitle {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 1rem 0 0 0; }
+  .header-aboutme-portfolio__my-photo {
+    border: 0.5rem solid var(--secondary-clr);
+    border-radius: 50%;
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    margin: 2.5rem auto; }
+  .header-aboutme-portfolio__description {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin: 0;
+    text-align: center;
+    width: 24rem; }
 
 .arrows {
   margin: 0 auto;
+  height: 5rem;
   width: 5rem; }
   .arrows.hide {
     display: none; }
@@ -465,6 +497,7 @@ body {
 @supports (clip-path: polygon(0 0, 100% 0, 50% 100%)) {
   .arrows {
     margin: 0 auto;
+    height: 5rem;
     width: 5rem; }
     .arrows.hide {
       display: none; }
@@ -500,6 +533,32 @@ body {
     transform: translate(-50%, -30%); }
   100% {
     transform: translate(-50%, 20%); } }
+.education {
+  background-color: var(--background-clr);
+  width: 100%; }
+  .education__title {
+    color: var(--secondary-clr);
+    font-size: 3rem;
+    margin: 5rem 0 1rem 0;
+    text-align: center;
+    text-transform: uppercase; }
+  .education .gray-box--border-right {
+    background-color: var(--gray-clr);
+    margin-bottom: 3rem;
+    width: 100%;
+    border-top-left-radius: var(--box-radius);
+    border-bottom-left-radius: var(--box-radius);
+    border-right: 0.5rem solid var(--secondary-clr);
+    padding: 1rem; }
+  .education .gray-box--border-left {
+    background-color: var(--gray-clr);
+    margin-bottom: 3rem;
+    width: 100%;
+    border-top-right-radius: var(--box-radius);
+    border-bottom-right-radius: var(--box-radius);
+    border-left: 0.5rem solid var(--secondary-clr);
+    padding: 1rem; }
+
 .hamburger-menu {
   cursor: pointer;
   height: 2.5rem;
