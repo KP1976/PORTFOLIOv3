@@ -432,6 +432,13 @@ body {
     top: -0.75rem;
     width: 1.5rem; }
 
+.udemy-title {
+  color: var(--secondary-clr);
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase; }
+
 .header {
   align-items: center;
   display: flex;
@@ -613,7 +620,10 @@ body {
   .skills .description--green {
     margin-bottom: 1.5rem; }
   .skills__skill-wrapper:not(:last-child) {
-    margin-bottom: 2rem; }
+    margin-bottom: 3rem; }
+
+.courses {
+  width: 100%; }
 
 .hamburger-menu {
   cursor: pointer;

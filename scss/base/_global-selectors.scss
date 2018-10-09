@@ -22,44 +22,6 @@
 	}
 }
 
-// .aboutme-title {
-// 	align-items: center;
-// 	display: flex;
-// 	justify-content: center;
-// 	margin: 1rem 0 1rem 0;
-
-// 	&__text {
-// 		color: var(--secondary-clr);
-// 		font-size: 3rem;
-// 		margin: 0 1rem 0 0;
-// 		text-align: center;
-// 		text-transform: uppercase;
-// 	}
-
-// 	i {
-// 		color: var(--secondary-clr);
-// 		font-size: 4rem;
-// 	}
-// }
-
-// .aboutme-title {
-// 	color: var(--secondary-clr);
-// 	display: inline-block;
-// 	font-size: 3rem;
-// 	margin: 1rem auto 1rem;
-// 	position: relative;
-// 	text-align: center;
-// 	text-transform: uppercase;
-
-// 	i {
-// 		color: var(--secondary-clr);
-// 		font-size: 4rem;
-// 		right: -6rem;
-// 		position: absolute;
-// 		top: -0.3rem;
-// 	}
-// }
-
 .aboutme-title {
 	align-items: center;
 	display: grid;
@@ -82,9 +44,6 @@
 		display: block;
 		font-size: 4rem;
 		grid-column: 2 / 3;
-		// right: -6rem;
-		// position: absolute;
-		// top: -0.3rem;
 	}
 }
 
@@ -130,4 +89,12 @@
 		top: -0.75rem;
 		width: 1.5rem;
 	}
+}
+
+.udemy-title {
+	color: var(--secondary-clr);
+	font-size: 2rem;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
 }
