@@ -3,3 +3,14 @@
 *::after {
 	box-sizing: border-box;
 }
+
+* {
+	&::-webkit-scrollbar {
+		background-color: var(--background_dark-clr);
+		width: 1rem;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--gray-clr);
+	}
+}

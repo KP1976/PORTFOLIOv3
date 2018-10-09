@@ -311,6 +311,12 @@ template {
 *::after {
   box-sizing: border-box; }
 
+*::-webkit-scrollbar {
+  background-color: var(--background_dark-clr);
+  width: 1rem; }
+*::-webkit-scrollbar-thumb {
+  background-color: var(--gray-clr); }
+
 html {
   font-size: 10px; }
 
@@ -339,22 +345,27 @@ body {
   justify-content: center;
   padding: 2rem; }
 
-.gray-box--border-right {
+.gray-box {
   background-color: var(--gray-clr);
-  margin-bottom: 3rem;
-  width: 100%;
-  border-top-left-radius: var(--box-radius);
-  border-bottom-left-radius: var(--box-radius);
-  border-right: 0.5rem solid var(--secondary-clr);
-  padding: 1rem; }
-.gray-box--border-left {
-  background-color: var(--gray-clr);
-  margin-bottom: 3rem;
-  width: 100%;
-  border-top-right-radius: var(--box-radius);
-  border-bottom-right-radius: var(--box-radius);
-  border-left: 0.5rem solid var(--secondary-clr);
-  padding: 1rem; }
+  border-radius: var(--box-radius);
+  padding: 2rem;
+  width: 100%; }
+  .gray-box--green-border-right {
+    background-color: var(--gray-clr);
+    margin-bottom: 3rem;
+    width: 100%;
+    border-top-left-radius: var(--box-radius);
+    border-bottom-left-radius: var(--box-radius);
+    border-right: 0.5rem solid var(--secondary-clr);
+    padding: 1rem; }
+  .gray-box--green-border-left {
+    background-color: var(--gray-clr);
+    margin-bottom: 3rem;
+    width: 100%;
+    border-top-right-radius: var(--box-radius);
+    border-bottom-right-radius: var(--box-radius);
+    border-left: 0.5rem solid var(--secondary-clr);
+    padding: 1rem; }
 
 .aboutme-title {
   color: var(--secondary-clr);
@@ -364,7 +375,7 @@ body {
   text-transform: uppercase; }
 
 .date {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: normal;
   font-style: italic;
   margin: 0 0 1rem 0;
@@ -393,6 +404,19 @@ body {
   line-height: 2rem;
   margin-bottom: 0;
   text-align: center; }
+
+.bar {
+  background-color: var(--primary-clr);
+  height: 0.1rem;
+  position: relative; }
+  .bar__ball {
+    background-color: var(--primary-clr);
+    border: 0.2rem solid var(--secondary-clr);
+    border-radius: 50%;
+    height: 1.5rem;
+    position: absolute;
+    top: -0.75rem;
+    width: 1.5rem; }
 
 .header {
   align-items: center;
@@ -565,8 +589,17 @@ body {
   100% {
     transform: translate(-50%, 20%); } }
 .education {
-  background-color: var(--background-clr);
   width: 100%; }
+
+.work {
+  width: 100%; }
+
+.skills {
+  width: 100%; }
+  .skills .description--green {
+    margin-bottom: 1.5rem; }
+  .skills__skill-wrapper:not(:last-child) {
+    margin-bottom: 2rem; }
 
 .hamburger-menu {
   cursor: pointer;

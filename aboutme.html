@@ -1,148 +1,214 @@
 <!DOCTYPE html>
-<p lang="pl">
+<html lang="pl">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="Description" content="Portfolio Krzysztofa Pawłowskiego">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ff934f">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="css/main.css">
-    <title>O mnie</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="Description" content="Portfolio Krzysztofa Pawłowskiego">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff934f">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/main.css">
+  <title>O mnie</title>
+</head>
 
-  <body style="background-image: none;">
-    <main class="container-aboutme-portfolio">
+<body style="background-image: none;">
+  <main class="container-aboutme-portfolio">
 
-      <!-- MENU -->
-      <div class="hamburger-menu">
-        <div class="hamburger-menu__bar"></div>
-      </div>
-      <nav class="menu">
-        <div class="menu__header">
-          <h1 class="header__my-name"><span class="header__my-name--green">Krzysztof</span>Pawłowski</h1>
-        </div>
-        <ul class="menu__list">
-          <li class="list__item"><a href="index.html" rel="noopener">strona główna</a></li>
-          <li class="list__item"><a class="highlighted" href="aboutme.html" rel="noopener">o mnie</a></li>
-          <li class="list__item"><a href="#!" rel="noopener">portfolio</a></li>
-          <li class="list__item"><a href="#!" rel="noopener">kontakt</a></li>
-        </ul>
-      </nav>
-
-      <!-- HEADER -->
-      <header class="header-aboutme-portfolio">
-        <h1 class="header-aboutme-portfolio__title">o mnie</h1>
-        <h2 class="header-aboutme-portfolio__subtitle">Parę słów o sobie...</h2>
-        <img src="./img/ja.jpg" alt="photo of Krzysztof Pawłowski" class="header-aboutme-portfolio__my-photo">
-        <p class="header-aboutme-portfolio__description">Z wykształcenia jestem informatykiem, z zawodu operatorem
-          DTP/grafikiem.
-          Przez ostatnie kilkanaście lat pracowałem w kilku wydawnictwach. Obecnie próbuj sił w tworzeniu stron
-          internetowych i programowaniu w JavaScript.</p>
-        <div class="arrows">
-          <div class="arrows__arrow"></div>
-          <div class="arrows__arrow"></div>
-          <div class="arrows__arrow"></div>
-        </div>
-      </header>
-
-      <!-- EDUKACJA -->
-      <section class="education">
-        <h2 class="aboutme-title">edukacja <i class="fas fa-graduation-cap"></i></h2>
-        <div class="gray-box--border-right">
-          <h3 class="date">październik 1995 r. – lipiec 2001 r.</h3>
-          <h4 class="description--green">Politechnika Szczecińska<br>Wydział Informatyki</h4>
-          <p class="description">Kierunek:<br><strong>informatyka</strong><br><br>Specjalizacja:
-            <br><strong>techniki multimedialne</strong><br><br>Tytuł:<br><strong>magister inżynier</strong>
-          </p>
-        </div>
-        <div class="gray-box--border-left">
-          <h3 class="date">wrzesień 1991 r. – maj 1995 r.</h3>
-          <h4 class="description--green">Liceum im. Mieszka I w&nbsp;Świnoujściu</h4>
-          <p class="description">Profil:<br><strong>ogólny</strong></p>
-        </div>
-      </section>
-
-      <!-- PRACA -->
-      <section class="work">
-        <h2 class="aboutme-title">praca <i class="far fa-handshake"></i></h2>
-        <div class="gray-box--border-right">
-          <h3 class="date">* kwiecień 2004 r. –</h3>
-          <h4 class="description--green">Operator DTP</h4>
-          <p class="description"><strong>Invest Company Corporation</strong></p>
-          <p class="description2">skład i łamanie czasopisma „Piłka Nożna”<br><br>wysyłka materiałów do drukarni<br><br>tworzenie
-            infografik<br><br>obróbka zdjęć<br><br>tworzenie okładki<br><br>* od października praca na 1/4 etatu (tylko
-            w kolejne niedziele)</p>
-        </div>
-
-
-
-        <!-- <div class="box-wrapper">
-        <h3 class="date">lipiec 1998 r.</h3>
-        <p class="desc">Pomocnik informatyka</p>
-        <p class="desc2">
-          <span class="desc-bold">Urząd miejski
-            <br>w Świnoujściu</span>
-        </p>
-        <div class="desc2">konfiguracja i&nbsp;pomoc techniczna urzędnikom w&nbsp;zakresie instalacji programów
-          i&nbsp;obsługi systemu Windows
-        </div>
-        <div class="desc2">instalacja i wymiana kabli sieciowych</div>
-      </div>
-      <div class="box-wrapper">
-        <h3 class="date">lipiec – sierpień 1999 r.</h3>
-        <p class="desc">Informatyk Helpdesk</p>
-        <p class="desc2">
-          <span class="desc-bold">Urząd miejski
-            <br>w Świnoujściu</span>
-        </p>
-        <div class="desc2">konfiguracja i&nbsp;pomoc techniczna urzędnikom w&nbsp;zakresie instalacji programów
-          i&nbsp;obsługi systemu Windows
-        </div>
-        <div class="desc2">instalacja i wymiana kabli sieciowych</div>
-      </div>
-      <div class="box-wrapper">
-        <h3 class="date">styczeń 2002 r.</h3>
-        <p class="desc">Grafik komputerowy</p>
-        <p class="desc2">
-          <span class="desc-bold">Wydawnictwo PAIP Warszawa
-          </span>
-        </p>
-        <div class="desc2">skład i łamanie czasopisma</div>
-        <div class="desc2">wysyłka materiałów do drukarni</div>
-      </div>
-      <div class="box-wrapper">
-        <h3 class="date">luty – kwiecień 2002 r.</h3>
-        <p class="desc">Operator DTP</p>
-        <p class="desc2">
-          <span class="desc-bold">Wydawnictwo Vision Media
-            <br> Warszawa
-          </span>
-        </p>
-        <div class="desc2">skład i łamanie czasopisma „Technologie i przemysł”</div>
-        <div class="desc2">wysyłka materiałów do drukarni</div>
-      </div>
-      <div class="box-wrapper">
-        <h3 class="date">czerwiec 2002 r. – grudzień 2003 r.</h3>
-        <p class="desc">Grafik komputerowy</p>
-        <p class="desc2">
-          <span class="desc-bold">Wydawnictwo
-            <br>Hearst-Marquard Publishing
-            <br> Warszawa
-          </span>
-        </p>
-        <div class="desc2">skład i łamanie czasopisma „Shape”</div>
-      </div>
+    <!-- MENU -->
+    <div class="hamburger-menu">
+      <div class="hamburger-menu__bar"></div>
     </div>
-    <div class="box"> -->
-      </section>
+    <nav class="menu">
+      <div class="menu__header">
+        <h1 class="header__my-name"><span class="header__my-name--green">Krzysztof</span>Pawłowski</h1>
+      </div>
+      <ul class="menu__list">
+        <li class="list__item"><a href="index.html" rel="noopener">strona główna</a></li>
+        <li class="list__item"><a class="highlighted" href="aboutme.html" rel="noopener">o mnie</a></li>
+        <li class="list__item"><a href="#!" rel="noopener">portfolio</a></li>
+        <li class="list__item"><a href="#!" rel="noopener">kontakt</a></li>
+      </ul>
+    </nav>
 
-    </main>
+    <!-- HEADER -->
+    <header class="header-aboutme-portfolio">
+      <h1 class="header-aboutme-portfolio__title">o mnie</h1>
+      <h2 class="header-aboutme-portfolio__subtitle">Parę słów o sobie...</h2>
+      <img src="./img/ja.jpg" alt="photo of Krzysztof Pawłowski" class="header-aboutme-portfolio__my-photo">
+      <p class="header-aboutme-portfolio__description">Z wykształcenia jestem informatykiem, z zawodu operatorem
+        DTP/grafikiem.
+        Przez ostatnie kilkanaście lat pracowałem w kilku wydawnictwach. Obecnie próbuj sił w tworzeniu stron
+        internetowych i programowaniu w JavaScript.</p>
+      <div class="arrows">
+        <div class="arrows__arrow"></div>
+        <div class="arrows__arrow"></div>
+        <div class="arrows__arrow"></div>
+      </div>
+    </header>
 
-    <script src="js/menu.js"></script>
-    <!-- <script src="js/boxes.js"></script> -->
-  </body>
+    <!-- EDUKACJA -->
+    <section class="education">
+      <h2 class="aboutme-title">edukacja <i class="fas fa-graduation-cap"></i></h2>
+      <div class="gray-box--green-border-right">
+        <h3 class="date">październik 1995 r. – lipiec 2001 r.</h3>
+        <h4 class="description--green">Politechnika Szczecińska<br>Wydział Informatyki</h4>
+        <p class="description">Kierunek:<br><strong>informatyka</strong><br><br>Specjalizacja:
+          <br><strong>techniki multimedialne</strong><br><br>Tytuł:<br><strong>magister inżynier</strong>
+        </p>
+      </div>
+      <div class="gray-box--green-border-left">
+        <h3 class="date">wrzesień 1991 r. – maj 1995 r.</h3>
+        <h4 class="description--green">Liceum im. Mieszka I w&nbsp;Świnoujściu</h4>
+        <p class="description">Profil:<br><strong>ogólny</strong></p>
+      </div>
+    </section>
+
+    <!-- PRACA -->
+    <section class="work">
+      <h2 class="aboutme-title">praca <i class="far fa-handshake"></i></h2>
+
+      <div class="gray-box--green-border-right">
+        <h3 class="date">* kwiecień 2004 r. –</h3>
+        <h4 class="description--green">Operator DTP</h4>
+        <p class="description"><strong>Invest Company Corporation</strong></p>
+        <p class="description2">skład i łamanie czasopisma „Piłka Nożna”<br><br>wysyłka materiałów do drukarni<br><br>tworzenie
+          infografik<br><br>obróbka zdjęć<br><br>tworzenie okładki<br><br>* od października praca na 1/4 etatu (tylko
+          w kolejne niedziele)</p>
+      </div>
+
+      <div class="gray-box--green-border-left">
+        <h3 class="date">czerwiec 2002 r. – grudzień 2003 r.</h3>
+        <h4 class="description--green">Grafik komputerowy</h4>
+        <p class="description"><strong>Wydawnictwo<br>Hearst-Marquard<br>Publishing</strong></p>
+        <p class="description2">skład i łamanie czasopisma „Shape”</p>
+      </div>
+
+      <div class="gray-box--green-border-right">
+        <h3 class="date">luty – kwiecień 2002 r.</h3>
+        <h4 class="description--green">Operator DTP</h4>
+        <p class="description"><strong>Wydawnictwo Vision Media</strong></p>
+        <p class="description2">skład i łamanie czasopisma „Technologie i przemysł<br><br>wysyłka materiałów do
+          drukarni</p>
+      </div>
+
+      <div class="gray-box--green-border-left">
+        <h3 class="date">styczeń 2002 r.</h3>
+        <h4 class="description--green">Grafik komputerowy</h4>
+        <p class="description"><strong>Wydawnictwo PAIP</strong></p>
+        <p class="description2">skład i łamanie czasopisma<br><br>wysyłka materiałów do drukarni</p>
+      </div>
+
+      <div class="gray-box--green-border-right">
+        <h3 class="date">lipiec – sierpień 1999 r.</h3>
+        <h4 class="description--green">Informatyk Helpdesk</h4>
+        <p class="description"><strong>Urząd miejski<br>w Świnoujściu</strong></p>
+        <p class="description2">konfiguracja i&nbsp;pomoc techniczna urzędnikom w&nbsp;zakresie instalacji programów
+          i&nbsp;obsługi systemu Windows<br><br>instalacja i wymiana kabli sieciowych</p>
+      </div>
+
+      <div class="gray-box--green-border-right">
+        <h3 class="date">lipiec 1998 r.</h3>
+        <h4 class="description--green">Pomocnik informatyka</h4>
+        <p class="description"><strong>Urząd miejski<br>w Świnoujściu</strong></p>
+        <p class="description2">konfiguracja i&nbsp;pomoc techniczna urzędnikom w&nbsp;zakresie instalacji programów
+          i&nbsp;obsługi systemu Windows<br><br>instalacja i wymiana kabli sieciowych</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2 class="aboutme-title">umiejętności <i class="fas fa-cogs"></i></h2>
+      <div class="gray-box">
+        <div class="skills__skill-wrapper">
+          <h4 class="description--green">adobe photoshop</h4>
+          <div class="bar">
+            <div class="bar__ball"></div>
+          </div>
+        </div>
+
+        <div class="skills__skill-wrapper">
+          <h4 class="description--green">quarkxpress</h4>
+          <div class="bar">
+            <div class="bar__ball"></div>
+          </div>
+        </div>
+
+        <div class="skills__skill-wrapper">
+          <h4 class="description--green">adobe indesign</h4>
+          <div class="bar">
+            <div class="bar__ball"></div>
+          </div>
+        </div>
+
+        <div class="skills__skill-wrapper">
+          <h4 class="description--green">adobe illustrator</h4>
+          <div class="bar">
+            <div class="bar__ball"></div>
+          </div>
+        </div>
+
+        <div class="skills__skill-wrapper">
+          <h4 class="description--green">adobe xd</h4>
+          <div class="bar">
+            <div class="bar__ball"></div>
+          </div>
+        </div>
+
+        <div class="skills__skill-wrapper">
+          <h4 class="description--green">html</h4>
+          <div class="bar">
+            <div class="bar__ball"></div>
+          </div>
+        </div>
+
+        <div class="skills__skill-wrapper">
+          <h4 class="description--green">css</h4>
+          <div class="bar">
+            <div class="bar__ball"></div>
+          </div>
+        </div>
+
+        <div class="skills__skill-wrapper">
+          <h4 class="description--green">bootstrap</h4>
+          <div class="bar">
+            <div class="bar__ball"></div>
+          </div>
+        </div>
+
+        <div class="skills__skill-wrapper">
+          <h4 class="description--green">materialize</h4>
+          <div class="bar">
+            <div class="bar__ball"></div>
+          </div>
+        </div>
+
+        <div class="skills__skill-wrapper">
+          <h4 class="description--green">javascript</h4>
+          <div class="bar">
+            <div class="bar__ball"></div>
+          </div>
+        </div>
+
+        <div class="skills__skill-wrapper">
+          <h4 class="description--green">react</h4>
+          <div class="bar">
+            <div class="bar__ball"></div>
+          </div>
+        </div>
+
+        <div class="skills__skill-wrapper">
+          <h4 class="description--green">ms office</h4>
+          <div class="bar">
+            <div class="bar__ball"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/menu.js"></script>
+  <!-- <script src="js/boxes.js"></script> -->
+</body>

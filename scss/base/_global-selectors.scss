@@ -1,5 +1,10 @@
 .gray-box {
-	&--border-right {
+	background-color: var(--gray-clr);
+	border-radius: var(--box-radius);
+	padding: 2rem;
+	width: 100%;
+
+	&--green-border-right {
 		@include grayBox(100%, 3rem);
 		border-top-left-radius: var(--box-radius);
 		border-bottom-left-radius: var(--box-radius);
@@ -7,7 +12,7 @@
 		padding: 1rem;
 	}
 
-	&--border-left {
+	&--green-border-left {
 		@include grayBox(100%, 3rem);
 		border-top-right-radius: var(--box-radius);
 		border-bottom-right-radius: var(--box-radius);
@@ -25,7 +30,7 @@
 }
 
 .date {
-	@include date(1.6rem);
+	@include date(1.5rem);
 }
 
 .description {
@@ -50,4 +55,20 @@
 	line-height: 2rem;
 	margin-bottom: 0;
 	text-align: center;
+}
+
+.bar {
+	background-color: var(--primary-clr);
+	height: 0.1rem;
+	position: relative;
+
+	&__ball {
+		background-color: var(--primary-clr);
+		border: 0.2rem solid var(--secondary-clr);
+		border-radius: 50%;
+		height: 1.5rem;
+		position: absolute;
+		top: -0.75rem;
+		width: 1.5rem;
+	}
 }
