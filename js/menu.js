@@ -4,6 +4,7 @@ const header = document.querySelector('.header');
 const headerMyName = document.querySelector('.menu__header .header__my-name');
 const menuList = document.querySelector('.menu__list');
 const menuListItem = document.querySelectorAll('.menu__list .list__item');
+const arrows = document.querySelector('.arrows');
 
 let menuIsVisible = true;
 
@@ -17,6 +18,10 @@ const toggleMenu = () => {
 
 		hamburgerMenu.classList.add('close-btn');
 
+		if (arrows !== null) {
+			arrows.classList.add('hide');
+		}
+
 		menuIsVisible = false;
 	} else {
 		menu.classList.remove('show-menu');
@@ -25,6 +30,10 @@ const toggleMenu = () => {
 		menuListItem.forEach(menuItem => menuItem.classList.remove('show'));
 
 		hamburgerMenu.classList.remove('close-btn');
+
+		if (arrows !== null) {
+			arrows.classList.remove('hide');
+		}
 
 		setTimeout(() => {
 			header.classList.remove('hide-header');

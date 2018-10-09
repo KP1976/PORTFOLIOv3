@@ -5,12 +5,13 @@
 @import 'base/reset';
 @import 'base/body';
 
-@import 'sections/header';
+@import 'sections/start-page/header';
+@import 'sections/aboutme/header';
 
 @import 'menu';
 // @import 'section-header';
-@import 'section-aboutme';
-@import 'section-portfolio';
-@import 'section-contact';
-@import 'footer';
-@import 'modals';
+// @import 'section-aboutme';
+// @import 'section-portfolio';
+// @import 'section-contact';
+// @import 'footer';
+// @import 'modals';

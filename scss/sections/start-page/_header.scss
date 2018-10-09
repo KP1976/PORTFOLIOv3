@@ -2,16 +2,13 @@
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	height: 100vh;
 	justify-content: center;
 	width: 100%;
 
 	&__my-photo {
-		border: 0.5rem solid var(--secondary-clr);
-		border-radius: 50%;
-		display: block;
+		@include myphoto(10rem);
 		margin: 0 auto;
-		height: 10rem;
-		width: 10rem;
 	}
 
 	&__my-name {

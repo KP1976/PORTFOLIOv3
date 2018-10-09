@@ -5,6 +5,14 @@
 	width: $width;
 }
 
+@mixin myphoto($size) {
+	border: 0.5rem solid var(--secondary-clr);
+	border-radius: 50%;
+	display: block;
+	height: $size;
+	width: $size;
+}
+
 @mixin mq($width) {
 	@media screen and (min-width: $width) {
 		@content;
