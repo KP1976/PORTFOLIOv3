@@ -348,6 +348,7 @@ body {
 .gray-box {
   background-color: var(--gray-clr);
   border-radius: var(--box-radius);
+  margin-bottom: 3rem;
   padding: 2rem;
   width: 100%; }
   .gray-box--green-border-right {
@@ -368,11 +369,24 @@ body {
     padding: 1rem; }
 
 .aboutme-title {
-  color: var(--secondary-clr);
-  font-size: 3rem;
-  margin: 1rem 0 1rem 0;
-  text-align: center;
-  text-transform: uppercase; }
+  align-items: center;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  justify-content: center;
+  margin: 1rem 0;
+  width: 100%; }
+  .aboutme-title__text {
+    color: var(--secondary-clr);
+    font-size: 3rem;
+    margin: 0 1rem 0 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase; }
+  .aboutme-title i {
+    color: var(--secondary-clr);
+    display: block;
+    font-size: 4rem;
+    grid-column: 2 / 3; }
 
 .date {
   font-size: 1.5rem;
