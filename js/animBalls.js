@@ -1,13 +1,13 @@
-// skillsPercentage = 90, 50, 15, 75, 65, 70, 40;
+// skillsPercentage = 90, 50, 15, 75, 65, 70, 40, 30;
 const balls = document.querySelectorAll('.bar__ball');
 const bar = document.querySelector('.bar');
 const skills = document.querySelector('.skills');
+const languages = document.querySelector('.languages');
 const ballWidth = 15;
 const skillsHeight = skills.offsetHeight;
+const languagesHeight = languages.offsetHeight;
 
-let widthOfBar = bar.offsetWidth;
-
-function setBallsTransform(widthOfBar) {
+function setSkillsBallsTransform(widthOfBar) {
 	balls[0].style.transform = `translateX(${widthOfBar - widthOfBar / 10 - ballWidth / 2}px)`;
 	balls[1].style.transform = `translateX(${widthOfBar - widthOfBar / 10 - ballWidth / 2}px)`;
 	balls[2].style.transform = `translateX(${widthOfBar - 5 * widthOfBar / 10 - ballWidth / 2}px)`;
@@ -22,13 +22,26 @@ function setBallsTransform(widthOfBar) {
 	balls[11].style.transform = `translateX(${widthOfBar - 6 * widthOfBar / 10 - ballWidth / 2}px)`;
 }
 
+function setLanguagesBallsTransform(widthOfBar) {
+	balls[12].style.transform = `translateX(${widthOfBar - widthOfBar / 10 - ballWidth / 2}px)`;
+	balls[13].style.transform = `translateX(${widthOfBar - 7 * widthOfBar / 10 - ballWidth / 2}px)`;
+}
+
 window.addEventListener('scroll', _ => {
+	let widthOfBar = bar.offsetWidth;
+
 	if ((skills.offsetTop - skillsHeight / 2 - window.scrollY) < 0) {
-		setBallsTransform(widthOfBar);
+		setSkillsBallsTransform(widthOfBar);
+
+	}
+
+	if ((languages.offsetTop - languagesHeight * 3.5 - window.scrollY) < 0) {
+		setLanguagesBallsTransform(widthOfBar);
 	}
 });
 
 window.addEventListener('resize', _ => {
 	let widthOfBar = bar.offsetWidth;
-	setBallsTransform(widthOfBar);
+	setSkillsBallsTransform(widthOfBar);
+	setLanguagesBallsTransform(widthOfBar);
 });
