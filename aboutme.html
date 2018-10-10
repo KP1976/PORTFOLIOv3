@@ -16,39 +16,41 @@
 </head>
 
 <body style="background-image: none;">
-  <main class="container-aboutme-portfolio">
 
-    <!-- MENU -->
-    <div class="hamburger-menu">
-      <div class="hamburger-menu__bar"></div>
+
+  <!-- MENU -->
+  <div class="hamburger-menu">
+    <div class="hamburger-menu__bar"></div>
+  </div>
+  <nav class="menu">
+    <div class="menu__header">
+      <h1 class="header__my-name"><span class="header__my-name--green">Krzysztof</span>Pawłowski</h1>
     </div>
-    <nav class="menu">
-      <div class="menu__header">
-        <h1 class="header__my-name"><span class="header__my-name--green">Krzysztof</span>Pawłowski</h1>
-      </div>
-      <ul class="menu__list">
-        <li class="list__item"><a href="index.html" rel="noopener">strona główna</a></li>
-        <li class="list__item"><a class="highlighted" href="aboutme.html" rel="noopener">o mnie</a></li>
-        <li class="list__item"><a href="#!" rel="noopener">portfolio</a></li>
-        <li class="list__item"><a href="#!" rel="noopener">kontakt</a></li>
-      </ul>
-    </nav>
+    <ul class="menu__list">
+      <li class="list__item"><a href="index.html" rel="noopener">strona główna</a></li>
+      <li class="list__item"><a class="highlighted" href="aboutme.html" rel="noopener">o mnie</a></li>
+      <li class="list__item"><a href="#!" rel="noopener">portfolio</a></li>
+      <li class="list__item"><a href="#!" rel="noopener">kontakt</a></li>
+    </ul>
+  </nav>
 
-    <!-- HEADER -->
-    <header class="header-aboutme-portfolio">
-      <h1 class="header-aboutme-portfolio__title">o mnie</h1>
-      <h2 class="header-aboutme-portfolio__subtitle">Parę słów o sobie...</h2>
-      <img src="./img/ja.jpg" alt="photo of Krzysztof Pawłowski" class="header-aboutme-portfolio__my-photo">
-      <p class="header-aboutme-portfolio__description">Z wykształcenia jestem informatykiem, z zawodu operatorem
-        DTP/grafikiem.
-        Przez ostatnie kilkanaście lat pracowałem w kilku wydawnictwach. Obecnie próbuj sił w tworzeniu stron
-        internetowych i programowaniu w JavaScript.</p>
-      <div class="arrows">
-        <div class="arrows__arrow"></div>
-        <div class="arrows__arrow"></div>
-        <div class="arrows__arrow"></div>
-      </div>
-    </header>
+  <!-- HEADER -->
+  <header class="header-aboutme-portfolio">
+    <h1 class="header-aboutme-portfolio__title">o mnie</h1>
+    <h2 class="header-aboutme-portfolio__subtitle">Parę słów o sobie...</h2>
+    <img src="./img/ja.jpg" alt="photo of Krzysztof Pawłowski" class="header-aboutme-portfolio__my-photo">
+    <p class="header-aboutme-portfolio__description">Z wykształcenia jestem informatykiem, z zawodu operatorem
+      DTP/grafikiem.
+      Przez ostatnie kilkanaście lat pracowałem w kilku wydawnictwach. Obecnie próbuj sił w tworzeniu stron
+      internetowych i programowaniu w JavaScript.</p>
+    <div class="arrows">
+      <div class="arrows__arrow"></div>
+      <div class="arrows__arrow"></div>
+      <div class="arrows__arrow"></div>
+    </div>
+  </header>
+
+  <main class="container-aboutme-portfolio">
 
     <!-- EDUKACJA -->
     <section class="education">
@@ -56,9 +58,6 @@
         <h2 class="aboutme-title__text">edukacja</h2>
         <i class="fas fa-graduation-cap"></i>
       </div>
-
-      <!-- <h2 class="aboutme-title">edukacja<i class="fas fa-graduation-cap"></i></h2> -->
-
 
       <div class="gray-box--green-border-right">
         <h3 class="date">październik 1995 r. – lipiec 2001 r.</h3>
@@ -295,6 +294,7 @@
     </section>
   </main>
 
-  <script src="js/menu.js"></script>
+  <script src="js/menu_aboutme.js"></script>
+  <script src="js/skillsBalls.js"></script>
   <!-- <script src="js/boxes.js"></script> -->
 </body>
