@@ -545,6 +545,13 @@ body {
     height: 10rem;
     width: 10rem;
     margin: 0 auto; }
+    @media screen and (min-width: 576px) {
+      .header__my-photo {
+        border: 0.5rem solid var(--secondary-clr);
+        border-radius: 50%;
+        display: block;
+        height: 12rem;
+        width: 12rem; } }
   .header__my-name {
     color: var(--primary-clr);
     font-size: 4rem;
@@ -552,6 +559,10 @@ body {
     margin: 1rem auto;
     text-align: center;
     width: 21rem; }
+    @media screen and (min-width: 576px) {
+      .header__my-name {
+        font-size: 7rem;
+        width: 37rem; } }
     .header__my-name--green {
       color: var(--secondary-clr);
       display: block; }
@@ -561,17 +572,28 @@ body {
     text-align: center;
     padding: 0.5rem 0;
     width: 28rem; }
+    @media screen and (min-width: 576px) {
+      .header .professions {
+        padding: 2rem 0;
+        width: 100%; } }
     .header .professions__profession {
       font-size: 1.8rem;
       font-weight: normal;
       line-height: 3rem;
       margin: 0; }
+      @media screen and (min-width: 576px) {
+        .header .professions__profession {
+          font-size: 2.4rem;
+          margin-bottom: 2rem; } }
       .header .professions__profession--green {
         color: var(--secondary-clr);
         font-size: 1.8rem;
         font-weight: normal;
         line-height: 3rem;
         margin: 0; }
+        @media screen and (min-width: 576px) {
+          .header .professions__profession--green {
+            font-size: 2.4rem; } }
   .header .header-icons {
     display: flex;
     justify-content: space-between;
@@ -583,6 +605,11 @@ body {
       font-size: 3rem;
       margin-right: 1.5rem;
       transition: color 0.3s ease-in-out; }
+      @media screen and (min-width: 576px) {
+        .header .header-icons .header-icons__facebook,
+        .header .header-icons .header-icons__github,
+        .header .header-icons .header-icons__linkedin {
+          margin-right: 4.3rem; } }
       .header .header-icons .header-icons__facebook:hover,
       .header .header-icons .header-icons__github:hover,
       .header .header-icons .header-icons__linkedin:hover {
