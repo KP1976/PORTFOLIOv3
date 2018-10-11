@@ -141,6 +141,12 @@
 		top: -0.75rem;
 		transition: transform 1s linear;
 		width: 1.5rem;
+		
+		@include mq(576px) {
+			top: -1rem;
+			height: 2rem;
+			width: 2rem;
+		}
 	}
 }
 

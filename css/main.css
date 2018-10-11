@@ -477,6 +477,11 @@ body {
     top: -0.75rem;
     transition: transform 1s linear;
     width: 1.5rem; }
+    @media screen and (min-width: 576px) {
+      .bar__ball {
+        top: -1rem;
+        height: 2rem;
+        width: 2rem; } }
 
 .udemy-title {
   color: var(--secondary-clr);
