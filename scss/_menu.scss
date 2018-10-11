@@ -7,6 +7,14 @@
 	width: 3rem;
 	z-index: 1;
 
+	@include mq(768px) {
+		height: 5rem;
+		position: absolute;
+		right: 5rem;
+		top: 5rem;
+		width: 6rem;
+	}
+
 	&.close-btn &__bar {
 		transform: rotate(-315deg);
 	}
@@ -22,24 +30,39 @@
 
 	&__bar {
 		@include hamburger-bar(0.5rem, 100%);
-		height: 0.5rem;
 		position: absolute;
 		top: 1rem;
 		transition: transform 0.3s ease-in-out;
+
+		@include mq(768px) {
+			@include hamburger-bar(1rem, 100%);
+		}
 
 		&::before,
 		&::after {
 			@include hamburger-bar(0.5rem, 100%);
 			content: '';
 			position: absolute;
+
+			@include mq(768px) {
+				@include hamburger-bar(1rem, 100%);
+			}
 		}
 
 		&::before {
 			top: -1rem;
+
+			@include mq(768px) {
+				top: -2rem;
+			}
 		}
 
 		&::after {
 			top: 1rem;
+
+			@include mq(768px) {
+				top: 2rem;
+			}
 		}
 	}
 }
@@ -110,7 +133,7 @@
 
 			&:not(:last-child) {
 				margin-bottom: 2.5rem;
-				
+
 				@include mq(576px) {
 					margin-bottom: 5rem;
 				}
