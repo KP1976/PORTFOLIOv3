@@ -640,10 +640,16 @@ body {
     font-weight: bold;
     margin: 0;
     text-transform: uppercase; }
+    @media screen and (min-width: 576px) {
+      .header-aboutme__title {
+        font-size: 7rem; } }
   .header-aboutme__subtitle {
     font-size: 1.8rem;
     font-weight: normal;
     margin: 1rem 0 0 0; }
+    @media screen and (min-width: 576px) {
+      .header-aboutme__subtitle {
+        font-size: 2.4rem; } }
   .header-aboutme__my-photo {
     border: 0.5rem solid var(--secondary-clr);
     border-radius: 50%;
@@ -651,12 +657,25 @@ body {
     height: 10rem;
     width: 10rem;
     margin: 2.5rem auto; }
+    @media screen and (min-width: 576px) {
+      .header-aboutme__my-photo {
+        border: 0.5rem solid var(--secondary-clr);
+        border-radius: 50%;
+        display: block;
+        height: 12rem;
+        width: 12rem;
+        margin: 4rem auto; } }
   .header-aboutme__description {
     font-size: 1.6rem;
     line-height: 2.5rem;
     margin: 0;
     text-align: center;
     width: 24rem; }
+    @media screen and (min-width: 576px) {
+      .header-aboutme__description {
+        font-size: 2.6rem;
+        line-height: 3.8rem;
+        width: 40rem; } }
 
 .arrows {
   margin: 0 auto;
@@ -676,6 +695,11 @@ body {
     left: 50%;
     position: absolute;
     transform: translateX(-50%); }
+    @media screen and (min-width: 576px) {
+      .arrows__arrow:nth-child(1) {
+        border-top: 5rem solid var(--secondary-clr);
+        border-left: 5rem solid transparent;
+        border-right: 5rem solid transparent; } }
   .arrows__arrow:nth-child(2) {
     animation-name: arrowMove;
     animation-duration: 1s;
@@ -688,6 +712,11 @@ body {
     left: 50%;
     position: absolute;
     transform: translateX(-50%); }
+    @media screen and (min-width: 576px) {
+      .arrows__arrow:nth-child(2) {
+        border-top: 4rem solid var(--secondary-clr);
+        border-left: 4rem solid transparent;
+        border-right: 4rem solid transparent; } }
   .arrows__arrow:nth-child(3) {
     animation-name: arrowMove;
     animation-duration: 1s;
@@ -700,6 +729,11 @@ body {
     left: 50%;
     position: absolute;
     transform: translateX(-50%); }
+    @media screen and (min-width: 576px) {
+      .arrows__arrow:nth-child(3) {
+        border-top: 3rem solid var(--secondary-clr);
+        border-left: 3rem solid transparent;
+        border-right: 3rem solid transparent; } }
 
 @supports (clip-path: polygon(0 0, 100% 0, 50% 100%)) {
   .arrows {
@@ -709,6 +743,10 @@ body {
     .arrows.hide {
       display: none; }
     .arrows__arrow:nth-child(1) {
+      animation-name: arrowMove;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
       background-color: var(--secondary-clr);
       bottom: 2rem;
       clip-path: polygon(0 0, 100% 0, 50% 100%);
@@ -717,7 +755,15 @@ body {
       position: absolute;
       transform: translateX(-50%);
       width: 5rem; }
+      @media screen and (min-width: 576px) {
+        .arrows__arrow:nth-child(1) {
+          height: 5rem;
+          width: 10rem; } }
     .arrows__arrow:nth-child(2) {
+      animation-name: arrowMove;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
       background-color: var(--secondary-clr);
       bottom: 1.5rem;
       clip-path: polygon(0 0, 100% 0, 50% 100%);
@@ -726,7 +772,15 @@ body {
       position: absolute;
       transform: translateX(-50%);
       width: 4rem; }
+      @media screen and (min-width: 576px) {
+        .arrows__arrow:nth-child(2) {
+          height: 4rem;
+          width: 8rem; } }
     .arrows__arrow:nth-child(3) {
+      animation-name: arrowMove;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
       background-color: var(--secondary-clr);
       bottom: 1rem;
       clip-path: polygon(0 0, 100% 0, 50% 100%);
@@ -734,7 +788,11 @@ body {
       left: 50%;
       position: absolute;
       transform: translateX(-50%);
-      width: 3rem; } }
+      width: 3rem; }
+      @media screen and (min-width: 576px) {
+        .arrows__arrow:nth-child(3) {
+          height: 3rem;
+          width: 6rem; } } }
 @keyframes arrowMove {
   0% {
     transform: translate(-50%, -30%); }
