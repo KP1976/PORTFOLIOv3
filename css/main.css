@@ -520,10 +520,16 @@ body {
         text-decoration: none;
         text-transform: uppercase;
         transition: color 0.3s ease-in-out; }
+        @media screen and (min-width: 576px) {
+          .menu__list .list__item a {
+            font-size: 3rem; } }
         .menu__list .list__item a:hover {
           color: var(--secondary-clr); }
       .menu__list .list__item:not(:last-child) {
         margin-bottom: 2.5rem; }
+        @media screen and (min-width: 576px) {
+          .menu__list .list__item:not(:last-child) {
+            margin-bottom: 5rem; } }
       .menu__list .list__item .highlighted {
         color: var(--secondary-clr);
         font-weight: bold; }

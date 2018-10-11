@@ -99,6 +99,10 @@
 				text-transform: uppercase;
 				transition: color 0.3s ease-in-out;
 
+				@include mq(576px) {
+					font-size: 3rem;
+				}
+
 				&:hover {
 					color: var(--secondary-clr);
 				}
@@ -106,6 +110,10 @@
 
 			&:not(:last-child) {
 				margin-bottom: 2.5rem;
+				
+				@include mq(576px) {
+					margin-bottom: 5rem;
+				}
 			}
 
 			.highlighted {
