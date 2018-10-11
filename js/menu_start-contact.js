@@ -1,6 +1,7 @@
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const menu = document.querySelector('.menu');
-const header = document.querySelector('.header');
+const headerStart = document.querySelector('.header');
+const headerContact = document.querySelector('.header-contact');
 const headerMyName = document.querySelector('.menu__header .header__my-name');
 const menuList = document.querySelector('.menu__list');
 const menuListItem = document.querySelectorAll('.menu__list .list__item');
@@ -12,8 +13,15 @@ const toggleMenu = () => {
 		menu.classList.add('show-menu');
 		headerMyName.classList.add('show');
 		menuList.classList.add('show');
-		header.classList.add('hide-header');
 		menuListItem.forEach(menuItem => menuItem.classList.add('show'));
+
+		if (headerStart !== null) {
+			headerStart.classList.add('hide-header');
+		}
+
+		if (headerContact !== null) {
+			headerContact.classList.add('hide-header');
+		}
 
 		hamburgerMenu.classList.add('close-btn');
 
@@ -26,9 +34,17 @@ const toggleMenu = () => {
 
 		hamburgerMenu.classList.remove('close-btn');
 
-		setTimeout(() => {
-			header.classList.remove('hide-header');
-		}, 400);
+		if (headerStart !== null) {
+			setTimeout(() => {
+				headerStart.classList.remove('hide-header');
+			}, 400);
+		}
+
+		if (headerContact !== null) {
+			setTimeout(() => {
+				headerContact.classList.remove('hide-header');
+			}, 400);
+		}
 
 		menuIsVisible = true;
 	}
