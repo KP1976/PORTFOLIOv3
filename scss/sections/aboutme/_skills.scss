@@ -8,6 +8,10 @@
 	.description {
 		&--green {
 			margin-bottom: 1.5rem;
+
+			@include mq(576px) {
+				margin-bottom: 2rem;
+			}
 		}
 	}
 }

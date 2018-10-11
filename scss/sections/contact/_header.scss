@@ -10,21 +10,39 @@
     color: var(--secondary-clr);
     font-size: 4rem;
     text-transform: uppercase;
+
+    @include mq(576px) {
+      font-size: 7rem;
+      margin: 4rem 0;
+    }
   }
 
   .fa-envelope {
     font-size: 4rem;
+
+    @include mq(576px) {
+      font-size: 6rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &__email {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
+
+    @include mq(576px) {
+      font-size: 2.2rem;
+    }
   }
 
   .header-icons {
 		display: flex;
 		justify-content: space-between;
-		margin-top: 2rem;
+    margin-top: 2rem;
+
+    @include mq(576px) {
+      margin-top: 4rem;
+    }
 
 		.header-icons__facebook,
 		.header-icons__github,
@@ -33,6 +51,11 @@
 			font-size: 4rem;
       margin-right: 6rem;
       transition: color 0.3s ease-in-out;
+
+      @include mq(576px) {
+        font-size: 6rem;
+        margin-right: 10rem;
+      }
 
       &:hover {
         color: var(--secondary-clr);
