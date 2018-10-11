@@ -3,7 +3,7 @@ const menu = document.querySelector('.menu');
 const headerMyName = document.querySelector('.menu__header .header__my-name');
 const menuList = document.querySelector('.menu__list');
 const menuListItem = document.querySelectorAll('.menu__list .list__item');
-const header = document.querySelector('.header-aboutme-portfolio');
+const header = document.querySelector('.header-aboutme');
 
 const containerAboutMeAndPortfolio = document.querySelector(
 	'.container-aboutme-portfolio',

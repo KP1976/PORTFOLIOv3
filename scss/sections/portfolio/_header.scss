@@ -1,0 +1,26 @@
+.header-portfolio {
+    align-items: center;
+    background-color: var(--background-clr);
+    display: flex;
+    flex-direction: column;
+    // height: 100vh;
+    justify-content: center;
+    padding-top: 7rem;
+    width: 100%;
+
+    &__title {
+      color: var(--secondary-clr);
+      font-size: 4rem;
+      font-weight: bold;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    
+    &__subtitle {
+      font-size: 1.8rem;
+      font-weight: normal;
+      line-height: 1.5;
+      margin: 1rem 0 0 0;
+      text-align: center;
+    }
+}

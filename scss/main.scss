@@ -7,6 +7,7 @@
 @import 'base/global-selectors';
 
 @import 'sections/start-page/header';
+
 @import 'sections/aboutme/header';
 @import 'sections/aboutme/education';
 @import 'sections/aboutme/work';
@@ -14,6 +15,9 @@
 @import 'sections/aboutme/courses';
 @import 'sections/aboutme/languages';
 @import 'sections/aboutme/footer';
+
+@import 'sections/portfolio/header';
+@import 'sections/portfolio/green-box';
 
 @import 'menu';
 // @import 'section-header';
