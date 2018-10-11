@@ -3,7 +3,6 @@
     background-color: var(--background-clr);
     display: flex;
     flex-direction: column;
-    // height: 100vh;
     justify-content: center;
     padding-top: 7rem;
     width: 100%;
@@ -15,7 +14,7 @@
       margin: 0;
       text-transform: uppercase;
     }
-    
+
     &__subtitle {
       font-size: 1.8rem;
       font-weight: normal;

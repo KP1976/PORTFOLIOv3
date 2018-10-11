@@ -1,0 +1,47 @@
+.header-contact {
+  align-items: center;
+  background-color: var(--background-clr);
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+  width: 100%;
+
+  &__title {
+    color: var(--secondary-clr);
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  .fa-envelope {
+    font-size: 4rem;
+  }
+
+  &__email {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-icons {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 2rem;
+
+		.header-icons__facebook,
+		.header-icons__github,
+		.header-icons__linkedin {
+			color: var(--primary-clr);
+			font-size: 4rem;
+      margin-right: 6rem;
+      transition: color 0.3s ease-in-out;
+      
+      &:hover {
+        color: var(--secondary-clr);
+      }
+		}
+
+		.header-icons__linkedin {
+			margin-right: 0;
+		}
+	}
+}

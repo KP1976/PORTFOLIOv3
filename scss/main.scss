@@ -6,6 +6,7 @@
 @import 'base/body';
 @import 'base/global-selectors';
 
+@import 'menu';
 @import 'sections/start-page/header';
 
 @import 'sections/aboutme/header';
@@ -19,10 +20,4 @@
 @import 'sections/portfolio/header';
 @import 'sections/portfolio/green-box';
 
-@import 'menu';
-// @import 'section-header';
-// @import 'section-aboutme';
-// @import 'section-portfolio';
-// @import 'section-contact';
-// @import 'footer';
-// @import 'modals';
+@import 'sections/contact/header';

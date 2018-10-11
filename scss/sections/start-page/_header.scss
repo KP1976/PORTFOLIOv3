@@ -59,6 +59,11 @@
 			color: var(--primary-clr);
 			font-size: 3rem;
 			margin-right: 1.5rem;
+			transition: color 0.3s ease-in-out;
+
+			&:hover {
+				color: var(--secondary-clr);
+			}
 		}
 
 		.header-icons__linkedin {
