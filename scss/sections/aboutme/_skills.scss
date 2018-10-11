@@ -1,6 +1,10 @@
 .skills {
 	width: 100%;
 
+	@include mq(576px) {
+		width: 40rem;
+	}
+
 	.description {
 		&--green {
 			margin-bottom: 1.5rem;

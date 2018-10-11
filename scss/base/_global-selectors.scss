@@ -11,6 +11,11 @@
 		border-bottom-left-radius: var(--box-radius);
 		border-right: 0.5rem solid var(--secondary-clr);
 		padding: 1rem;
+
+		@include mq(576px) {
+			border-right: 1rem solid var(--secondary-clr);
+			padding: 1.5rem;
+		}
 	}
 
 	&--green-border-left {
@@ -19,6 +24,11 @@
 		border-bottom-right-radius: var(--box-radius);
 		border-left: 0.5rem solid var(--secondary-clr);
 		padding: 1rem;
+
+		@include mq(576px) {
+			border-left: 1rem solid var(--secondary-clr);
+			padding: 1.5rem;
+		}
 	}
 }
 
@@ -30,6 +40,10 @@
 	margin: 1rem 0;
 	width: 100%;
 
+	@include mq(576px) {
+		margin: 2rem 0;
+	}
+
 	&__text {
 		color: var(--secondary-clr);
 		font-size: 3rem;
@@ -37,6 +51,10 @@
 		position: relative;
 		text-align: center;
 		text-transform: uppercase;
+
+		@include mq(576px) {
+			font-size: 4.5rem;
+		}
 	}
 
 	i {
@@ -44,11 +62,21 @@
 		display: block;
 		font-size: 4rem;
 		grid-column: 2 / 3;
+
+		@include mq(576px) {
+			font-size: 5.5rem;
+		}
 	}
 }
 
 .date {
 	@include date(1.5rem);
+	margin: 0 0 1rem 0;
+
+	@include mq(576px) {
+		@include date(2.1rem);
+		margin: 0 0 1.5rem 0;
+	}
 }
 
 .description {
@@ -58,12 +86,25 @@
 	margin-bottom: 0;
 	text-align: center;
 
+	@include mq(576px) {
+		font-size: 2.1rem;
+		line-height: 2.6rem;
+	}
+
 	strong {
 		text-transform: uppercase;
 	}
 
 	&--green {
 		@include description--green(1.6rem);
+		line-height: 2rem;
+		margin: 0 0 1rem 0;
+
+		@include mq(576px) {
+			@include description--green(2.1rem);
+			line-height: 2.6rem;
+			margin: 0 0 1.5rem 0;
+		}
 	}
 }
 
@@ -73,6 +114,11 @@
 	line-height: 2rem;
 	margin-bottom: 0;
 	text-align: center;
+
+	@include mq(576px) {
+		font-size: 2.1rem;
+		line-height: 2.6rem;
+	}
 }
 
 .bar-wrapper {
@@ -104,4 +150,8 @@
 	margin: 0;
 	text-align: center;
 	text-transform: uppercase;
+
+	@include mq(576px) {
+		font-size: 2.1rem;
+	}
 }

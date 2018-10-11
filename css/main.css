@@ -353,20 +353,28 @@ body {
   width: 100%; }
   .gray-box--green-border-right {
     background-color: var(--gray-clr);
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem;
     width: 100%;
     border-top-left-radius: var(--box-radius);
     border-bottom-left-radius: var(--box-radius);
     border-right: 0.5rem solid var(--secondary-clr);
     padding: 1rem; }
+    @media screen and (min-width: 576px) {
+      .gray-box--green-border-right {
+        border-right: 1rem solid var(--secondary-clr);
+        padding: 1.5rem; } }
   .gray-box--green-border-left {
     background-color: var(--gray-clr);
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem;
     width: 100%;
     border-top-right-radius: var(--box-radius);
     border-bottom-right-radius: var(--box-radius);
     border-left: 0.5rem solid var(--secondary-clr);
     padding: 1rem; }
+    @media screen and (min-width: 576px) {
+      .gray-box--green-border-left {
+        border-left: 1rem solid var(--secondary-clr);
+        padding: 1.5rem; } }
 
 .aboutme-title {
   align-items: center;
@@ -375,6 +383,9 @@ body {
   justify-content: center;
   margin: 1rem 0;
   width: 100%; }
+  @media screen and (min-width: 576px) {
+    .aboutme-title {
+      margin: 2rem 0; } }
   .aboutme-title__text {
     color: var(--secondary-clr);
     font-size: 3rem;
@@ -382,18 +393,31 @@ body {
     position: relative;
     text-align: center;
     text-transform: uppercase; }
+    @media screen and (min-width: 576px) {
+      .aboutme-title__text {
+        font-size: 4.5rem; } }
   .aboutme-title i {
     color: var(--secondary-clr);
     display: block;
     font-size: 4rem;
     grid-column: 2 / 3; }
+    @media screen and (min-width: 576px) {
+      .aboutme-title i {
+        font-size: 5.5rem; } }
 
 .date {
   font-size: 1.5rem;
   font-weight: normal;
   font-style: italic;
-  margin: 0 0 1rem 0;
-  text-align: center; }
+  text-align: center;
+  margin: 0 0 1rem 0; }
+  @media screen and (min-width: 576px) {
+    .date {
+      font-size: 2.1rem;
+      font-weight: normal;
+      font-style: italic;
+      text-align: center;
+      margin: 0 0 1.5rem 0; } }
 
 .description {
   font-size: 1.6rem;
@@ -401,16 +425,29 @@ body {
   line-height: 2rem;
   margin-bottom: 0;
   text-align: center; }
+  @media screen and (min-width: 576px) {
+    .description {
+      font-size: 2.1rem;
+      line-height: 2.6rem; } }
   .description strong {
     text-transform: uppercase; }
   .description--green {
     color: var(--secondary-clr);
     font-size: 1.6rem;
     font-weight: bold;
-    line-height: 2rem;
-    margin: 0 0 1rem 0;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    line-height: 2rem;
+    margin: 0 0 1rem 0; }
+    @media screen and (min-width: 576px) {
+      .description--green {
+        color: var(--secondary-clr);
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 2.6rem;
+        margin: 0 0 1.5rem 0; } }
 
 .description2 {
   font-size: 1.6rem;
@@ -418,6 +455,10 @@ body {
   line-height: 2rem;
   margin-bottom: 0;
   text-align: center; }
+  @media screen and (min-width: 576px) {
+    .description2 {
+      font-size: 2.1rem;
+      line-height: 2.6rem; } }
 
 .bar-wrapper:not(:last-child) {
   margin-bottom: 3rem; }
@@ -442,6 +483,9 @@ body {
   margin: 0;
   text-align: center;
   text-transform: uppercase; }
+  @media screen and (min-width: 576px) {
+    .udemy-title {
+      font-size: 2.1rem; } }
 
 .hamburger-menu {
   cursor: pointer;
@@ -800,21 +844,39 @@ body {
     transform: translate(-50%, 20%); } }
 .education {
   width: 100%; }
+  @media screen and (min-width: 576px) {
+    .education {
+      width: 40rem; } }
 
 .work {
   width: 100%; }
+  @media screen and (min-width: 576px) {
+    .work {
+      width: 40rem; } }
 
 .skills {
   width: 100%; }
+  @media screen and (min-width: 576px) {
+    .skills {
+      width: 40rem; } }
   .skills .description--green {
     margin-bottom: 1.5rem; }
 
 .courses {
   width: 100%;
   margin-bottom: 3rem; }
+  @media screen and (min-width: 576px) {
+    .courses {
+      width: 40rem; } }
+  @media screen and (min-width: 576px) {
+    .courses .gray-box {
+      padding: 2rem 3.5rem; } }
 
 .languages {
   width: 100%; }
+  @media screen and (min-width: 576px) {
+    .languages {
+      width: 40rem; } }
 
 .footer {
   align-items: center;

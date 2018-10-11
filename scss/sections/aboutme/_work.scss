@@ -1,3 +1,7 @@
 .work {
 	width: 100%;
+
+	@include mq(576px) {
+		width: 40rem;
+	}
 }

@@ -15,7 +15,7 @@
 
 @mixin grayBox($widthSize, $marginSize) {
 	background-color: var(--gray-clr);
-	margin-bottom: $marginSize;
+	margin: 0 auto $marginSize;;
 	width: $widthSize;
 }
 
@@ -23,7 +23,6 @@
 	font-size: $size;
 	font-weight: normal;
 	font-style: italic;
-	margin: 0 0 1rem 0;
 	text-align: center;
 }
 
@@ -31,8 +30,6 @@
 	color: var(--secondary-clr);
 	font-size: $size;
 	font-weight: bold;
-	line-height: 2rem;
-	margin: 0 0 1rem 0;
 	text-align: center;
 	text-transform: uppercase;
 }
