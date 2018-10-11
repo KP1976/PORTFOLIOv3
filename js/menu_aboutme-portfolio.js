@@ -3,7 +3,8 @@ const menu = document.querySelector('.menu');
 const headerMyName = document.querySelector('.menu__header .header__my-name');
 const menuList = document.querySelector('.menu__list');
 const menuListItem = document.querySelectorAll('.menu__list .list__item');
-const header = document.querySelector('.header-aboutme');
+const headerAboutme = document.querySelector('.header-aboutme');
+const headerPortfolio = document.querySelector('.header-portfolio');
 
 const containerAboutMeAndPortfolio = document.querySelector(
 	'.container-aboutme-portfolio',
@@ -18,8 +19,15 @@ const toggleMenu = () => {
 		menu.classList.add('show-menu');
 		headerMyName.classList.add('show');
 		menuList.classList.add('show');
-		header.classList.add('hide-header');
 		menuListItem.forEach(menuItem => menuItem.classList.add('show'));
+
+		if (headerAboutme !== null) {
+			headerAboutme.classList.add('hide-header');
+		}
+
+		if (headerPortfolio !== null) {
+			headerPortfolio.classList.add('hide-header');
+		}
 
 		hamburgerMenu.classList.add('close-btn');
 
@@ -37,9 +45,17 @@ const toggleMenu = () => {
 
 		containerAboutMeAndPortfolio.style.display = 'flex';
 
-		setTimeout(() => {
-			header.classList.remove('hide-header');
-		}, 400);
+		if (headerAboutme !== null) {
+			setTimeout(() => {
+				headerAboutme.classList.remove('hide-header');
+			}, 400);
+		}
+
+		if (headerPortfolio !== null) {
+			setTimeout(() => {
+				headerPortfolio.classList.remove('hide-header');
+			}, 400);
+		}
 
 		menuIsVisible = true;
 	}
