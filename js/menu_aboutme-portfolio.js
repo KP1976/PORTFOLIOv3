@@ -43,8 +43,6 @@ const toggleMenu = () => {
 
 		hamburgerMenu.classList.remove('close-btn');
 
-		containerAboutMeAndPortfolio.style.display = 'flex';
-
 		if (headerAboutme !== null) {
 			setTimeout(() => {
 				headerAboutme.classList.remove('hide-header');
@@ -54,6 +52,7 @@ const toggleMenu = () => {
 		if (headerPortfolio !== null) {
 			setTimeout(() => {
 				headerPortfolio.classList.remove('hide-header');
+				containerAboutMeAndPortfolio.style.display = 'flex';
 			}, 400);
 		}
 
