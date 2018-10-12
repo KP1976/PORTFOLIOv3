@@ -30,12 +30,11 @@ function setLanguagesBallsTransform(widthOfBar) {
 window.addEventListener('scroll', _ => {
 	let widthOfBar = bar.offsetWidth;
 
-	if ((skills.offsetTop - skillsHeight / 2 - window.scrollY) < 0) {
+	if (window.scrollY + 500 >= skills.offsetTop) {
 		setSkillsBallsTransform(widthOfBar);
-
 	}
 
-	if ((languages.offsetTop - languagesHeight * 3.5 - window.scrollY) < 0) {
+	if (window.scrollY + window.innerHeight + 100 > body.offsetHeight) {
 		setLanguagesBallsTransform(widthOfBar);
 	}
 });

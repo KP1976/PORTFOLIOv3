@@ -6,6 +6,10 @@
 	justify-content: center;
 	width: calc(100% + 4rem);
 
+	@include mq(768px) {
+		width: calc(100% + 10rem);
+	}
+
 	&__text {
 		font-size: 1.6rem;
 		font-style: italic;

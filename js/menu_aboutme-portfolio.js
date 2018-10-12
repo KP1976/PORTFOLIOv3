@@ -23,16 +23,16 @@ const toggleMenu = () => {
 
 		if (headerAboutme !== null) {
 			headerAboutme.classList.add('hide-header');
+			containerAboutMeAndPortfolio.style.display = 'none';
 		}
 
 		if (headerPortfolio !== null) {
 			headerPortfolio.classList.add('hide-header');
+			containerAboutMeAndPortfolio.style.display = 'none';
 		}
 
 		hamburgerMenu.classList.add('close-btn');
-
 		body.style.backgroundColor = 'var(--background-clr)';
-		containerAboutMeAndPortfolio.style.display = 'none';
 
 		menuIsVisible = false;
 	} else {
@@ -46,6 +46,7 @@ const toggleMenu = () => {
 		if (headerAboutme !== null) {
 			setTimeout(() => {
 				headerAboutme.classList.remove('hide-header');
+				containerAboutMeAndPortfolio.style.display = 'flex';
 			}, 400);
 		}
 

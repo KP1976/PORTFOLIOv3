@@ -403,7 +403,8 @@ body {
       margin: 2rem 0; } }
   @media screen and (min-width: 768px) {
     .aboutme-title {
-      grid-column: 1 / -1; } }
+      grid-column: 1 / -1;
+      line-height: 1; } }
   .aboutme-title__text {
     color: var(--secondary-clr);
     font-size: 3rem;
@@ -510,11 +511,17 @@ body {
 
 .bar-wrapper:not(:last-child) {
   margin-bottom: 3rem; }
+  @media screen and (min-width: 768px) {
+    .bar-wrapper:not(:last-child) {
+      margin-bottom: 5rem; } }
 
 .bar {
   background-color: var(--primary-clr);
   height: 0.1rem;
   position: relative; }
+  @media screen and (min-width: 768px) {
+    .bar {
+      height: 0.3rem; } }
   .bar__ball {
     background-color: var(--primary-clr);
     border: 0.2rem solid var(--secondary-clr);
@@ -526,9 +533,21 @@ body {
     width: 1.5rem; }
     @media screen and (min-width: 576px) {
       .bar__ball {
-        top: -1rem;
         height: 2rem;
+        top: -1rem;
         width: 2rem; } }
+    @media screen and (min-width: 768px) {
+      .bar__ball {
+        border: 0.5rem solid var(--secondary-clr);
+        height: 4rem;
+        top: -2rem;
+        width: 4rem; } }
+
+.youtube {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .youtube {
+      grid-column: 1 / -1; } }
 
 .udemy-title {
   color: var(--secondary-clr);
@@ -1047,6 +1066,16 @@ body {
     @media screen and (min-width: 576px) {
       .skills .description--green {
         margin-bottom: 2rem; } }
+    @media screen and (min-width: 768px) {
+      .skills .description--green {
+        font-size: 3rem;
+        margin-bottom: 3.5rem; } }
+  @media screen and (min-width: 768px) {
+    .skills {
+      width: 100%; }
+      .skills .gray-box {
+        padding-bottom: 4rem;
+        padding-top: 3rem; } }
 
 .courses {
   width: 100%;
@@ -1054,15 +1083,46 @@ body {
   @media screen and (min-width: 576px) {
     .courses {
       width: 40rem; } }
+  @media screen and (min-width: 768px) {
+    .courses {
+      display: grid;
+      grid-column-gap: 4rem;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%; } }
   @media screen and (min-width: 576px) {
     .courses .gray-box {
       padding: 2rem 3.5rem; } }
+  @media screen and (min-width: 768px) {
+    .courses .gray-box {
+      grid-column: 2;
+      grid-row: 2 / 5; } }
+  @media screen and (min-width: 768px) {
+    .courses .gray-box--green-border-left {
+      grid-column: 1; } }
 
 .languages {
   width: 100%; }
   @media screen and (min-width: 576px) {
     .languages {
       width: 40rem; } }
+  @media screen and (min-width: 768px) {
+    .languages {
+      width: 100%; } }
+  .languages .description--green {
+    margin-bottom: 1.5rem; }
+    @media screen and (min-width: 576px) {
+      .languages .description--green {
+        margin-bottom: 2rem; } }
+    @media screen and (min-width: 768px) {
+      .languages .description--green {
+        font-size: 3rem;
+        margin-bottom: 3.5rem; } }
+  @media screen and (min-width: 768px) {
+    .languages {
+      width: 100%; }
+      .languages .gray-box {
+        padding-bottom: 4rem;
+        padding-top: 3rem; } }
 
 .footer {
   align-items: center;
@@ -1071,6 +1131,9 @@ body {
   height: 5rem;
   justify-content: center;
   width: calc(100% + 4rem); }
+  @media screen and (min-width: 768px) {
+    .footer {
+      width: calc(100% + 10rem); } }
   .footer__text {
     font-size: 1.6rem;
     font-style: italic; }
