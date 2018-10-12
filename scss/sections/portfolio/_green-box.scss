@@ -6,6 +6,7 @@
   flex-direction: column;
   height: 30rem;
   justify-content: center;
+  margin: 0;
   padding: 1.5rem;
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
   width: 28rem;
@@ -16,11 +17,22 @@
     width: 45.6rem;
   }
 
+  @include mq(768px) {
+    height: 32.5rem;
+    padding: 1.5rem;
+    width: 32.5rem;
+  }
+
   &:first-child {
     margin-top: 1rem;
 
     @include mq(576px) {
       margin-top: 3rem;
+    }
+
+    @include mq(768px) {
+      margin-top: 0;
+
     }
   }
 
@@ -51,6 +63,11 @@
       max-height: 17rem;
       max-width: 40rem;
     }
+
+    @include mq(768px) {
+      max-height: 10rem;
+      max-width: 25rem;
+    }
   }
 
   &__title {
@@ -61,6 +78,10 @@
     @include mq(576px) {
       font-size: 3.2rem;
       margin: 2rem 0 1.5rem;
+    }
+
+    @include mq(768px) {
+      font-size: 2.2rem;
     }
   }
 
@@ -73,6 +94,11 @@
     @include mq(576px) {
       font-size: 2.4rem;
       line-height: 3rem;
+    }
+
+    @include mq(768px) {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
     }
   }
 

@@ -8,6 +8,7 @@
 
 	@include mq(768px) {
 		width: calc(100% + 10rem);
+		margin: 0 -5rem;
 	}
 
 	&__text {
