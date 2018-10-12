@@ -348,6 +348,9 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 2rem 2rem 0; }
+  @media screen and (min-width: 768px) {
+    .container-aboutme-portfolio {
+      padding: 2rem 5rem 0; } }
 
 .gray-box {
   background-color: var(--gray-clr);
@@ -367,6 +370,10 @@ body {
       .gray-box--green-border-right {
         border-right: 1rem solid var(--secondary-clr);
         padding: 1.5rem; } }
+    @media screen and (min-width: 768px) {
+      .gray-box--green-border-right {
+        border-right: 0.5rem solid var(--secondary-clr);
+        padding: 1.5rem 1rem; } }
   .gray-box--green-border-left {
     background-color: var(--gray-clr);
     margin: 0 auto 3rem;
@@ -379,6 +386,10 @@ body {
       .gray-box--green-border-left {
         border-left: 1rem solid var(--secondary-clr);
         padding: 1.5rem; } }
+    @media screen and (min-width: 768px) {
+      .gray-box--green-border-left {
+        border-left: 0.5rem solid var(--secondary-clr);
+        padding: 1.5rem 1rem; } }
 
 .aboutme-title {
   align-items: center;
@@ -390,6 +401,9 @@ body {
   @media screen and (min-width: 576px) {
     .aboutme-title {
       margin: 2rem 0; } }
+  @media screen and (min-width: 768px) {
+    .aboutme-title {
+      grid-column: 1 / -1; } }
   .aboutme-title__text {
     color: var(--secondary-clr);
     font-size: 3rem;
@@ -400,6 +414,9 @@ body {
     @media screen and (min-width: 576px) {
       .aboutme-title__text {
         font-size: 4.5rem; } }
+    @media screen and (min-width: 768px) {
+      .aboutme-title__text {
+        font-size: 6rem; } }
   .aboutme-title i {
     color: var(--secondary-clr);
     display: block;
@@ -408,6 +425,9 @@ body {
     @media screen and (min-width: 576px) {
       .aboutme-title i {
         font-size: 5.5rem; } }
+    @media screen and (min-width: 768px) {
+      .aboutme-title i {
+        font-size: 7rem; } }
 
 .date {
   font-size: 1.5rem;
@@ -422,6 +442,13 @@ body {
       font-style: italic;
       text-align: center;
       margin: 0 0 1.5rem 0; } }
+  @media screen and (min-width: 768px) {
+    .date {
+      font-size: 1.7rem;
+      font-weight: normal;
+      font-style: italic;
+      text-align: center;
+      margin: 0 0 1rem 0; } }
 
 .description {
   font-size: 1.6rem;
@@ -433,6 +460,10 @@ body {
     .description {
       font-size: 2.1rem;
       line-height: 2.6rem; } }
+  @media screen and (min-width: 768px) {
+    .description {
+      font-size: 1.8rem;
+      line-height: 2.2rem; } }
   .description strong {
     text-transform: uppercase; }
   .description--green {
@@ -452,6 +483,15 @@ body {
         text-transform: uppercase;
         line-height: 2.6rem;
         margin: 0 0 1.5rem 0; } }
+    @media screen and (min-width: 768px) {
+      .description--green {
+        color: var(--secondary-clr);
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 2.2rem;
+        margin: 0 0 1rem 0; } }
 
 .description2 {
   font-size: 1.6rem;
@@ -463,6 +503,10 @@ body {
     .description2 {
       font-size: 2.1rem;
       line-height: 2.6rem; } }
+  @media screen and (min-width: 768px) {
+    .description2 {
+      font-size: 1.8rem;
+      line-height: 2.2rem; } }
 
 .bar-wrapper:not(:last-child) {
   margin-bottom: 3rem; }
@@ -974,12 +1018,24 @@ body {
   @media screen and (min-width: 576px) {
     .education {
       width: 40rem; } }
+  @media screen and (min-width: 768px) {
+    .education {
+      display: grid;
+      grid-column-gap: 4rem;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%; } }
 
 .work {
   width: 100%; }
   @media screen and (min-width: 576px) {
     .work {
       width: 40rem; } }
+  @media screen and (min-width: 768px) {
+    .work {
+      display: grid;
+      grid-column-gap: 4rem;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%; } }
 
 .skills {
   width: 100%; }

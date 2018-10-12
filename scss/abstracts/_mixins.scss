@@ -15,7 +15,7 @@
 
 @mixin grayBox($widthSize, $marginSize) {
 	background-color: var(--gray-clr);
-	margin: 0 auto $marginSize;;
+	margin: 0 auto $marginSize;
 	width: $widthSize;
 }
 

@@ -177,7 +177,7 @@
 			position: absolute;
 			transform: translateX(-50%);
 			width: 5rem;
-			
+
 			@include mq(576px) {
 				height: 5rem;
 				width: 10rem;
