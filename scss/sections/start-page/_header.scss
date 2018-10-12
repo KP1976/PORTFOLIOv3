@@ -65,11 +65,11 @@
 			padding: 2rem 0;
 			width: 100%;
 		}
-		
+
 		@include mq(768px) {
 			align-items: center;
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			padding: 1.5rem 2rem;
 		}
 
