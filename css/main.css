@@ -776,6 +776,13 @@ body {
   height: 100vh;
   justify-content: center;
   width: 100%; }
+  @media screen and (min-width: 768px) {
+    .header-aboutme {
+      align-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 5rem; } }
   .header-aboutme__title {
     color: var(--secondary-clr);
     font-size: 4rem;
@@ -785,6 +792,10 @@ body {
     @media screen and (min-width: 576px) {
       .header-aboutme__title {
         font-size: 7rem; } }
+    @media screen and (min-width: 768px) {
+      .header-aboutme__title {
+        font-size: 10rem;
+        width: 100%; } }
   .header-aboutme__subtitle {
     font-size: 1.8rem;
     font-weight: normal;
@@ -792,6 +803,10 @@ body {
     @media screen and (min-width: 576px) {
       .header-aboutme__subtitle {
         font-size: 2.4rem; } }
+    @media screen and (min-width: 768px) {
+      .header-aboutme__subtitle {
+        font-size: 3.2rem;
+        width: 100%; } }
   .header-aboutme__my-photo {
     border: 0.5rem solid var(--secondary-clr);
     border-radius: 50%;
@@ -807,6 +822,14 @@ body {
         height: 12rem;
         width: 12rem;
         margin: 4rem auto; } }
+    @media screen and (min-width: 768px) {
+      .header-aboutme__my-photo {
+        border: 0.5rem solid var(--secondary-clr);
+        border-radius: 50%;
+        display: block;
+        height: 22rem;
+        width: 22rem;
+        margin: 4rem 0; } }
   .header-aboutme__description {
     font-size: 1.6rem;
     line-height: 2.5rem;
@@ -818,6 +841,12 @@ body {
         font-size: 2.6rem;
         line-height: 3.8rem;
         width: 40rem; } }
+    @media screen and (min-width: 768px) {
+      .header-aboutme__description {
+        font-size: 2.6rem;
+        margin: 4rem 0 0 5rem;
+        text-align: left;
+        max-width: 38.5rem; } }
 
 .arrows {
   margin: 0 auto;
@@ -1097,7 +1126,7 @@ body {
     @media screen and (min-width: 576px) {
       .header-contact__title {
         font-size: 7rem;
-        margin: 4rem 0; } }
+        margin: 0 0 2rem 0; } }
   .header-contact .fa-envelope {
     font-size: 4rem; }
     @media screen and (min-width: 576px) {

@@ -6,6 +6,14 @@
 	height: 100vh;
 	justify-content: center;
 	width: 100%;
+	
+	@include mq(768px) {
+		align-content: flex-start;
+		align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 5rem;
+	}
 
 	&__title {
 		color: var(--secondary-clr);
@@ -17,6 +25,11 @@
 		@include mq(576px) {
 			font-size: 7rem;
 		}
+
+		@include mq(768px) {
+			font-size: 10rem;
+			width: 100%;
+		}
 	}
 
 	&__subtitle {
@@ -27,6 +40,11 @@
 		@include mq(576px) {
 			font-size: 2.4rem;
 		}
+
+		@include mq(768px) {
+			font-size: 3.2rem;
+			width: 100%;
+		}
 	}
 
 	&__my-photo {
@@ -36,6 +54,11 @@
 		@include mq(576px) {
 			@include myphoto(12rem);
 			margin: 4rem auto;
+		}
+
+		@include mq(768px) {
+			@include myphoto(22rem);
+			margin: 4rem 0;
 		}
 	}
 
@@ -50,6 +73,13 @@
 			font-size: 2.6rem;
 			line-height: 3.8rem;
 			width: 40rem;
+		}
+
+		@include mq(768px) {
+			font-size: 2.6rem;
+			margin: 4rem 0 0 5rem;
+			text-align: left;
+			max-width: 38.5rem;
 		}
 	}
 }
