@@ -6,12 +6,21 @@
 	justify-content: center;
 	width: 100%;
 
+	@include mq(768px) {
+		align-items: flex-start;
+	}
+
 	&__my-photo {
 		@include myphoto(10rem);
 		margin: 0 auto;
 
 		@include mq(576px) {
 			@include myphoto(12rem);
+		}
+
+		@include mq(768px) {
+			@include myphoto(15rem);
+			margin: 0;
 		}
 	}
 
@@ -22,15 +31,26 @@
 		margin: 1rem auto;
 		text-align: center;
 		width: 21rem;
-		
+
 		@include mq(576px) {
 			font-size: 7rem;
 			width: 37rem;
+
+			@include mq(768px) {
+				font-size: 5.5rem;
+				margin: 1.5rem 0 3rem;
+				text-align: left;
+				width: 100%;
+			}
 		}
 
 		&--green {
 			color: var(--secondary-clr);
 			display: block;
+
+			@include mq(768px) {
+				display: inline-block;
+			}
 		}
 	}
 
@@ -45,6 +65,13 @@
 			padding: 2rem 0;
 			width: 100%;
 		}
+		
+		@include mq(768px) {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			padding: 1.5rem 2rem;
+		}
 
 		&__profession {
 			font-size: 1.8rem;
@@ -57,6 +84,11 @@
 				margin-bottom: 2rem;
 			}
 
+			@include mq(768px) {
+				font-size: 2.2rem;
+				margin-bottom: 0;
+			}
+
 			&--green {
 				color: var(--secondary-clr);
 				font-size: 1.8rem;
@@ -67,6 +99,10 @@
 				@include mq(576px) {
 					font-size: 2.4rem;
 				}
+
+				@include mq(768px) {
+					font-size: 2.2rem;
+				}
 			}
 		}
 	}
@@ -75,6 +111,10 @@
 		display: flex;
 		justify-content: space-between;
 		margin-top: 2rem;
+
+		@include mq(768px) {
+			margin-top: 5rem;
+		}
 
 		.header-icons__facebook,
 		.header-icons__github,
@@ -86,6 +126,11 @@
 
 			@include mq(576px) {
 				margin-right: 4.3rem;
+			}
+
+			@include mq(768px) {
+				font-size: 6rem;
+				margin-right: 5rem;
 			}
 
 			&:hover {

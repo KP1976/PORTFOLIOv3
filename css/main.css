@@ -337,6 +337,9 @@ body {
   height: 100vh;
   justify-content: center;
   padding: 2rem; }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 5rem; } }
 
 .container-aboutme-portfolio {
   align-items: center;
@@ -528,7 +531,8 @@ body {
         background-color: var(--primary-clr);
         border-radius: 0.5rem;
         height: 1rem;
-        width: 100%; } }
+        width: 100%;
+        top: 2rem; } }
     .hamburger-menu__bar::before, .hamburger-menu__bar::after {
       background-color: var(--primary-clr);
       border-radius: 0.5rem;
@@ -618,6 +622,9 @@ body {
   height: 100vh;
   justify-content: center;
   width: 100%; }
+  @media screen and (min-width: 768px) {
+    .header {
+      align-items: flex-start; } }
   .header__my-photo {
     border: 0.5rem solid var(--secondary-clr);
     border-radius: 50%;
@@ -632,6 +639,14 @@ body {
         display: block;
         height: 12rem;
         width: 12rem; } }
+    @media screen and (min-width: 768px) {
+      .header__my-photo {
+        border: 0.5rem solid var(--secondary-clr);
+        border-radius: 50%;
+        display: block;
+        height: 15rem;
+        width: 15rem;
+        margin: 0; } }
   .header__my-name {
     color: var(--primary-clr);
     font-size: 4rem;
@@ -643,9 +658,19 @@ body {
       .header__my-name {
         font-size: 7rem;
         width: 37rem; } }
+  @media screen and (min-width: 576px) and (min-width: 768px) {
+    .header__my-name {
+      font-size: 5.5rem;
+      margin: 1.5rem 0 3rem;
+      text-align: left;
+      width: 100%; } }
+
     .header__my-name--green {
       color: var(--secondary-clr);
       display: block; }
+      @media screen and (min-width: 768px) {
+        .header__my-name--green {
+          display: inline-block; } }
   .header .professions {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: var(--box-radius);
@@ -656,6 +681,12 @@ body {
       .header .professions {
         padding: 2rem 0;
         width: 100%; } }
+    @media screen and (min-width: 768px) {
+      .header .professions {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 2rem; } }
     .header .professions__profession {
       font-size: 1.8rem;
       font-weight: normal;
@@ -665,6 +696,10 @@ body {
         .header .professions__profession {
           font-size: 2.4rem;
           margin-bottom: 2rem; } }
+      @media screen and (min-width: 768px) {
+        .header .professions__profession {
+          font-size: 2.2rem;
+          margin-bottom: 0; } }
       .header .professions__profession--green {
         color: var(--secondary-clr);
         font-size: 1.8rem;
@@ -674,10 +709,16 @@ body {
         @media screen and (min-width: 576px) {
           .header .professions__profession--green {
             font-size: 2.4rem; } }
+        @media screen and (min-width: 768px) {
+          .header .professions__profession--green {
+            font-size: 2.2rem; } }
   .header .header-icons {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem; }
+    @media screen and (min-width: 768px) {
+      .header .header-icons {
+        margin-top: 5rem; } }
     .header .header-icons .header-icons__facebook,
     .header .header-icons .header-icons__github,
     .header .header-icons .header-icons__linkedin {
@@ -690,6 +731,12 @@ body {
         .header .header-icons .header-icons__github,
         .header .header-icons .header-icons__linkedin {
           margin-right: 4.3rem; } }
+      @media screen and (min-width: 768px) {
+        .header .header-icons .header-icons__facebook,
+        .header .header-icons .header-icons__github,
+        .header .header-icons .header-icons__linkedin {
+          font-size: 6rem;
+          margin-right: 5rem; } }
       .header .header-icons .header-icons__facebook:hover,
       .header .header-icons .header-icons__github:hover,
       .header .header-icons .header-icons__linkedin:hover {

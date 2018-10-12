@@ -20,6 +20,10 @@ body {
 	height: 100vh;
 	justify-content: center;
 	padding: 2rem;
+
+	@include mq(768px) {
+		padding: 5rem;
+	}
 }
 
 .container-aboutme-portfolio {

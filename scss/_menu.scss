@@ -36,6 +36,7 @@
 
 		@include mq(768px) {
 			@include hamburger-bar(1rem, 100%);
+			top: 2rem;
 		}
 
 		&::before,
