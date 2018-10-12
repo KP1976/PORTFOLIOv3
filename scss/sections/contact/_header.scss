@@ -15,6 +15,11 @@
       font-size: 7rem;
       margin: 0 0 2rem 0;
     }
+
+    @include mq(768px) {
+      font-size: 10rem;
+      margin: 0 0 4rem 0;
+    }
   }
 
   .fa-envelope {
@@ -24,6 +29,10 @@
       font-size: 6rem;
       margin-bottom: 2rem;
     }
+
+    @include mq(768px) {
+      font-size: 8rem;
+    }
   }
 
   &__email {
@@ -32,6 +41,10 @@
 
     @include mq(576px) {
       font-size: 2.2rem;
+    }
+
+    @include mq(768px) {
+      font-size: 3rem;
     }
   }
 
@@ -55,6 +68,10 @@
       @include mq(576px) {
         font-size: 6rem;
         margin-right: 10rem;
+      }
+
+      @include mq(768px) {
+        font-size: 8rem;
       }
 
       &:hover {

@@ -1283,18 +1283,28 @@ body {
       .header-contact__title {
         font-size: 7rem;
         margin: 0 0 2rem 0; } }
+    @media screen and (min-width: 768px) {
+      .header-contact__title {
+        font-size: 10rem;
+        margin: 0 0 4rem 0; } }
   .header-contact .fa-envelope {
     font-size: 4rem; }
     @media screen and (min-width: 576px) {
       .header-contact .fa-envelope {
         font-size: 6rem;
         margin-bottom: 2rem; } }
+    @media screen and (min-width: 768px) {
+      .header-contact .fa-envelope {
+        font-size: 8rem; } }
   .header-contact__email {
     font-size: 1.8rem;
     margin-bottom: 0.5rem; }
     @media screen and (min-width: 576px) {
       .header-contact__email {
         font-size: 2.2rem; } }
+    @media screen and (min-width: 768px) {
+      .header-contact__email {
+        font-size: 3rem; } }
   .header-contact .header-icons {
     display: flex;
     justify-content: space-between;
@@ -1315,6 +1325,11 @@ body {
         .header-contact .header-icons .header-icons__linkedin {
           font-size: 6rem;
           margin-right: 10rem; } }
+      @media screen and (min-width: 768px) {
+        .header-contact .header-icons .header-icons__facebook,
+        .header-contact .header-icons .header-icons__github,
+        .header-contact .header-icons .header-icons__linkedin {
+          font-size: 8rem; } }
       .header-contact .header-icons .header-icons__facebook:hover,
       .header-contact .header-icons .header-icons__github:hover,
       .header-contact .header-icons .header-icons__linkedin:hover {
