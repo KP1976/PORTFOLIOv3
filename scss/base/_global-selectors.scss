@@ -21,6 +21,12 @@
 			border-right: 0.5rem solid var(--secondary-clr);
 			padding: 1.5rem 1rem;
 		}
+
+		@include mq(992px) {
+			border-right: 1rem solid var(--secondary-clr);
+			padding: 1.5rem 1rem;
+			max-width: 45rem;
+		}
 	}
 
 	&--green-border-left {
@@ -38,6 +44,12 @@
 		@include mq(768px) {
 			border-left: 0.5rem solid var(--secondary-clr);
 			padding: 1.5rem 1rem;
+		}
+
+		@include mq(992px) {
+			border-left: 1rem solid var(--secondary-clr);
+			padding: 1.5rem 1rem;
+			max-width: 45rem;
 		}
 	}
 }
@@ -105,6 +117,11 @@
 		@include date(1.7rem);
 		margin: 0 0 1rem 0;
 	}
+
+	@include mq(992px) {
+		@include date(2.1rem);
+		margin: 0 0 1.5rem 0;
+	}
 }
 
 .description {
@@ -122,6 +139,11 @@
 	@include mq(768px) {
 		font-size: 1.8rem;
 		line-height: 2.2rem;
+	}
+
+	@include mq(992px) {
+		font-size: 2.1rem;
+		line-height: 2.6rem;
 	}
 
 	strong {
@@ -144,6 +166,12 @@
 			line-height: 2.2rem;
 			margin: 0 0 1rem 0;
 		}
+
+		@include mq(992px) {
+			@include description--green(2.1rem);
+			line-height: 2.6rem;
+			margin: 0 0 1.5rem 0;
+		}
 	}
 }
 
@@ -162,6 +190,11 @@
 	@include mq(768px) {
 		font-size: 1.8rem;
 		line-height: 2.2rem;
+	}
+
+	@include mq(992px) {
+		font-size: 2.1rem;
+		line-height: 2.6rem;
 	}
 }
 

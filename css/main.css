@@ -377,6 +377,11 @@ body {
       .gray-box--green-border-right {
         border-right: 0.5rem solid var(--secondary-clr);
         padding: 1.5rem 1rem; } }
+    @media screen and (min-width: 992px) {
+      .gray-box--green-border-right {
+        border-right: 1rem solid var(--secondary-clr);
+        padding: 1.5rem 1rem;
+        max-width: 45rem; } }
   .gray-box--green-border-left {
     background-color: var(--gray-clr);
     margin: 0 auto 3rem;
@@ -393,6 +398,11 @@ body {
       .gray-box--green-border-left {
         border-left: 0.5rem solid var(--secondary-clr);
         padding: 1.5rem 1rem; } }
+    @media screen and (min-width: 992px) {
+      .gray-box--green-border-left {
+        border-left: 1rem solid var(--secondary-clr);
+        padding: 1.5rem 1rem;
+        max-width: 45rem; } }
 
 .aboutme-title {
   align-items: center;
@@ -453,6 +463,13 @@ body {
       font-style: italic;
       text-align: center;
       margin: 0 0 1rem 0; } }
+  @media screen and (min-width: 992px) {
+    .date {
+      font-size: 2.1rem;
+      font-weight: normal;
+      font-style: italic;
+      text-align: center;
+      margin: 0 0 1.5rem 0; } }
 
 .description {
   font-size: 1.6rem;
@@ -468,6 +485,10 @@ body {
     .description {
       font-size: 1.8rem;
       line-height: 2.2rem; } }
+  @media screen and (min-width: 992px) {
+    .description {
+      font-size: 2.1rem;
+      line-height: 2.6rem; } }
   .description strong {
     text-transform: uppercase; }
   .description--green {
@@ -496,6 +517,15 @@ body {
         text-transform: uppercase;
         line-height: 2.2rem;
         margin: 0 0 1rem 0; } }
+    @media screen and (min-width: 992px) {
+      .description--green {
+        color: var(--secondary-clr);
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 2.6rem;
+        margin: 0 0 1.5rem 0; } }
 
 .description2 {
   font-size: 1.6rem;
@@ -511,6 +541,10 @@ body {
     .description2 {
       font-size: 1.8rem;
       line-height: 2.2rem; } }
+  @media screen and (min-width: 992px) {
+    .description2 {
+      font-size: 2.1rem;
+      line-height: 2.6rem; } }
 
 .bar-wrapper:not(:last-child) {
   margin-bottom: 3rem; }
