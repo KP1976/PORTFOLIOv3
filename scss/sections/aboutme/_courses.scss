@@ -13,6 +13,11 @@
 		width: 100%;
 	}
 
+	@include mq(992px) {
+		margin: 0 auto 3rem;
+		max-width: 100rem;
+	}
+
 	.gray-box {
 		@include mq(576px) {
 			padding: 2rem 3.5rem;
@@ -23,7 +28,7 @@
 			grid-row: 2 / 5;
 		}
 
-		&--green-border-left { 
+		&--green-border-left {
 			@include mq(768px) {
 				grid-column: 1;
 			}

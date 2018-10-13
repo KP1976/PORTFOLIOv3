@@ -380,8 +380,7 @@ body {
     @media screen and (min-width: 992px) {
       .gray-box--green-border-right {
         border-right: 1rem solid var(--secondary-clr);
-        padding: 1.5rem 1rem;
-        max-width: 45rem; } }
+        padding: 1.5rem 1rem; } }
   .gray-box--green-border-left {
     background-color: var(--gray-clr);
     margin: 0 auto 3rem;
@@ -401,8 +400,7 @@ body {
     @media screen and (min-width: 992px) {
       .gray-box--green-border-left {
         border-left: 1rem solid var(--secondary-clr);
-        padding: 1.5rem 1rem;
-        max-width: 45rem; } }
+        padding: 1.5rem 1rem; } }
 
 .aboutme-title {
   align-items: center;
@@ -982,6 +980,10 @@ body {
       grid-column-gap: 4rem;
       grid-template-columns: repeat(2, 1fr);
       width: 100%; } }
+  @media screen and (min-width: 992px) {
+    .education {
+      margin: 0 auto;
+      max-width: 100rem; } }
 
 .work {
   width: 100%; }
@@ -994,6 +996,10 @@ body {
       grid-column-gap: 4rem;
       grid-template-columns: repeat(2, 1fr);
       width: 100%; } }
+  @media screen and (min-width: 992px) {
+    .work {
+      margin: 0 auto;
+      max-width: 100rem; } }
 
 .skills {
   width: 100%; }
@@ -1015,6 +1021,10 @@ body {
       .skills .gray-box {
         padding-bottom: 4rem;
         padding-top: 3rem; } }
+  @media screen and (min-width: 992px) {
+    .skills {
+      margin: 0 auto;
+      max-width: 100rem; } }
 
 .courses {
   width: 100%;
@@ -1028,6 +1038,10 @@ body {
       grid-column-gap: 4rem;
       grid-template-columns: repeat(2, 1fr);
       width: 100%; } }
+  @media screen and (min-width: 992px) {
+    .courses {
+      margin: 0 auto 3rem;
+      max-width: 100rem; } }
   @media screen and (min-width: 576px) {
     .courses .gray-box {
       padding: 2rem 3.5rem; } }
@@ -1047,6 +1061,10 @@ body {
   @media screen and (min-width: 768px) {
     .languages {
       width: 100%; } }
+  @media screen and (min-width: 992px) {
+    .languages {
+      margin: 0 auto;
+      max-width: 100rem; } }
   .languages .description--green {
     margin-bottom: 1.5rem; }
     @media screen and (min-width: 576px) {

@@ -25,7 +25,6 @@
 		@include mq(992px) {
 			border-right: 1rem solid var(--secondary-clr);
 			padding: 1.5rem 1rem;
-			max-width: 45rem;
 		}
 	}
 
@@ -49,7 +48,6 @@
 		@include mq(992px) {
 			border-left: 1rem solid var(--secondary-clr);
 			padding: 1.5rem 1rem;
-			max-width: 45rem;
 		}
 	}
 }

@@ -11,4 +11,9 @@
 		grid-template-columns: repeat(2, 1fr);
 		width: 100%;
 	}
+
+	@include mq(992px) {
+		margin: 0 auto;
+		max-width: 100rem;
+	}
 }

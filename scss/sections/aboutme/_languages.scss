@@ -9,6 +9,11 @@
 		width: 100%;
 	}
 
+	@include mq(992px) {
+		margin: 0 auto;
+		max-width: 100rem;
+	}
+
 	.description {
 		&--green {
 			margin-bottom: 1.5rem;
