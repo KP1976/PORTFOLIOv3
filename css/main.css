@@ -774,6 +774,9 @@ body {
         display: flex;
         justify-content: space-around;
         padding: 1.5rem 2rem; } }
+    @media screen and (min-width: 992px) {
+      .header .professions {
+        max-width: 67rem; } }
     .header .professions__profession {
       font-size: 1.8rem;
       font-weight: normal;

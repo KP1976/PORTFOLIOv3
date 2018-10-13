@@ -33,7 +33,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	padding: 2rem 2rem 0;
-	
+
 	@include mq(768px) {
 		flex-direction: row;
 		flex-wrap: wrap;

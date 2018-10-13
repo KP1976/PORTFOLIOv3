@@ -73,6 +73,10 @@
 			padding: 1.5rem 2rem;
 		}
 
+		@include mq(992px) {
+			max-width: 67rem;
+		}
+
 		&__profession {
 			font-size: 1.8rem;
 			font-weight: normal;
