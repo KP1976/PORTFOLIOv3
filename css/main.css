@@ -847,17 +847,16 @@ body {
   width: 100%; }
   @media screen and (min-width: 768px) {
     .header-aboutme {
-      align-content: flex-start;
-      align-items: flex-start;
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding: 5rem; } }
-  @media screen and (min-width: 992px) {
-    .header-aboutme {
+      align-content: center;
+      align-items: start;
       display: grid;
       grid-template-columns: min-content 1fr;
       grid-template-rows: repeat(3, min-content);
-      grid-gap: 2rem 5rem; } }
+      grid-gap: 2rem 5rem;
+      padding: 5rem; } }
+  @media screen and (min-width: 992px) {
+    .header-aboutme {
+      align-content: start; } }
   .header-aboutme__title {
     color: var(--secondary-clr);
     font-size: 4rem;
@@ -870,11 +869,9 @@ body {
     @media screen and (min-width: 768px) {
       .header-aboutme__title {
         font-size: 10rem;
-        width: 100%; } }
-    @media screen and (min-width: 992px) {
-      .header-aboutme__title {
         grid-column: 1 / -1;
-        grid-row: 1; } }
+        grid-row: 1;
+        width: 100%; } }
   .header-aboutme__subtitle {
     font-size: 1.8rem;
     font-weight: normal;
@@ -885,9 +882,7 @@ body {
     @media screen and (min-width: 768px) {
       .header-aboutme__subtitle {
         font-size: 3.2rem;
-        width: 100%; } }
-    @media screen and (min-width: 992px) {
-      .header-aboutme__subtitle {
+        width: 100%;
         grid-column: 1 / -1;
         grid-row: 2;
         margin: 0; } }
@@ -913,9 +908,6 @@ body {
         display: block;
         height: 22rem;
         width: 22rem;
-        margin: 4rem 0; } }
-    @media screen and (min-width: 992px) {
-      .header-aboutme__my-photo {
         grid-column: 1 / 2;
         grid-row: 3;
         margin: 2rem 0 0 0; } }
@@ -933,16 +925,12 @@ body {
     @media screen and (min-width: 768px) {
       .header-aboutme__description {
         font-size: 2.6rem;
-        margin: 4rem 0 0 5rem;
-        text-align: left;
-        max-width: 38.5rem; } }
-    @media screen and (min-width: 992px) {
-      .header-aboutme__description {
         grid-column: 2 / 3;
         grid-row: 3;
         margin: 2rem 0 0 0;
         max-width: 100%;
-        width: 100%; } }
+        width: 100%;
+        text-align: left; } }
 
 @keyframes arrowMove {
   0% {

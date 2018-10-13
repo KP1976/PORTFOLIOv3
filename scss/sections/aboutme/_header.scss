@@ -8,18 +8,17 @@
 	width: 100%;
 
 	@include mq(768px) {
-		align-content: flex-start;
-		align-items: flex-start;
-		flex-direction: row;
-		flex-wrap: wrap;
-		padding: 5rem;
-	}
-
-	@include mq(992px) {
+		align-content: center;
+		align-items: start;
 		display: grid;
 		grid-template-columns: min-content 1fr;
 		grid-template-rows: repeat(3, min-content);
 		grid-gap: 2rem 5rem;
+		padding: 5rem;
+	}
+
+	@include mq(992px) {
+		align-content: start;
 	}
 
 	&__title {
@@ -35,12 +34,9 @@
 
 		@include mq(768px) {
 			font-size: 10rem;
-			width: 100%;
-		}
-
-		@include mq(992px) {
 			grid-column: 1 / -1;
 			grid-row: 1;
+			width: 100%;
 		}
 	}
 
@@ -56,9 +52,6 @@
 		@include mq(768px) {
 			font-size: 3.2rem;
 			width: 100%;
-		}
-
-		@include mq(992px) {
 			grid-column: 1 / -1;
 			grid-row: 2;
 			margin: 0;
@@ -76,10 +69,6 @@
 
 		@include mq(768px) {
 			@include myphoto(22rem);
-			margin: 4rem 0;
-		}
-
-		@include mq(992px) {
 			grid-column: 1 / 2;
 			grid-row: 3;
 			margin: 2rem 0 0 0;
@@ -101,17 +90,12 @@
 
 		@include mq(768px) {
 			font-size: 2.6rem;
-			margin: 4rem 0 0 5rem;
-			text-align: left;
-			max-width: 38.5rem;
-		}
-
-		@include mq(992px) {
 			grid-column: 2 / 3;
 			grid-row: 3;
 			margin: 2rem 0 0 0;
 			max-width: 100%;
 			width: 100%;
+			text-align: left;
 		}
 	}
 }
