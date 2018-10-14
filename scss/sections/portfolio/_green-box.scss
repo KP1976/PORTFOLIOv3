@@ -32,7 +32,6 @@
 
     @include mq(768px) {
       margin-top: 0;
-
     }
   }
 
@@ -41,6 +40,10 @@
 
     @include mq(576px) {
       margin-bottom: 5rem;
+    }
+
+    @include mq(768px) {
+      margin-bottom: 0;
     }
   }
 

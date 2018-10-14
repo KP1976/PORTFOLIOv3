@@ -6,8 +6,11 @@ const menuListItem = document.querySelectorAll('.menu__list .list__item');
 const headerAboutme = document.querySelector('.header-aboutme');
 const headerPortfolio = document.querySelector('.header-portfolio');
 
-const containerAboutMeAndPortfolio = document.querySelector(
-	'.container-aboutme-portfolio',
+const containerAboutMe = document.querySelector(
+	'.aboutme-container',
+);
+const containerPortfolio = document.querySelector(
+	'.portfolio-container',
 );
 
 const body = document.querySelector('body');
@@ -23,12 +26,12 @@ const toggleMenu = () => {
 
 		if (headerAboutme !== null) {
 			headerAboutme.classList.add('hide-header');
-			containerAboutMeAndPortfolio.style.display = 'none';
+			containerAboutMe.style.display = 'none';
 		}
 
 		if (headerPortfolio !== null) {
 			headerPortfolio.classList.add('hide-header');
-			containerAboutMeAndPortfolio.style.display = 'none';
+			containerPortfolio.style.display = 'none';
 		}
 
 		hamburgerMenu.classList.add('close-btn');
@@ -46,14 +49,14 @@ const toggleMenu = () => {
 		if (headerAboutme !== null) {
 			setTimeout(() => {
 				headerAboutme.classList.remove('hide-header');
-				containerAboutMeAndPortfolio.style.display = 'flex';
+				containerAboutMe.style.display = 'flex';
 			}, 400);
 		}
 
 		if (headerPortfolio !== null) {
 			setTimeout(() => {
 				headerPortfolio.classList.remove('hide-header');
-				containerAboutMeAndPortfolio.style.display = 'flex';
+				containerPortfolio.style.display = 'flex';
 			}, 400);
 		}
 

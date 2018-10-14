@@ -10,8 +10,8 @@ const languagesHeight = languages.offsetHeight;
 function setSkillsBallsTransform(widthOfBar) {
 	balls[0].style.transform = `translateX(${widthOfBar - widthOfBar / 10 - ballWidth / 2}px)`;
 	balls[1].style.transform = `translateX(${widthOfBar - widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[2].style.transform = `translateX(${widthOfBar - 5 * widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[3].style.transform = `translateX(${widthOfBar - 5 * widthOfBar / 10 - ballWidth / 2}px)`;
+	balls[2].style.transform = `translateX(${widthOfBar - 3.5 * widthOfBar / 10 - ballWidth / 2}px)`;
+	balls[3].style.transform = `translateX(${widthOfBar - 3.5 * widthOfBar / 10 - ballWidth / 2}px)`;
 	balls[4].style.transform = `translateX(${widthOfBar - 8.5 * widthOfBar / 10 - ballWidth / 2}px)`;
 	balls[5].style.transform = `translateX(${widthOfBar - 2.5 * widthOfBar / 10 - ballWidth / 2}px)`;
 	balls[6].style.transform = `translateX(${widthOfBar - 2.5 * widthOfBar / 10 - ballWidth / 2}px)`;
