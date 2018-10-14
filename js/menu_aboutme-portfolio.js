@@ -49,14 +49,14 @@ const toggleMenu = () => {
 		if (headerAboutme !== null) {
 			setTimeout(() => {
 				headerAboutme.classList.remove('hide-header');
-				containerAboutMe.style.display = 'flex';
+				containerAboutMe.style.display = 'grid';
 			}, 400);
 		}
 
 		if (headerPortfolio !== null) {
 			setTimeout(() => {
 				headerPortfolio.classList.remove('hide-header');
-				containerPortfolio.style.display = 'flex';
+				containerPortfolio.style.display = 'grid';
 			}, 400);
 		}
 

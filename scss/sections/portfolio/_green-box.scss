@@ -23,6 +23,12 @@
     width: 32.5rem;
   }
 
+  @include mq(992px) {
+    height: 42rem;
+    padding: 2rem;
+    width: 42rem;
+  }
+
   &:first-child {
     margin-top: 1rem;
 
@@ -71,6 +77,11 @@
       max-height: 10rem;
       max-width: 25rem;
     }
+
+    @include mq(992px) {
+      max-height: 14.5rem;
+      max-width: 36.5rem;
+    }
   }
 
   &__title {
@@ -85,6 +96,10 @@
 
     @include mq(768px) {
       font-size: 2.2rem;
+    }
+
+    @include mq(992px) {
+      font-size: 3rem;
     }
   }
 
@@ -102,6 +117,11 @@
     @include mq(768px) {
       font-size: 1.8rem;
       line-height: 2.4rem;
+    }
+
+    @include mq(992px) {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
     }
   }
 

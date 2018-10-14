@@ -15,4 +15,9 @@
     justify-content: space-evenly;
     padding: 2rem 5rem 3rem;
 	}
+
+	@include mq(992px) {
+    grid-column-gap: 4%;
+    grid-template-columns: repeat(2, 42rem);
+	}
 }
