@@ -94,8 +94,10 @@
 			transition: transform 0.3s ease-in-out;
 
 			@include mq(768px) {
+				margin: 0 auto;
 				transform: translateX(-100%);
 				text-align: center;
+				width: 80%;
 			}
 
 			&.show {

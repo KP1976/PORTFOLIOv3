@@ -22,6 +22,10 @@
 			@include myphoto(15rem);
 			margin: 0;
 		}
+
+		@include mq(1200px) {
+			@include myphoto(20rem);
+		}
 	}
 
 	&__my-name {
@@ -36,12 +40,17 @@
 			font-size: 7rem;
 			width: 37rem;
 
-			@include mq(768px) {
-				font-size: 5.5rem;
-				margin: 1.5rem 0 3rem;
-				text-align: left;
-				width: 100%;
-			}
+		}
+
+		@include mq(768px) {
+			font-size: 5.5rem;
+			margin: 1.5rem 0 3rem;
+			text-align: left;
+			width: 100%;
+		}
+
+		@include mq(1200px) {
+			font-size: 8rem;
 		}
 
 		&--green {
@@ -77,6 +86,11 @@
 			max-width: 67rem;
 		}
 
+		@include mq(1200px) {
+			padding: 2rem 2rem;
+			max-width: 100%;
+		}
+
 		&__profession {
 			font-size: 1.8rem;
 			font-weight: normal;
@@ -93,6 +107,10 @@
 				margin-bottom: 0;
 			}
 
+			@include mq(1200px) {
+				font-size: 2.8rem;
+			}
+
 			&--green {
 				color: var(--secondary-clr);
 				font-size: 1.8rem;
@@ -106,6 +124,10 @@
 
 				@include mq(768px) {
 					font-size: 2.2rem;
+				}
+
+				@include mq(1200px) {
+					font-size: 2.8rem;
 				}
 			}
 		}
