@@ -42,7 +42,7 @@ body {
 		background-color: transparent;
 		margin: 0 auto;
 		max-width: 120rem;
-		padding: 5rem 19rem;
+		padding: 5rem 0;
 	}
 }
 
@@ -53,6 +53,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	padding: 2rem 2rem 0;
+	position: relative;
 
 	@include mq(768px) {
 		flex-direction: row;

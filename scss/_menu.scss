@@ -80,6 +80,10 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	@include mq(1200px) {
+		width: 120rem;
+	}
+
 	&__header {
 		align-items: center;
 		display: flex;
@@ -126,8 +130,16 @@
 			height: 100vh;
 		}
 
+		@include mq(1200px) {
+			transform: translate(100%, 0);
+		}
+
 		&.show {
 			transform: translateY(0);
+
+			@include mq(1200px) {
+				transform: translate(0, 0);
+			}
 		}
 
 		.list__item {
@@ -141,8 +153,16 @@
 				transform: translateX(100%);
 			}
 
+			@include mq(1200px) {
+				transform: translate(0, -1500%);
+			}
+
 			&.show {
 				transform: translateX(0);
+
+				@include mq(1200px) {
+					transform: translate(0, 0);
+				}
 			}
 
 			a {
