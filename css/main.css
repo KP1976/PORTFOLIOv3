@@ -330,15 +330,21 @@ body {
   overflow-x: hidden;
   padding: 0; }
   @media screen and (min-width: 1200px) {
-    body::after {
+    body {
       background-color: rgba(51, 51, 51, 0.95);
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: -1; } }
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%; }
+      body::after {
+        background-color: rgba(51, 51, 51, 0.95);
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1; } }
 
 .container {
   align-items: center;
@@ -371,6 +377,9 @@ body {
       flex-wrap: wrap;
       justify-content: space-between;
       padding: 2rem 5rem 0; } }
+  @media screen and (min-width: 1200px) {
+    .aboutme-container {
+      width: 120rem; } }
 
 .gray-box {
   background-color: var(--gray-clr);
@@ -611,20 +620,21 @@ body {
     .udemy-title {
       font-size: 2.1rem; } }
 
+.background {
+  align-items: center;
+  background-color: var(--background_dark-clr);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%; }
+
 .footer {
   align-items: center;
   background-color: var(--background_dark-clr);
   display: flex;
   height: 5rem;
   justify-content: center;
-  width: calc(100% + 4rem); }
-  @media screen and (min-width: 768px) {
-    .footer {
-      bottom: -5rem;
-      left: 0;
-      margin: 0 -5rem;
-      position: absolute;
-      width: calc(100% + 10rem); } }
+  width: 100%; }
   .footer__text {
     font-size: 1.6rem;
     font-style: italic; }
@@ -757,7 +767,7 @@ body {
           transform: translateX(100%); } }
       @media screen and (min-width: 1200px) {
         .menu__list .list__item {
-          transform: translate(0, -1500%); } }
+          transform: translate(0, -100rem); } }
       .menu__list .list__item.show {
         transform: translateX(0); }
         @media screen and (min-width: 1200px) {
@@ -957,9 +967,11 @@ body {
       grid-template-rows: repeat(3, min-content);
       grid-gap: 2rem 5rem;
       padding: 5rem; } }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1200px) {
     .header-aboutme {
-      align-content: start; } }
+      align-content: center;
+      padding: 5rem 13.5rem;
+      width: 120rem; } }
   .header-aboutme__title {
     color: var(--secondary-clr);
     font-size: 4rem;

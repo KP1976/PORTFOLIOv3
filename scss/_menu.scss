@@ -154,7 +154,7 @@
 			}
 
 			@include mq(1200px) {
-				transform: translate(0, -1500%);
+				transform: translate(0, -100rem);
 			}
 
 			&.show {

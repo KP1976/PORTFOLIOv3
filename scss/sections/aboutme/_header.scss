@@ -16,9 +16,11 @@
 		grid-gap: 2rem 5rem;
 		padding: 5rem;
 	}
-
-	@include mq(992px) {
-		align-content: start;
+	
+	@include mq(1200px) {
+		align-content: center;
+		padding: 5rem 13.5rem;
+		width: 120rem;
 	}
 
 	&__title {

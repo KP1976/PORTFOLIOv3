@@ -13,14 +13,22 @@ body {
 	padding: 0;
 
 	@include mq(1200px) {
+		background-color: rgba(51, 51, 51, 0.95);
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+
 		&::after {
 			background-color: rgba(51, 51, 51, 0.95);
+			bottom: 0;
 			content: '';
-			height: 100%;
+			// height: 100%;
 			left: 0;
 			position: absolute;
+			right: 0;
 			top: 0;
-			width: 100%;
+			// width: 100%;
 			z-index: -1;
 		}
 	}
@@ -60,5 +68,9 @@ body {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		padding: 2rem 5rem 0;
+	}
+
+	@include mq(1200px) {
+		width: 120rem;
 	}
 }
