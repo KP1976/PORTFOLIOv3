@@ -14,6 +14,7 @@ const containerPortfolio = document.querySelector(
 );
 
 const body = document.querySelector('body');
+const footer = document.querySelector('.footer');
 
 let menuIsVisible = true;
 
@@ -27,11 +28,13 @@ const toggleMenu = () => {
 		if (headerAboutme !== null) {
 			headerAboutme.classList.add('hide-header');
 			containerAboutMe.style.display = 'none';
+			footer.style.display = 'none';
 		}
 
 		if (headerPortfolio !== null) {
 			headerPortfolio.classList.add('hide-header');
 			containerPortfolio.style.display = 'none';
+			footer.style.display = 'none';
 		}
 
 		hamburgerMenu.classList.add('close-btn');
@@ -50,6 +53,7 @@ const toggleMenu = () => {
 			setTimeout(() => {
 				headerAboutme.classList.remove('hide-header');
 				containerAboutMe.style.display = 'grid';
+				footer.style.display = 'flex';
 			}, 400);
 		}
 
@@ -57,6 +61,7 @@ const toggleMenu = () => {
 			setTimeout(() => {
 				headerPortfolio.classList.remove('hide-header');
 				containerPortfolio.style.display = 'grid';
+				footer.style.display = 'flex';
 			}, 400);
 		}
 

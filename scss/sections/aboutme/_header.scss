@@ -16,7 +16,7 @@
 		grid-gap: 2rem 5rem;
 		padding: 5rem;
 	}
-	
+
 	@include mq(1200px) {
 		align-content: center;
 		padding: 5rem 13.5rem;
@@ -83,6 +83,7 @@
 		margin: 0;
 		text-align: center;
 		width: 24rem;
+		z-index: 1;
 
 		@include mq(576px) {
 			font-size: 2.6rem;

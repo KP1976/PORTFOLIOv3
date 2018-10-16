@@ -2,10 +2,7 @@
 const balls = document.querySelectorAll('.bar__ball');
 const bar = document.querySelector('.bar');
 const skills = document.querySelector('.skills');
-const languages = document.querySelector('.languages');
 const ballWidth = 15;
-const skillsHeight = skills.offsetHeight;
-const languagesHeight = languages.offsetHeight;
 
 function setSkillsBallsTransform(widthOfBar) {
 	balls[0].style.transform = `translateX(${widthOfBar - widthOfBar / 10 - ballWidth / 2}px)`;
@@ -30,7 +27,7 @@ function setLanguagesBallsTransform(widthOfBar) {
 window.addEventListener('scroll', _ => {
 	let widthOfBar = bar.offsetWidth;
 
-	if (window.scrollY + 500 >= skills.offsetTop) {
+	if (window.scrollY >= skills.offsetTop + 500) {
 		setSkillsBallsTransform(widthOfBar);
 	}
 

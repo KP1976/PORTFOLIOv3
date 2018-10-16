@@ -17,6 +17,12 @@
       padding: 7rem 5rem 0;
     }
 
+    @include mq(1200px) {
+      align-content: center;
+      padding: 5rem 13.5rem;
+      width: 120rem;
+    }
+
     &__title {
       color: var(--secondary-clr);
       font-size: 4rem;

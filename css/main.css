@@ -370,7 +370,8 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 2rem 2rem 0;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   @media screen and (min-width: 768px) {
     .aboutme-container {
       flex-direction: row;
@@ -626,6 +627,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  min-height: 100vh;
   width: 100%; }
 
 .footer {
@@ -1031,7 +1033,8 @@ body {
     line-height: 2.5rem;
     margin: 0;
     text-align: center;
-    width: 24rem; }
+    width: 24rem;
+    z-index: 1; }
     @media screen and (min-width: 576px) {
       .header-aboutme__description {
         font-size: 2.6rem;
@@ -1180,6 +1183,11 @@ body {
     .header-portfolio {
       align-items: flex-start;
       padding: 7rem 5rem 0; } }
+  @media screen and (min-width: 1200px) {
+    .header-portfolio {
+      align-content: center;
+      padding: 5rem 13.5rem;
+      width: 120rem; } }
   .header-portfolio__title {
     color: var(--secondary-clr);
     font-size: 4rem;
@@ -1220,7 +1228,8 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 2rem 2rem 0;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   @media screen and (min-width: 768px) {
     .portfolio-container {
       display: grid;
@@ -1233,6 +1242,9 @@ body {
     .portfolio-container {
       grid-column-gap: 4%;
       grid-template-columns: repeat(2, 42rem); } }
+  @media screen and (min-width: 992px) {
+    .portfolio-container {
+      width: 120rem; } }
 
 .green-box {
   align-items: center;

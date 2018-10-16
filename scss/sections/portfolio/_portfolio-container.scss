@@ -6,6 +6,7 @@
 	justify-content: center;
   padding: 2rem 2rem 0;
   position: relative;
+  width: 100%;
 
 	@include mq(768px) {
     display: grid;
@@ -19,5 +20,9 @@
 	@include mq(992px) {
     grid-column-gap: 4%;
     grid-template-columns: repeat(2, 42rem);
+  }
+
+	@include mq(992px) {
+    width: 120rem;
 	}
 }

@@ -62,6 +62,7 @@ body {
 	justify-content: center;
 	padding: 2rem 2rem 0;
 	position: relative;
+	width: 100%;
 
 	@include mq(768px) {
 		flex-direction: row;
