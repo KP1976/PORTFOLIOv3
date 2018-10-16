@@ -22,7 +22,7 @@
     grid-template-columns: repeat(2, 42rem);
   }
 
-	@include mq(992px) {
+	@include mq(1200px) {
     width: 120rem;
 	}
 }

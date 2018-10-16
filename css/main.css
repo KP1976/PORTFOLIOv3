@@ -1242,7 +1242,7 @@ body {
     .portfolio-container {
       grid-column-gap: 4%;
       grid-template-columns: repeat(2, 42rem); } }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1200px) {
     .portfolio-container {
       width: 120rem; } }
 
