@@ -1,0 +1,114 @@
+.header-aboutme {
+	align-items: center;
+	background-color: var(--background-clr);
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	width: 100%;
+
+	@include mq(768px) {
+		align-content: center;
+		align-items: start;
+		display: grid;
+		grid-template-columns: min-content 1fr;
+		grid-template-rows: repeat(3, min-content);
+		grid-gap: 2rem 5rem;
+		padding: 5rem;
+	}
+
+	@include mq(1200px) {
+		align-content: center;
+		padding: 5rem 13.5rem;
+		width: 120rem;
+	}
+
+	&__title {
+		color: var(--secondary-clr);
+		font-size: 4rem;
+		font-weight: bold;
+		margin: 0;
+		text-transform: uppercase;
+
+		@include mq(576px) {
+			font-size: 7rem;
+		}
+
+		@include mq(768px) {
+			font-size: 10rem;
+			grid-column: 1 / -1;
+			grid-row: 1;
+			width: 100%;
+		}
+	}
+
+	&__subtitle {
+		font-size: 1.8rem;
+		font-weight: normal;
+		margin: 1rem 0 0 0;
+
+		@include mq(576px) {
+			font-size: 2.4rem;
+		}
+
+		@include mq(768px) {
+			font-size: 3.2rem;
+			width: 100%;
+			grid-column: 1 / -1;
+			grid-row: 2;
+			margin: 0;
+		}
+	}
+
+	&__my-photo {
+		@include myphoto(10rem);
+		margin: 2.5rem auto;
+
+		@include mq(576px) {
+			@include myphoto(12rem);
+			margin: 4rem auto;
+		}
+
+		@include mq(768px) {
+			@include myphoto(22rem);
+			grid-column: 1 / 2;
+			grid-row: 3;
+			margin: 2rem 0 0 0;
+		}
+	}
+
+	&__description {
+		font-size: 1.6rem;
+		line-height: 2.5rem;
+		margin: 0;
+		text-align: center;
+		width: 24rem;
+		z-index: 1;
+
+		@include mq(576px) {
+			font-size: 2.6rem;
+			line-height: 3.8rem;
+			width: 40rem;
+		}
+
+		@include mq(768px) {
+			font-size: 2.6rem;
+			grid-column: 2 / 3;
+			grid-row: 3;
+			margin: 2rem 0 0 0;
+			max-width: 100%;
+			width: 100%;
+			text-align: left;
+		}
+	}
+}
+
+@keyframes arrowMove {
+	0% {
+		transform: translate(-50%, -30%);
+	}
+
+	100% {
+		transform: translate(-50%, 20%);
+	}
+}

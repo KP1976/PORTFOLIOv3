@@ -2,7 +2,7 @@
 	"short_name": "KP1976",
 	"name": "Portfolio Krzysztofa Pawłowskiego",
 	"start_url": "index.html?launcher=true",
-	"background_color": "#524c50",
+	"background_color": "#333333",
 	"display": "standalone",
-	"theme_color": "#ff934f"
+	"theme_color": "#41FF14"
 }

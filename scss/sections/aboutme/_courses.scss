@@ -1,0 +1,37 @@
+.courses {
+	width: 100%;
+	margin-bottom: 3rem;
+
+	@include mq(576px) {
+		width: 40rem;
+	}
+
+	@include mq(768px) {
+		display: grid;
+		grid-column-gap: 4rem;
+		grid-template-columns: repeat(2, 1fr);
+		width: 100%;
+	}
+
+	@include mq(992px) {
+		margin: 0 auto 3rem;
+		max-width: 100rem;
+	}
+
+	.gray-box {
+		@include mq(576px) {
+			padding: 2rem 3.5rem;
+		}
+
+		@include mq(768px) {
+			grid-column: 2;
+			grid-row: 2 / 5;
+		}
+
+		&--green-border-left {
+			@include mq(768px) {
+				grid-column: 1;
+			}
+		}
+	}
+}

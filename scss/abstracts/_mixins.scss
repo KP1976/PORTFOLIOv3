@@ -1,0 +1,41 @@
+@mixin hamburger-bar($height, $width) {
+	background-color: var(--primary-clr);
+	border-radius: 0.5rem;
+	height: $height;
+	width: $width;
+}
+
+@mixin myphoto($size) {
+	border: 0.5rem solid var(--secondary-clr);
+	border-radius: 50%;
+	display: block;
+	height: $size;
+	width: $size;
+}
+
+@mixin grayBox($widthSize, $marginSize) {
+	background-color: var(--gray-clr);
+	margin: 0 auto $marginSize;
+	width: $widthSize;
+}
+
+@mixin date($size) {
+	font-size: $size;
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+}
+
+@mixin description--green($size) {
+	color: var(--secondary-clr);
+	font-size: $size;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@mixin mq($width) {
+	@media screen and (min-width: $width) {
+		@content;
+	}
+}

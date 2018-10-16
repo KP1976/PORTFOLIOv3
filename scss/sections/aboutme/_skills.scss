@@ -1,0 +1,36 @@
+.skills {
+	width: 100%;
+
+	@include mq(576px) {
+		width: 40rem;
+	}
+
+	.description {
+		&--green {
+			margin-bottom: 1.5rem;
+
+			@include mq(576px) {
+				margin-bottom: 2rem;
+			}
+
+			@include mq(768px) {
+				font-size: 3rem;
+				margin-bottom: 3.5rem;
+			}
+		}
+	}
+
+	@include mq(768px) {
+		width: 100%;
+
+		.gray-box {
+			padding-bottom: 4rem;
+			padding-top: 3rem;
+		}
+	}
+
+	@include mq(992px) {
+		margin: 0 auto;
+		max-width: 100rem;
+	}
+}
