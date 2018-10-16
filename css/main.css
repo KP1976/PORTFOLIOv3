@@ -1254,7 +1254,7 @@ body {
   flex-direction: column;
   height: 30rem;
   justify-content: center;
-  margin: 0;
+  margin: 0 0 3rem 0;
   padding: 1.5rem;
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
   width: 28rem; }
@@ -1266,6 +1266,7 @@ body {
   @media screen and (min-width: 768px) {
     .green-box {
       height: 32.5rem;
+      margin: 0;
       padding: 1.5rem;
       width: 32.5rem; } }
   @media screen and (min-width: 992px) {
@@ -1281,14 +1282,6 @@ body {
     @media screen and (min-width: 768px) {
       .green-box:first-child {
         margin-top: 0; } }
-  .green-box:not(:last-child) {
-    margin-bottom: 3rem; }
-    @media screen and (min-width: 576px) {
-      .green-box:not(:last-child) {
-        margin-bottom: 5rem; } }
-    @media screen and (min-width: 768px) {
-      .green-box:not(:last-child) {
-        margin-bottom: 0; } }
   .green-box__link {
     align-items: center;
     color: var(--primary-clr);
