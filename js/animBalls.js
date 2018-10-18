@@ -14,7 +14,7 @@ function setSkillsBallsTransform(widthOfBar) {
 	balls[6].style.transform = `translateX(${widthOfBar - 2.5 * widthOfBar / 10 - ballWidth / 2}px)`;
 	balls[7].style.transform = `translateX(${widthOfBar - 3.5 * widthOfBar / 10 - ballWidth / 2}px)`;
 	balls[8].style.transform = `translateX(${widthOfBar - 5 * widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[9].style.transform = `translateX(${widthOfBar - 3 * widthOfBar / 10 - ballWidth / 2}px)`;
+	balls[9].style.transform = `translateX(${widthOfBar - 5 * widthOfBar / 10 - ballWidth / 2}px)`;
 	balls[10].style.transform = `translateX(${widthOfBar - 8.5 * widthOfBar / 10 - ballWidth / 2}px)`;
 	balls[11].style.transform = `translateX(${widthOfBar - 6 * widthOfBar / 10 - ballWidth / 2}px)`;
 }
