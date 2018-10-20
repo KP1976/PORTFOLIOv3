@@ -31,7 +31,7 @@ window.addEventListener('scroll', _ => {
 		setSkillsBallsTransform(widthOfBar);
 	}
 
-	if (window.scrollY + window.innerHeight + 100 > body.offsetHeight) {
+	if (window.scrollY + window.innerHeight + 100 > variables.body.offsetHeight) {
 		setLanguagesBallsTransform(widthOfBar);
 	}
 });
