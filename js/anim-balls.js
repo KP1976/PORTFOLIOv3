@@ -1,27 +1,21 @@
-// skillsPercentage = 90, 50, 15, 75, 65, 70, 40, 30;
-const balls = document.querySelectorAll('.bar__ball');
+const skillBalls = document.querySelectorAll('.skills .bar__ball');
+const languagesBalls = document.querySelectorAll('.languages .bar__ball');
 const bar = document.querySelector('.bar');
 const skills = document.querySelector('.skills');
 const ballWidth = 15;
+const tableOfSkillsNumbers = [1, 1, 3.5, 3.5, 8.5, 2.5, 2.5, 3.5, 5, 5, 8.5, 6];
+const tableOfLanguagesNumbers = [1, 7];
 
 function setSkillsBallsTransform(widthOfBar) {
-	balls[0].style.transform = `translateX(${widthOfBar - widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[1].style.transform = `translateX(${widthOfBar - widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[2].style.transform = `translateX(${widthOfBar - 3.5 * widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[3].style.transform = `translateX(${widthOfBar - 3.5 * widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[4].style.transform = `translateX(${widthOfBar - 8.5 * widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[5].style.transform = `translateX(${widthOfBar - 2.5 * widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[6].style.transform = `translateX(${widthOfBar - 2.5 * widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[7].style.transform = `translateX(${widthOfBar - 3.5 * widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[8].style.transform = `translateX(${widthOfBar - 5 * widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[9].style.transform = `translateX(${widthOfBar - 5 * widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[10].style.transform = `translateX(${widthOfBar - 8.5 * widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[11].style.transform = `translateX(${widthOfBar - 6 * widthOfBar / 10 - ballWidth / 2}px)`;
+	for (let i = 0; i < skillBalls.length; i++) {
+		skillBalls[i].style.transform = `translateX(${widthOfBar - tableOfSkillsNumbers[i] * widthOfBar / 10 - ballWidth / 2}px)`;
+	}
 }
 
 function setLanguagesBallsTransform(widthOfBar) {
-	balls[12].style.transform = `translateX(${widthOfBar - widthOfBar / 10 - ballWidth / 2}px)`;
-	balls[13].style.transform = `translateX(${widthOfBar - 7 * widthOfBar / 10 - ballWidth / 2}px)`;
+	for (let i = 0; i < languagesBalls.length; i++) {
+		languagesBalls[i].style.transform = `translateX(${widthOfBar - tableOfLanguagesNumbers[i] * widthOfBar / 10 - ballWidth / 2}px)`;
+	}
 }
 
 window.addEventListener('scroll', _ => {
