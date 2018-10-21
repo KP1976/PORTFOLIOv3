@@ -39,3 +39,9 @@
 		@content;
 	}
 }
+
+@mixin mqh($height) {
+	@media screen and (max-height: $height) {
+		@content;
+	}
+}

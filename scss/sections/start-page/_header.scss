@@ -18,6 +18,10 @@
 			@include myphoto(12rem);
 		}
 
+		@include mqh(320px) {
+			@include myphoto(10rem);
+		}
+
 		@include mq(768px) {
 			@include myphoto(15rem);
 			margin: 0;
@@ -36,10 +40,14 @@
 		text-align: center;
 		width: 21rem;
 
+		@include mqh(320px) {
+			font-size: 4rem;
+			width: 100%;
+		}
+
 		@include mq(576px) {
 			font-size: 7rem;
 			width: 37rem;
-
 		}
 
 		@include mq(768px) {
@@ -57,6 +65,10 @@
 			color: var(--secondary-clr);
 			display: block;
 
+			@include mqh(320px) {
+				display: inline;
+			}
+
 			@include mq(768px) {
 				display: inline-block;
 			}
@@ -69,6 +81,14 @@
 		text-align: center;
 		padding: 0.5rem 0;
 		width: 28rem;
+
+		@include mqh(320px) {
+			align-items: center;
+			display: flex;
+			justify-content: space-around;
+			padding: 1.5rem 2rem;
+			width: 100%;
+		}
 
 		@include mq(576px) {
 			padding: 2rem 0;
@@ -96,6 +116,10 @@
 			font-weight: normal;
 			line-height: 3rem;
 			margin: 0;
+
+			@include mqh(320px) {
+				font-size: 1.8rem;
+			}
 
 			@include mq(576px) {
 				font-size: 2.4rem;
