@@ -66,7 +66,7 @@
 			display: block;
 
 			@include mqh(320px) {
-				display: inline;
+				display: inline-block;
 			}
 
 			@include mq(768px) {
