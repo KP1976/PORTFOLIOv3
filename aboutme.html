@@ -1,307 +1,352 @@
 <!DOCTYPE html>
 <html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="Description" content="Portfolio Krzysztofa Pawłowskiego" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#41FF14" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+			integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+			crossorigin="anonymous"
+		/>
+		<link rel="manifest" href="manifest.json" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>O mnie</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="Description" content="Portfolio Krzysztofa Pawłowskiego">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#41FF14">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="css/main.css">
-  <title>O mnie</title>
-</head>
+	<body
+		style="background-image: none; background-color: var(--background_dark-clr);"
+	>
+		<!-- MENU -->
+		<div class="hamburger-menu"><div class="hamburger-menu__bar"></div></div>
+		<nav class="menu">
+			<div class="menu__header">
+				<h2 class="header__my-name">
+					<span class="header__my-name--green">Krzysztof</span>Pawłowski
+				</h2>
+			</div>
+			<ul class="menu__list">
+				<li class="list__item">
+					<a href="index.html" rel="noopener">strona główna</a>
+				</li>
+				<li class="list__item">
+					<a class="highlighted" href="aboutme.html" rel="noopener">o mnie</a>
+				</li>
+				<li class="list__item">
+					<a href="portfolio.html" rel="noopener">portfolio</a>
+				</li>
+				<li class="list__item">
+					<a href="contact.html" rel="noopener">kontakt</a>
+				</li>
+			</ul>
+		</nav>
 
-<body style="background-image: none; background-color: var(--background_dark-clr);">
+		<div class="background">
+			<!-- HEADER -->
+			<header class="header-aboutme">
+				<h2 class="header-aboutme__title">o mnie</h2>
+				<h3 class="header-aboutme__subtitle">Parę słów o sobie...</h3>
+				<img
+					src="./img/ja.jpg"
+					alt="photo of Krzysztof Pawłowski"
+					class="header-aboutme__my-photo"
+				/>
+				<p class="header-aboutme__description">
+					Z wykształcenia jestem informatykiem, z&nbsp;zawodu operatorem
+					DTP/grafikiem. Przez ostatnie kilkanaście lat pracowałem w&nbsp;kilku
+					wydawnictwach. Obecnie w&nbsp;ramach nauki i&nbsp;praktyki zajmuję się
+					tworzeniem stron internetowych i&nbsp;programowaniem
+					w&nbsp;JavaScript.
+				</p>
+			</header>
 
-  <!-- MENU -->
-  <div class="hamburger-menu">
-    <div class="hamburger-menu__bar"></div>
-  </div>
-  <nav class="menu">
-    <div class="menu__header">
-      <h2 class="header__my-name"><span class="header__my-name--green">Krzysztof</span>Pawłowski</h2>
-    </div>
-    <ul class="menu__list">
-      <li class="list__item"><a href="index.html" rel="noopener">strona główna</a></li>
-      <li class="list__item"><a class="highlighted" href="aboutme.html" rel="noopener">o mnie</a></li>
-      <li class="list__item"><a href="portfolio.html" rel="noopener">portfolio</a></li>
-      <li class="list__item"><a href="contact.html" rel="noopener">kontakt</a></li>
-    </ul>
-  </nav>
+			<main class="aboutme-container">
+				<!-- EDUKACJA -->
+				<section class="education">
+					<div class="aboutme-title">
+						<h3 class="aboutme-title__text">edukacja</h3>
+						<i class="fas fa-graduation-cap"></i>
+					</div>
 
-  <div class="background">
-    <!-- HEADER -->
-    <header class="header-aboutme">
-      <h2 class="header-aboutme__title">o mnie</h2>
-      <h3 class="header-aboutme__subtitle">Parę słów o sobie...</h3>
-      <img src="./img/ja.jpg" alt="photo of Krzysztof Pawłowski" class="header-aboutme__my-photo">
-      <p class="header-aboutme__description">Z wykształcenia jestem informatykiem, z&nbsp;zawodu operatorem
-        DTP/grafikiem.
-        Przez ostatnie kilkanaście lat pracowałem w&nbsp;kilku wydawnictwach. Obecnie w&nbsp;ramach nauki
-        i&nbsp;praktyki
-        zajmuję się tworzeniem stron internetowych i&nbsp;programowaniem w&nbsp;JavaScript.</p>
-    </header>
+					<div class="gray-box--green-border-right">
+						<h4 class="date">październik 1995 r. – lipiec 2001 r.</h4>
+						<h5 class="description--green">
+							Politechnika Szczecińska<br />Wydział Informatyki
+						</h5>
+						<p class="description">
+							Kierunek:<br /><strong>informatyka</strong
+							><br /><br />Specjalizacja: <br /><strong
+								>techniki multimedialne</strong
+							><br /><br />Tytuł:<br /><strong>magister inżynier</strong>
+						</p>
+					</div>
+					<div class="gray-box--green-border-left">
+						<h4 class="date">wrzesień 1991 r. – maj 1995 r.</h4>
+						<h5 class="description--green">
+							Liceum im. Mieszka I w&nbsp;Świnoujściu
+						</h5>
+						<p class="description">Profil:<br /><strong>ogólny</strong></p>
+					</div>
+				</section>
 
-    <main class="aboutme-container">
+				<!-- PRACA -->
+				<section class="work">
+					<div class="aboutme-title">
+						<h3 class="aboutme-title__text">praca</h3>
+						<i class="far fa-handshake"></i>
+					</div>
 
-      <!-- EDUKACJA -->
-      <section class="education">
-        <div class="aboutme-title">
-          <h3 class="aboutme-title__text">edukacja</h3>
-          <i class="fas fa-graduation-cap"></i>
-        </div>
+					<div class="gray-box--green-border-left">
+						<h4 class="date">listopad 2018 r. –</h4>
+						<h5 class="description--green">Wsparcie prac magazynowych</h5>
+						<p class="description"><strong>DPD Polska Sp. z o. o.</strong></p>
+						<p class="description2">
+							świadczenie usług konfekcjonowania i&nbsp;magazynowania
+						</p>
+					</div>
 
-        <div class="gray-box--green-border-right">
-          <h4 class="date">październik 1995 r. – lipiec 2001 r.</h4>
-          <h5 class="description--green">Politechnika Szczecińska<br>Wydział Informatyki</h5>
-          <p class="description">Kierunek:<br><strong>informatyka</strong><br><br>Specjalizacja:
-            <br><strong>techniki multimedialne</strong><br><br>Tytuł:<br><strong>magister inżynier</strong>
-          </p>
-        </div>
-        <div class="gray-box--green-border-left">
-          <h4 class="date">wrzesień 1991 r. – maj 1995 r.</h4>
-          <h5 class="description--green">Liceum im. Mieszka I w&nbsp;Świnoujściu</h5>
-          <p class="description">Profil:<br><strong>ogólny</strong></p>
-        </div>
-      </section>
+					<div class="gray-box--green-border-right">
+						<h4 class="date">* kwiecień 2004 r. –</h4>
+						<h5 class="description--green">Operator DTP</h5>
+						<p class="description">
+							<strong>Invest Company Corporation</strong>
+						</p>
+						<p class="description2">
+							skład i&nbsp;łamanie czasopisma „Piłka Nożna”<br /><br />wysyłka
+							materiałów do drukarni<br /><br />tworzenie infografik<br /><br />obróbka
+							zdjęć<br /><br />tworzenie okładki (w&nbsp;zastępstwie)<br /><br />*
+							od października praca na 1/4 etatu (tylko w&nbsp;kolejne
+							niedziele)
+						</p>
+					</div>
 
-      <!-- PRACA -->
-      <section class="work">
-        <div class="aboutme-title">
-          <h3 class="aboutme-title__text">praca</h3>
-          <i class="far fa-handshake"></i>
-        </div>
+					<div class="gray-box--green-border-left">
+						<h4 class="date">czerwiec 2002 r. – grudzień 2003 r.</h4>
+						<h5 class="description--green">Grafik komputerowy</h5>
+						<p class="description">
+							<strong>Wydawnictwo<br />Hearst-Marquard<br />Publishing</strong>
+						</p>
+						<p class="description2">skład i&nbsp;łamanie czasopisma „Shape”</p>
+					</div>
 
-        <div class="gray-box--green-border-right">
-          <h4 class="date">* kwiecień 2004 r. –</h4>
-          <h5 class="description--green">Operator DTP</h5>
-          <p class="description"><strong>Invest Company Corporation</strong></p>
-          <p class="description2">skład i&nbsp;łamanie czasopisma „Piłka Nożna”<br><br>wysyłka materiałów do drukarni<br><br>tworzenie
-            infografik<br><br>obróbka zdjęć<br><br>tworzenie okładki (w&nbsp;zastępstwie)<br><br>* od października
-            praca na
-            1/4 etatu (tylko
-            w&nbsp;kolejne niedziele)</p>
-        </div>
+					<div class="gray-box--green-border-right">
+						<h4 class="date">luty – kwiecień 2002 r.</h4>
+						<h5 class="description--green">Operator DTP</h5>
+						<p class="description"><strong>Wydawnictwo Vision Media</strong></p>
+						<p class="description2">
+							skład i&nbsp;łamanie czasopisma „Technologie i&nbsp;przemysł”<br /><br />wysyłka
+							materiałów drukarni
+						</p>
+					</div>
 
-        <div class="gray-box--green-border-left">
-          <h4 class="date">czerwiec 2002 r. – grudzień 2003 r.</h4>
-          <h5 class="description--green">Grafik komputerowy</h5>
-          <p class="description"><strong>Wydawnictwo<br>Hearst-Marquard<br>Publishing</strong></p>
-          <p class="description2">skład i&nbsp;łamanie czasopisma „Shape”</p>
-        </div>
+					<div class="gray-box--green-border-left">
+						<h4 class="date">styczeń 2002 r.</h4>
+						<h5 class="description--green">Grafik komputerowy</h5>
+						<p class="description"><strong>Wydawnictwo PAIP</strong></p>
+						<p class="description2">
+							skład i&nbsp;łamanie czasopisma<br /><br />wysyłka materiałów do
+							drukarni
+						</p>
+					</div>
 
-        <div class="gray-box--green-border-right">
-          <h4 class="date">luty – kwiecień 2002 r.</h4>
-          <h5 class="description--green">Operator DTP</h5>
-          <p class="description"><strong>Wydawnictwo Vision Media</strong></p>
-          <p class="description2">skład i&nbsp;łamanie czasopisma „Technologie i&nbsp;przemysł”<br><br>wysyłka
-            materiałów
-            drukarni</p>
-        </div>
+					<div class="gray-box--green-border-right">
+						<h4 class="date">lipiec – sierpień 1999 r.</h4>
+						<h5 class="description--green">Informatyk Helpdesk</h5>
+						<p class="description">
+							<strong>Urząd miejski<br />w Świnoujściu</strong>
+						</p>
+						<p class="description2">
+							konfiguracja i&nbsp;pomoc techniczna urzędnikom w&nbsp;zakresie
+							instalacji programów i&nbsp;obsługi systemu Windows<br /><br />instalacja
+							i&nbsp;wymiana kabli sieciowych
+						</p>
+					</div>
 
-        <div class="gray-box--green-border-left">
-          <h4 class="date">styczeń 2002 r.</h4>
-          <h5 class="description--green">Grafik komputerowy</h5>
-          <p class="description"><strong>Wydawnictwo PAIP</strong></p>
-          <p class="description2">skład i&nbsp;łamanie czasopisma<br><br>wysyłka materiałów do drukarni</p>
-        </div>
+					<div class="gray-box--green-border-left">
+						<h4 class="date">lipiec 1998 r.</h4>
+						<h5 class="description--green">Pomocnik informatyka</h5>
+						<p class="description">
+							<strong>Urząd miejski<br />w Świnoujściu</strong>
+						</p>
+						<p class="description2">
+							konfiguracja i&nbsp;pomoc techniczna urzędnikom w&nbsp;zakresie
+							instalacji programów i&nbsp;obsługi systemu Windows<br /><br />instalacja
+							i wymiana kabli sieciowych
+						</p>
+					</div>
+				</section>
 
-        <div class="gray-box--green-border-right">
-          <h4 class="date">lipiec – sierpień 1999 r.</h4>
-          <h5 class="description--green">Informatyk Helpdesk</h5>
-          <p class="description"><strong>Urząd miejski<br>w Świnoujściu</strong></p>
-          <p class="description2">konfiguracja i&nbsp;pomoc techniczna urzędnikom w&nbsp;zakresie instalacji programów
-            i&nbsp;obsługi systemu Windows<br><br>instalacja i&nbsp;wymiana kabli sieciowych</p>
-        </div>
+				<!-- UMIEJĘTNOŚCI -->
+				<section class="skills">
+					<div class="aboutme-title">
+						<h3 class="aboutme-title__text">umiejętności</h3>
+						<i class="fas fa-cogs"></i>
+					</div>
 
-        <div class="gray-box--green-border-left">
-          <h4 class="date">lipiec 1998 r.</h4>
-          <h5 class="description--green">Pomocnik informatyka</h5>
-          <p class="description"><strong>Urząd miejski<br>w Świnoujściu</strong></p>
-          <p class="description2">konfiguracja i&nbsp;pomoc techniczna urzędnikom w&nbsp;zakresie instalacji programów
-            i&nbsp;obsługi systemu Windows<br><br>instalacja i wymiana kabli sieciowych</p>
-        </div>
-      </section>
+					<div class="gray-box">
+						<div class="bar-wrapper">
+							<h5 class="description--green">adobe photoshop</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
 
-      <!-- UMIEJĘTNOŚCI -->
-      <section class="skills">
-        <div class="aboutme-title">
-          <h3 class="aboutme-title__text">umiejętności</h3>
-          <i class="fas fa-cogs"></i>
-        </div>
+						<div class="bar-wrapper">
+							<h5 class="description--green">quarkxpress</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
 
-        <div class="gray-box">
-          <div class="bar-wrapper">
-            <h5 class="description--green">adobe photoshop</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
+						<div class="bar-wrapper">
+							<h5 class="description--green">adobe indesign</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
 
-          <div class="bar-wrapper">
-            <h5 class="description--green">quarkxpress</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
+						<div class="bar-wrapper">
+							<h5 class="description--green">adobe illustrator</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
 
-          <div class="bar-wrapper">
-            <h5 class="description--green">adobe indesign</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
+						<div class="bar-wrapper">
+							<h5 class="description--green">adobe xd</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
 
-          <div class="bar-wrapper">
-            <h5 class="description--green">adobe illustrator</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
+						<div class="bar-wrapper">
+							<h5 class="description--green">html</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
 
-          <div class="bar-wrapper">
-            <h5 class="description--green">adobe xd</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
+						<div class="bar-wrapper">
+							<h5 class="description--green">css</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
 
-          <div class="bar-wrapper">
-            <h5 class="description--green">html</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
+						<div class="bar-wrapper">
+							<h5 class="description--green">bootstrap</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
 
-          <div class="bar-wrapper">
-            <h5 class="description--green">css</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
+						<div class="bar-wrapper">
+							<h5 class="description--green">materialize</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
 
-          <div class="bar-wrapper">
-            <h5 class="description--green">bootstrap</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
+						<div class="bar-wrapper">
+							<h5 class="description--green">javascript</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
 
-          <div class="bar-wrapper">
-            <h5 class="description--green">materialize</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
+						<div class="bar-wrapper">
+							<h5 class="description--green">react</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
 
-          <div class="bar-wrapper">
-            <h5 class="description--green">javascript</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
+						<div class="bar-wrapper">
+							<h5 class="description--green">ms office</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
+					</div>
+				</section>
 
-          <div class="bar-wrapper">
-            <h5 class="description--green">react</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
+				<!-- KURSY, CERTYFIKATY -->
+				<section class="courses">
+					<div class="aboutme-title">
+						<h3 class="aboutme-title__text">kursy, certyfikaty</h3>
+						<i class="fas fa-certificate"></i>
+					</div>
 
-          <div class="bar-wrapper">
-            <h5 class="description--green">ms office</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+					<div class="gray-box--green-border-right">
+						<h4 class="date">22 listopada 2016 r.</h4>
+						<h5 class="description--green">
+							Certyfikat internetowych rewolucji<br />(kurs marketingu
+							internetowego)
+						</h5>
+						<p class="description"><strong>Google</strong></p>
+					</div>
 
-      <!-- KURSY, CERTYFIKATY -->
-      <section class="courses">
-        <div class="aboutme-title">
-          <h3 class="aboutme-title__text">kursy, certyfikaty</h3>
-          <i class="fas fa-certificate"></i>
-        </div>
+					<div class="gray-box--green-border-left">
+						<h4 class="date">listopad 2001 r.</h4>
+						<h5 class="description--green">Certyfikat Operatora DTP</h5>
+						<p class="description">
+							<strong>Ośrodek szkoleniowy<br />Publishing Institute</strong>
+						</p>
+					</div>
 
-        <div class="gray-box--green-border-right">
-          <h4 class="date">22 listopada 2016 r.</h4>
-          <h5 class="description--green">Certyfikat internetowych rewolucji<br>(kurs marketingu internetowego)</h5>
-          <p class="description"><strong>Google</strong></p>
-        </div>
+					<div class="gray-box--green-border-right">
+						<h4 class="date">październik 2001 r.</h4>
+						<h5 class="description--green">
+							Kurs podstawowy<br />na Operatora DTP
+						</h5>
+						<h5 class="description--green">
+							Kurs zaawansowany<br />na Operatora DTP
+						</h5>
+						<p class="description">
+							<strong>Ośrodek szkoleniowy<br />Publishing Institute</strong>
+						</p>
+					</div>
 
-        <div class="gray-box--green-border-left">
-          <h4 class="date">listopad 2001 r.</h4>
-          <h5 class="description--green">Certyfikat Operatora DTP</h5>
-          <p class="description"><strong>Ośrodek szkoleniowy<br>Publishing Institute</strong></p>
-        </div>
+					<div class="gray-box">
+						<h3 class="udemy-title">kursy na platformie udemy</h3>
+						<p class="description2">ES6 JavaScript Reloaded, Javascript ES6!</p>
+						<p class="description2">A Complete Reference Guide to Javascript</p>
+						<p class="description2">
+							Code Your First Game: Arcade Classic in JavaScript On Canvas
+						</p>
+						<p class="description2">Modern JavaScript From The Beginning</p>
+						<p class="description2">
+							Materialize CSS From Scratch With 5 Projects
+						</p>
+						<p class="description2">React for Absolute Beginners</p>
+						<p class="description2">React Front To Back</p>
+					</div>
 
-        <div class="gray-box--green-border-right">
-          <h4 class="date">październik 2001 r.</h4>
-          <h5 class="description--green">Kurs podstawowy<br>na Operatora DTP</h5>
-          <h5 class="description--green">Kurs zaawansowany<br>na Operatora DTP</h5>
-          <p class="description"><strong>Ośrodek szkoleniowy<br>Publishing Institute</strong></p>
-        </div>
+					<div class="youtube">
+						<h5 class="description--green">
+							Ponadto dziesiątki kursów na youtube od następujących
+							użytkowników:
+						</h5>
+						<p class="description2">
+							Traversy Media, The Net Ninja, Fun Fun Function, DevTips,
+							techsith, Samuraj Programowania i wiele innych...
+						</p>
+					</div>
+				</section>
 
-        <div class="gray-box">
-          <h3 class="udemy-title">kursy na platformie udemy</h3>
-          <p class="description2">ES6 JavaScript Reloaded, Javascript ES6!</p>
-          <p class="description2">A Complete Reference Guide to Javascript</p>
-          <p class="description2">Code Your First Game: Arcade Classic in JavaScript On Canvas</p>
-          <p class="description2">Modern JavaScript From The Beginning</p>
-          <p class="description2">Materialize CSS From Scratch With 5 Projects</p>
-          <p class="description2">React for Absolute Beginners</p>
-          <p class="description2">React Front To Back</p>
-        </div>
+				<!-- JĘZYKI -->
+				<section class="languages">
+					<div class="aboutme-title">
+						<h3 class="aboutme-title__text">języki</h3>
+						<i class="fas fa-comment"></i>
+					</div>
 
-        <div class="youtube">
-          <h5 class="description--green">Ponadto dziesiątki kursów na youtube od następujących użytkowników:</h5>
-          <p class="description2">Traversy Media, The Net Ninja, Fun Fun Function, DevTips, techsith, Samuraj
-            Programowania
-            i wiele innych...</p>
-        </div>
-      </section>
+					<div class="gray-box">
+						<div class="bar-wrapper">
+							<h5 class="description--green">polski</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
 
-      <!-- JĘZYKI -->
-      <section class="languages">
-        <div class="aboutme-title">
-          <h3 class="aboutme-title__text">języki</h3>
-          <i class="fas fa-comment"></i>
-        </div>
+						<div class="bar-wrapper">
+							<h5 class="description--green">angielski</h5>
+							<div class="bar"><div class="bar__ball"></div></div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
 
-        <div class="gray-box">
-          <div class="bar-wrapper">
-            <h5 class="description--green">polski</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<span class="footer__text">&copy; Krzysztof Pawłowski 2018</span>
+		</footer>
 
-          <div class="bar-wrapper">
-            <h5 class="description--green">angielski</h5>
-            <div class="bar">
-              <div class="bar__ball"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <span class="footer__text">&copy; Krzysztof Pawłowski 2018</span>
-  </footer>
-
-  <script src="js/variables.js"></script>
-  <script src="js/menu_classes.js"></script>
-  <script src="js/menu_aboutme-portfolio.js"></script>
-  <script src="js/anim-balls.js"></script>
-</body>
-
+		<script src="js/variables.js"></script>
+		<script src="js/menu_classes.js"></script>
+		<script src="js/menu_aboutme-portfolio.js"></script>
+		<script src="js/anim-balls.js"></script>
+	</body>
 </html>
