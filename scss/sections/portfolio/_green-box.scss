@@ -1,137 +1,126 @@
 .green-box {
-  align-items: center;
-  border: 0.5rem solid var(--secondary-clr);
-  border-radius: var(--box-radius);
-  display: flex;
-  flex-direction: column;
-  height: 30rem;
-  justify-content: center;
-  margin: 0 0 3rem 0;
-  padding: 1.5rem;
-  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  width: 28rem;
+	align-items: center;
+	border: 0.5rem solid var(--secondary-clr);
+	border-radius: var(--box-radius);
+	display: flex;
+	flex-direction: column;
+	height: 30rem;
+	justify-content: center;
+	margin: 0 0 3rem 0;
+	padding: 1.5rem;
+	transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+	width: 28rem;
 
-  @include mq(576px) {
-    height: 45.6rem;
-    padding: 2rem;
-    width: 45.6rem;
-  }
+	@include mq(576px) {
+		height: 45.6rem;
+		padding: 2rem;
+		width: 45.6rem;
+	}
 
-  @include mq(768px) {
-    height: 32.5rem;
-    margin: 0;
-    padding: 1.5rem;
-    width: 32.5rem;
-  }
+	@include mq(768px) {
+		height: 32.5rem;
+		margin: 0;
+		padding: 1.5rem;
+		width: 32.5rem;
+	}
 
-  @include mq(992px) {
-    height: 42rem;
-    padding: 2rem;
-    width: 42rem;
-  }
+	@include mq(992px) {
+		height: 42rem;
+		padding: 2rem;
+		width: 42rem;
+	}
 
-  &:first-child {
-    margin-top: 1rem;
+	&:first-child {
+		margin-top: 1rem;
 
-    @include mq(576px) {
-      margin-top: 3rem;
-    }
+		@include mq(576px) {
+			margin-top: 3rem;
+		}
 
-    @include mq(768px) {
-      margin-top: 0;
-    }
-  }
+		@include mq(768px) {
+			margin-top: 0;
+		}
+	}
 
-  // &:not(:last-child) {
-  //   margin-bottom: 3rem;
+	&__link {
+		align-items: center;
+		color: var(--primary-clr);
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		text-decoration: none;
+	}
 
-  //   @include mq(576px) {
-  //     margin-bottom: 5rem;
-  //   }
+	&__example-img {
+		max-height: 10rem;
+		max-width: 24rem;
+		width: auto;
 
-  //   @include mq(768px) {
-  //     margin-bottom: 0;
-  //   }
-  // }
+		@include mq(576px) {
+			max-height: 17rem;
+			max-width: 40rem;
+		}
 
-  &__link {
-    align-items: center;
-    color: var(--primary-clr);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    text-decoration: none;
-  }
+		@include mq(768px) {
+			max-height: 10rem;
+			max-width: 25rem;
+		}
 
-  &__example-img {
-    max-height: 10rem;
-    max-width: 24rem;
-    width: auto;
+		@include mq(992px) {
+			max-height: 14.5rem;
+			max-width: 36.5rem;
+		}
+	}
 
-    @include mq(576px) {
-      max-height: 17rem;
-      max-width: 40rem;
-    }
+	&__title {
+		color: var(--secondary-clr);
+		font-size: 2rem;
+		margin: 1rem 0;
+		text-align: center;
 
-    @include mq(768px) {
-      max-height: 10rem;
-      max-width: 25rem;
-    }
+		@include mq(576px) {
+			font-size: 3.2rem;
+			margin: 2rem 0 1.5rem;
+		}
 
-    @include mq(992px) {
-      max-height: 14.5rem;
-      max-width: 36.5rem;
-    }
-  }
+		@include mq(768px) {
+			font-size: 2.2rem;
+		}
 
-  &__title {
-    color: var(--secondary-clr);
-    font-size: 2rem;
-    margin: 1rem 0;
+		@include mq(992px) {
+			font-size: 3rem;
+		}
+	}
 
-    @include mq(576px) {
-      font-size: 3.2rem;
-      margin: 2rem 0 1.5rem;
-    }
+	&__text {
+		font-size: 1.6rem;
+		line-height: 2rem;
+		margin: 0;
+		text-align: center;
 
-    @include mq(768px) {
-      font-size: 2.2rem;
-    }
+		@include mq(576px) {
+			font-size: 2.4rem;
+			line-height: 3rem;
+		}
 
-    @include mq(992px) {
-      font-size: 3rem;
-    }
-  }
+		@include mq(768px) {
+			font-size: 1.8rem;
+			line-height: 2.4rem;
+		}
 
-  &__text {
-    font-size: 1.6rem;
-    line-height: 2rem;
-    margin: 0;
-    text-align: center;
+		@include mq(992px) {
+			font-size: 2.2rem;
+			line-height: 2.8rem;
+		}
+	}
 
-    @include mq(576px) {
-      font-size: 2.4rem;
-      line-height: 3rem;
-    }
+	&:hover {
+		box-shadow: 0 0 2rem 0 rgba(65, 255, 20, 1);
+		background-color: #222;
+	}
 
-    @include mq(768px) {
-      font-size: 1.8rem;
-      line-height: 2.4rem;
-    }
-
-    @include mq(992px) {
-      font-size: 2.2rem;
-      line-height: 2.8rem;
-    }
-  }
-
-  &:hover {
-    box-shadow: 0 0 2rem 0 rgba(65, 255, 20, 1);
-    background-color: #222;
-  }
-
-  &:hover .container-aboutme-portfolio {
-    background-color: #222;
-  }
+	&:hover .container-aboutme-portfolio {
+		background-color: #222;
+	}
 }

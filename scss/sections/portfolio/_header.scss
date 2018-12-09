@@ -1,66 +1,66 @@
 .header-portfolio {
-    align-items: center;
-    background-color: var(--background-clr);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 7rem;
-    width: 100%;
+	align-items: center;
+	// background-color: var(--background-clr);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 7rem;
+	width: 100%;
 
-    @include mq(768px) {
-      align-items: flex-start;
-      padding: 13rem 5rem 0;
-    }
+	@include mq(768px) {
+		align-items: flex-start;
+		padding: 13rem 5rem 0;
+	}
 
-    @include mq(992px) {
-      align-items: flex-start;
-      padding: 7rem 5rem 0;
-    }
+	@include mq(992px) {
+		align-items: flex-start;
+		padding: 7rem 5rem 0;
+	}
 
-    @include mq(1200px) {
-      align-content: center;
-      padding: 5rem 13.5rem;
-      width: 120rem;
-    }
+	@include mq(1200px) {
+		align-content: center;
+		padding: 5rem 13.5rem;
+		width: 120rem;
+	}
 
-    &__title {
-      color: var(--secondary-clr);
-      font-size: 4rem;
-      font-weight: bold;
-      margin: 0;
-      text-transform: uppercase;
+	&__title {
+		color: var(--secondary-clr);
+		font-size: 4rem;
+		font-weight: bold;
+		margin: 0;
+		text-transform: uppercase;
 
-      @include mq(576px) {
-        font-size: 7rem;
-      }
+		@include mq(576px) {
+			font-size: 7rem;
+		}
 
-      @include mq(768px) {
-        font-size: 10rem;
-      }
-    }
+		@include mq(768px) {
+			font-size: 10rem;
+		}
+	}
 
-    &__subtitle {
-      font-size: 1.8rem;
-      font-weight: normal;
-      line-height: 1.5;
-      margin: 1rem 0 0 0;
-      margin: 1rem 0 0 0;
-      text-align: center;
+	&__subtitle {
+		font-size: 1.8rem;
+		font-weight: normal;
+		line-height: 1.5;
+		margin: 1rem 0 0 0;
+		margin: 1rem 0 0 0;
+		text-align: center;
 
-      @include mq(576px) {
-        font-size: 2.4rem;
-        width: 34rem;
-      }
+		@include mq(576px) {
+			font-size: 2.4rem;
+			width: 34rem;
+		}
 
-      @include mq(768px) {
-        font-size: 3.2rem;
-        margin: 1rem 0 5rem 0;
-        text-align: left;
-        width: 100%;
-      }
+		@include mq(768px) {
+			font-size: 3.2rem;
+			margin: 1rem 0 5rem 0;
+			text-align: left;
+			width: 100%;
+		}
 
-      @include mq(992px) {
-        margin: 1rem 0 3rem 0;
-      }
-    }
+		@include mq(992px) {
+			margin: 1rem 0 3rem 0;
+		}
+	}
 }

@@ -365,7 +365,6 @@ body {
 
 .aboutme-container {
   align-items: center;
-  background-color: var(--background-clr);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -716,9 +715,6 @@ body {
     .menu {
       display: grid;
       grid-template-columns: repeat(2, 1fr); } }
-  @media screen and (min-width: 1200px) {
-    .menu {
-      width: 120rem; } }
   .menu__header {
     align-items: center;
     display: flex;
@@ -991,7 +987,6 @@ body {
 
 .header-aboutme {
   align-items: center;
-  background-color: var(--background-clr);
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -1237,7 +1232,6 @@ body {
 
 .header-portfolio {
   align-items: center;
-  background-color: var(--background-clr);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1291,7 +1285,6 @@ body {
 
 .portfolio-container {
   align-items: center;
-  background-color: var(--background-clr);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1377,7 +1370,8 @@ body {
   .green-box__title {
     color: var(--secondary-clr);
     font-size: 2rem;
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    text-align: center; }
     @media screen and (min-width: 576px) {
       .green-box__title {
         font-size: 3.2rem;

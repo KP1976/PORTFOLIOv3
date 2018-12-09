@@ -85,9 +85,9 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	@include mq(1200px) {
-		width: 120rem;
-	}
+	// @include mq(1200px) {
+	// 	width: 120rem;
+	// }
 
 	&__header {
 		align-items: center;

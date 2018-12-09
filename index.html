@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="Description" content="Portfolio Krzysztofa Pawłowskiego" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#41FF14" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+			integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+			crossorigin="anonymous"
+		/>
+		<link rel="manifest" href="manifest.json" />
+		<link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Portfolio – Krzysztof Pawłowski</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="Description" content="Portfolio Krzysztofa Pawłowskiego">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#41FF14">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Portfolio – Krzysztof Pawłowski</title>
-</head>
+	<body>
+		<main class="container">
+			<!-- MENU -->
+			<div class="hamburger-menu"><div class="hamburger-menu__bar"></div></div>
+			<nav class="menu">
+				<div class="menu__header">
+					<h2 class="header__my-name"><span class="header__my-name--green">Krzysztof</span> Pawłowski</h2>
+				</div>
+				<ul class="menu__list">
+					<li class="list__item">
+						<a class="highlighted" href="index.html" rel="noopener">strona główna</a>
+					</li>
+					<li class="list__item"><a href="aboutme.html" rel="noopener">o mnie</a></li>
+					<li class="list__item"><a href="portfolio.html" rel="noopener">portfolio</a></li>
+					<li class="list__item"><a href="contact.html" rel="noopener">kontakt</a></li>
+				</ul>
+			</nav>
 
-<body>
-  <main class="container">
+			<!-- HEADER -->
+			<header class="header">
+				<img src="./img/ja.jpg" alt="photo of Krzysztof Pawłowski" class="header__my-photo" />
+				<h2 class="header__my-name"><span class="header__my-name--green">Krzysztof</span> Pawłowski</h2>
+				<div class="professions">
+					<h2 class="professions__profession">operator DTP</h2>
+					<h2 class="professions__profession">grafik komputerowy</h2>
+					<h2 class="professions__profession--green">front-end developer?</h2>
+				</div>
+				<div class="header-icons">
+					<a
+						class="header-icons__facebook"
+						href="https://www.facebook.com/KP1976PL"
+						target="_blank"
+						aria-label="Facebook"
+						rel="noopener"
+					>
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a
+						class="header-icons__github"
+						href="https://github.com/KP1976"
+						target="_blank"
+						aria-label="GitHub"
+						rel="noopener"
+					>
+						<i class="fab fa-github"></i>
+					</a>
+					<a
+						class="header-icons__linkedin"
+						href="https://www.linkedin.com/in/krzysztof-pawłowski-74aa01154"
+						target="_blank"
+						aria-label="LinkedIn"
+						rel="noopener"
+					>
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</div>
+			</header>
+		</main>
 
-    <!-- MENU -->
-    <div class="hamburger-menu">
-      <div class="hamburger-menu__bar"></div>
-    </div>
-    <nav class="menu">
-      <div class="menu__header">
-        <h2 class="header__my-name"><span class="header__my-name--green">Krzysztof</span> Pawłowski</h2>
-      </div>
-      <ul class="menu__list">
-        <li class="list__item"><a class="highlighted" href="index.html" rel="noopener">strona główna</a></li>
-        <li class="list__item"><a href="aboutme.html" rel="noopener">o mnie</a></li>
-        <li class="list__item"><a href="portfolio.html" rel="noopener">portfolio</a></li>
-        <li class="list__item"><a href="contact.html" rel="noopener">kontakt</a></li>
-      </ul>
-    </nav>
-
-    <!-- HEADER -->
-    <header class="header">
-      <img src="./img/ja.jpg" alt="photo of Krzysztof Pawłowski" class="header__my-photo">
-      <h2 class="header__my-name"><span class="header__my-name--green">Krzysztof</span> Pawłowski</h2>
-      <div class="professions">
-        <h2 class="professions__profession">operator DTP</h2>
-        <h2 class="professions__profession">grafik komputerowy</h2>
-        <h2 class="professions__profession--green">front-end developer?</h2>
-      </div>
-      <div class="header-icons">
-        <a class="header-icons__facebook" href="https://www.facebook.com/KP1976PL" target="_blank" aria-label="Facebook"
-          rel="noopener">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a class="header-icons__github" href="https://github.com/KP1976" target="_blank" aria-label="GitHub" rel="noopener">
-          <i class="fab fa-github"></i>
-        </a>
-        <a class="header-icons__linkedin" href="https://www.linkedin.com/in/krzysztof-pawłowski-74aa01154" target="_blank"
-          aria-label="LinkedIn" rel="noopener">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </header>
-  </main>
-
-  <script src="js/variables.js"></script>
-  <script src="js/menu_classes.js"></script>
-  <script src="js/menu_startpage-contact.js"></script>
-</body>
-
+		<script src="js/variables.js"></script>
+		<script src="js/menu_classes.js"></script>
+		<script src="js/menu_startpage-contact.js"></script>
+	</body>
 </html>
