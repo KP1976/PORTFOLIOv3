@@ -4,8 +4,12 @@ html {
 
 body {
 	background-attachment: fixed;
+<<<<<<< HEAD
 	background-image: url('../img/background.jpg');
 	background-image: url('../img/background.webp');
+=======
+	background-image: url('../../img/background.jpg');
+>>>>>>> parent of 3b916b3... Update _body.scss
 	background-size: cover;
 	color: var(--primary-clr);
 	font-family: var(--font);
